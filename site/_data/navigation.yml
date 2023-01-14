@@ -2,19 +2,21 @@
 main:
   - title: "Quick-Start Guide"
     description: "Sample description."
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+    url: /docs/quick-start-guide/
   - title: "About"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
-  - title: "Posts"
-    url: /year-archive/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
-  - title: "Pages"
-    url: /page-archive/
-  - title: "Collections"
-    url: /collection-archive/
+    url: /about/
+  - title: "Portfolio"
+    url: /portfolio/
+  # - title: "Posts"
+  #   url: /year-archive/
+  # - title: "Categories"
+  #   url: /categories/
+  # - title: "Tags"
+  #   url: /tags/
+  # - title: "Pages"
+  #   url: /page-archive/
+  # - title: "Collections"
+  #   url: /collection-archive/
   - title: "External Link"
     url: https://google.com
 
@@ -24,12 +26,10 @@ docs:
     children:
       - title: "Quick-Start Guide"
         url: /docs/quick-start-guide/
-
   - title: Structure
     children:
       - title: "Structure"
         url: /docs/structure/
-
   - title: Installation
     children:
       - title: "Installation"
