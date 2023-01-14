@@ -7,7 +7,7 @@
 
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
-minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale: "en-US"
@@ -35,7 +35,7 @@ comments:
     theme: # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
 atom_feed:
   path: # blank (default) uses feed.xml
-  hide: # true, false (default)
+  hide: true # true, false (default)
 
 search: true # true, false (default)
 search_full_content: false # true, false (default)
@@ -67,9 +67,6 @@ author:
   location: "Athens, Greece"
   email: christosgalanop@gmail.com
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:christosgalanop@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/christosgalano"
