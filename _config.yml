@@ -11,7 +11,7 @@ minimal_mistakes_skin: "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon
 
 # Site Settings
 locale: "en-US"
-title: "Christos Galanopoulos"
+title: "Christos' Blog"
 title_separator: " "
 subtitle:
 name: &name "Christos Galanopoulos" # &name is a YAML anchor which can be *referenced later
@@ -63,10 +63,12 @@ social:
 author:
   name: *name # *name is a YAML reference pointing to the &anchor earlier
   avatar: "/assets/images/christos-galano.jpg"
-  bio: "Just another *boring*, *tattooed*, *time traveling*, *designer*."
+  bio: "Just another *curious improver*."
   location: "Athens, Greece"
-  email: christosgalanop@gmail.com
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:christosgalanop@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/christosgalano"
