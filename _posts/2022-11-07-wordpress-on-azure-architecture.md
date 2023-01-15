@@ -58,3 +58,4 @@ That pretty much covers the details of our architecture. In the next part, we ar
 * [**Part 0: Introduction**](2022-11-07-wordpress-on-azure-introduction.md)
 
 **GitHub repository** <https://github.com/christosgalano/WordPress-on-Azure>
+
