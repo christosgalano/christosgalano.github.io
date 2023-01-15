@@ -18,7 +18,7 @@ tags:
 toc: true
 ---
 
-Hello, fellow Azure enthusiasts! In today’s blog post, we look into the deployment of our [Azure infrastructure]({% post_url 2022-11-07-wordpress-on-azure-architecture %}) and some post-configuration steps.
+Hello everyone! In today’s blog post, we look into the deployment of our [Azure infrastructure]({% post_url 2022-11-07-wordpress-on-azure-architecture %}) and some post-configuration steps.
 
 We use GitHub Actions to deploy our infrastructure.
 

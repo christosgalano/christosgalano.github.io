@@ -15,7 +15,7 @@ tags:
 toc: true
 ---
 
-Hello, fellow Azure enthusiasts! In today’s blog post, we set up monitoring and testing for our WordPress site.
+Hello everyone! In today’s blog post, we set up monitoring and testing for our WordPress site.
 
 ## Set up monitoring
 
