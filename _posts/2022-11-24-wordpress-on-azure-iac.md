@@ -25,7 +25,7 @@ We are not going to delve into every single one of the modules; instead, we are 
 <details>
   <summary>Code</summary>
 
-```csharp
+{% highlight csharp linenos %}
 resource webapp 'Microsoft.Web/sites@2022-03-01' = {
   name: name
   location: location
@@ -88,7 +88,7 @@ resource webapp 'Microsoft.Web/sites@2022-03-01' = {
     serverFarmId: app_service_plan_id
   }
 }
-```
+{% endhighlight %}
 
 </details>
 
@@ -110,7 +110,7 @@ Lastly, we need to create the necessary configuration settings regarding the dat
 <details>
   <summary>Code</summary>
 
-```terraform
+{% highlight terraform %}
 var private_dns_zone_name = '${name}.private.mysql.database.azure.com'
 
 resource private_dns_zone 'Microsoft.Network/privateDnsZones@2020-06-01' = {
@@ -161,7 +161,7 @@ resource mysql 'Microsoft.DBforMySQL/flexibleServers@2021-12-01-preview' = {
     private_dns_zone_vnet_link
   ]
 }
-```
+{% endhighlight %}
 
 </details>
 
@@ -176,7 +176,7 @@ Because the application expects a pre-existing database with the name *wordpress
 <details>
 <summary>Code</summary>
 
-```cpp
+{% highlight cpp %}
 var private_dns_zone_name = 'privatelink.azurecr.io'
 
 resource private_dns_zone 'Microsoft.Network/privateDnsZones@2020-06-01' = {
@@ -231,7 +231,7 @@ resource private_dns_zone_group 'Microsoft.Network/privateEndpoints/privateDnsZo
     ]
   }
 }
-```
+{% endhighlight %}
 
 </details>
 
@@ -246,7 +246,7 @@ I strongly suggest that you use the **parent** element in order to avoid [resolv
 <details>
   <summary>Code</summary>
 
-```bicep
+{% highlight bicep %}
 resource identity 'Microsoft.ManagedIdentity/userAssignedIdentities@2022-01-31-preview' = {
   name: name
   location: location
@@ -255,7 +255,7 @@ resource identity 'Microsoft.ManagedIdentity/userAssignedIdentities@2022-01-31-p
 output identity_resource_id string = identity.id
 output identity_client_id string = identity.properties.clientId
 output identity_principal_id string = identity.properties.principalId
-```
+{% endhighlight %}
 
 </details>
 
