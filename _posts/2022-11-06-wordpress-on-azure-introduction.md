@@ -1,9 +1,10 @@
 ---
 title: "WordPress on Azure: Part 0 - Introduction"
-excerpt: "The purpose of this series of articles will be about utilizing Azure, Bicep, and GitHub to host, monitor, and test a WordPress site."
+excerpt: "The purpose of this series will be about utilizing Azure, Bicep, and GitHub to host, monitor, and test a WordPress site."
 header:
-  image: /assets/images/wordpress-on-azure-teaser.png
-  teaser: /assets/images/wordpress-on-azure-teaser.png
+  image: /assets/images/wordpress-on-azure/wordpress-on-azure.png
+  teaser: /assets/images/wordpress-on-azure/wordpress-on-azure.png
+related: true
 categories:
   - azure
 tags:
@@ -25,4 +26,4 @@ Hello, fellow Azure enthusiasts! I suppose more or less all of us have heard abo
 
 * [**Part 4: Monitoring & Testing**]({% post_url 2023-01-03-wordpress-on-azure-monitoring-and-testing %})
 
-**GitHub repository** <https://github.com/christosgalano/WordPress-on-Azure>
+**GitHub repository:** <https://github.com/christosgalano/WordPress-on-Azure>

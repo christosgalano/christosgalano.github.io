@@ -1,9 +1,10 @@
 ---
 title: "WordPress on Azure: Part 4 - Monitoring & Testing"
-excerpt: "The purpose of this series of articles will be about utilizing Azure, Bicep, and GitHub to host, monitor, and test a WordPress site."
+excerpt: "In today’s blog post, we set up monitoring and testing for our WordPress site."
 header:
-  image: /assets/images/wordpress-on-azure-monitoring-and-testing.jpg
-  teaser: /assets/images/wordpress-on-azure-monitoring-and-testing.jpg
+  image: /assets/images/wordpress-on-azure/monitoring-and-testing.jpg
+  teaser: /assets/images/wordpress-on-azure/monitoring-and-testing.jpg
+related: true
 categories:
   - azure
   - github
@@ -23,17 +24,17 @@ Hello, fellow Azure enthusiasts! In today’s blog post, we set up monitoring an
 
 * Go to the Application Insights resource and copy its Instrumentation Key
 
-{% raw %}![get-instrumentation-key]({{ site.url }}{{ site.baseurl }}/assets/images/wordpress-on-azure-get-instrumentation-key.png){% endraw %}
+![get-instrumentation-key](/assets/images/wordpress-on-azure/get-instrumentation-key.png)
 
 * Login to WordPress at <https://{{app-service-name}}.azurewebsites.net/login>
 
 * Go to Plugins, install and activate the **Application Insights** plugin
 
-{% raw %}![install-plugin]({{ site.url }}{{ site.baseurl }}/assets/images/wordpress-on-azure-install-plugin.png){% endraw %}
+![install-plugin](/assets/images/wordpress-on-azure/install-plugin.png)
 
 * Go to **Settings -> Application Insights** and set the Instrumentation Key
 
-{% raw %}![set-instrumentation-key]({{ site.url }}{{ site.baseurl }}/assets/images/wordpress-on-azure-set-instrumentation-key.png){% endraw %}
+![set-instrumentation-key](/assets/images/wordpress-on-azure/set-instrumentation-key.png)
 
 * Wait 5 minutes for the integration to take place
 
@@ -47,7 +48,7 @@ The ***web_test*** module was included in the ***main*** deployment template. Th
 
 * Click on the test and enable it
 
-{% raw %}![enable-availability-test]({{ site.url }}{{ site.baseurl }}/assets/images/wordpress-on-azure-enable-availability-test.png){% endraw %}
+![enable-availability-test](/assets/images/wordpress-on-azure/enable-availability-test.png)
 
 ### Perform a Load Test
 
@@ -63,7 +64,7 @@ The ***web_test*** module was included in the ***main*** deployment template. Th
 
 * Create and run the load test
 
-{% raw %}![load-test-results]({{ site.url }}{{ site.baseurl }}/assets/images/wordpress-on-azure-load-test-results.png){% endraw %}
+![load-test-results](/assets/images/wordpress-on-azure/load-test-results.png)
 
 ## Teardown the infrastructure using the *destroy.yaml* workflow
 
@@ -85,7 +86,7 @@ The ***web_test*** module was included in the ***main*** deployment template. Th
 
 * If at least one approver responds negatively, the workflow fails
 
-{% raw %}![approve-teardown]({{ site.url }}{{ site.baseurl }}/assets/images/wordpress-on-azure-approve-teardown.png){% endraw %}
+![approve-teardown](/assets/images/wordpress-on-azure/approve-teardown.png)
 
 ### Destroy the infrastructure
 
@@ -109,12 +110,12 @@ Well, this brings the WordPress-on-Azure series to an end. I hope you found the 
 
 **Previous parts:**
 
-* [**Part 0: Introduction**](2022-11-07-wordpress-on-azure-introduction.md)
+* [**Part 0: Introduction**]({% post_url 2022-11-07-wordpress-on-azure-introduction %})
 
-* [**Part 1: Architecture**](2022-11-07-wordpress-on-azure-architecture.md)
+* [**Part 1: Architecture**]({% post_url 2022-11-07-wordpress-on-azure-architecture %})
 
-* [**Part 2: Infrastructure as Code**](2022-11-24-wordpress-on-azure-iac.md)
+* [**Part 2: Infrastructure as Code**]({% post_url 2022-11-24-wordpress-on-azure-iac %})
 
-* [**Part 3: Deployment**](2022-12-09-wordpress-on-azure-deployment.md)
+* [**Part 3: Deployment**]({% post_url 2022-12-09-wordpress-on-azure-deployment %})
 
-**GitHub repository** <https://github.com/christosgalano/WordPress-on-Azure>
+**GitHub repository:** <https://github.com/christosgalano/WordPress-on-Azure>

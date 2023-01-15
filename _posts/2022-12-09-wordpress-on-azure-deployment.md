@@ -1,9 +1,10 @@
 ---
 title: "WordPress on Azure: Part 3 - Deployment"
-excerpt: "The purpose of this series of articles will be about utilizing Azure, Bicep, and GitHub to host, monitor, and test a WordPress site."
+excerpt: "In today’s blog post, we look into the deployment of our Azure infrastructure and the configuration of the application."
 header:
-  image: /assets/images/wordpress-on-azure-deployment.png
-  teaser: /assets/images/wordpress-on-azure-deployment.png
+  image: /assets/images/wordpress-on-azure/deployment.jpg
+  teaser: /assets/images/wordpress-on-azure/deployment.jpg
+related: true
 categories:
   - github
   - azure
@@ -85,7 +86,7 @@ cd /home/site/wwwroot && mkdir bin && cd bin
 curl https://cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem -o DigiCertGlobalRootCA.crt.pem
 ```
 
-{% raw %}![kudu-environment]({{ site.url }}{{ site.baseurl }}/assets/images/wordpress-on-azure-kudu.png){% endraw %}
+![kudu-environment](/assets/images/wordpress-on-azure/kudu-environment.png)
 
 ### Import WordPress image to Azure Container Registry
 
@@ -93,7 +94,7 @@ curl https://cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem -o DigiCertGlobal
 
 * Login to the jumpbox through Bastion using the credentials stored in the Key Vault
 
-![wordpress-on-azure-bastion-login](/assets/images/wordpress-on-azure-bastion-login.png)
+![bastion-login](/assets/images/wordpress-on-azure/bastion-login.png)
 
 * Run the following:
 
@@ -118,14 +119,14 @@ So we deployed our infrastructure and completed the essential post-configuration
 
 **Next part:**
 
-* [**Part 4: Monitoring & Testing**](2023-01-03-wordpress-on-azure-monitoring-and-testing.md)
+* [**Part 4: Monitoring & Testing**]({% post_url 2023-01-03-wordpress-on-azure-monitoring-and-testing %})
 
 **Previous parts:**
 
-* [**Part 0: Introduction**](2022-11-07-wordpress-on-azure-introduction.md)
+* [**Part 0: Introduction**]({% post_url 2022-11-07-wordpress-on-azure-introduction %})
 
-* [**Part 1: Architecture**](2022-11-07-wordpress-on-azure-architecture.md)
+* [**Part 1: Architecture**]({% post_url 2022-11-07-wordpress-on-azure-architecture %})
 
-* [**Part 2: Infrastructure as Code**](2022-11-24-wordpress-on-azure-iac.md)
+* [**Part 2: Infrastructure as Code**]({% post_url 2022-11-24-wordpress-on-azure-iac %})
 
-**GitHub repository** <https://github.com/christosgalano/WordPress-on-Azure>
+**GitHub repository:** <https://github.com/christosgalano/WordPress-on-Azure>

@@ -1,9 +1,10 @@
 ---
 title: "WordPress on Azure: Part 2 - IaC"
-excerpt: "The purpose of this series of articles will be about utilizing Azure, Bicep, and GitHub to host, monitor, and test a WordPress site."
+excerpt: "In today’s blog post we examine the code that will be used to deploy our infrastructure."
 header:
-  image: /assets/images/wordpress-on-azure-bicep.png
-  teaser: /assets/images/wordpress-on-azure-bicep.png
+  image: /assets/images/wordpress-on-azure/bicep.png
+  teaser: /assets/images/wordpress-on-azure/bicep.png
+related: true
 categories:
   - azure
 tags:
@@ -308,12 +309,12 @@ That about sums up the code modules. In the following part, we will deploy our i
 
 **Next part:**
 
-* [**Part 3: Deployment**](2022-12-09-wordpress-on-azure-deployment.md)
+* [**Part 3: Deployment**]({% post_url 2022-12-09-wordpress-on-azure-deployment %})
 
 **Previous parts:**
 
-* [**Part 0: Introduction**](2022-11-07-wordpress-on-azure-introduction.md)
+* [**Part 0: Introduction**]({% post_url 2022-11-07-wordpress-on-azure-introduction %})
 
-* [**Part 1: Architecture**](2022-11-07-wordpress-on-azure-architecture.md)
+* [**Part 1: Architecture**]({% post_url 2022-11-07-wordpress-on-azure-architecture %})
 
-**GitHub repository** <https://github.com/christosgalano/WordPress-on-Azure>
+**GitHub repository:** <https://github.com/christosgalano/WordPress-on-Azure>
