@@ -2,8 +2,8 @@
 title: "WordPress on Azure: Part 0 - Introduction"
 excerpt: "The purpose of this series of articles will be about utilizing Azure, Bicep, and GitHub to host, monitor, and test a WordPress site."
 header:
-  image: /assets/images/wordpress-on-azure/wordpress-on-azure.png
-  teaser: /assets/images/wordpress-on-azure/wordpress-on-azure.png
+  image: /assets/images/wordpress-on-azure-teaser.png
+  teaser: /assets/images/wordpress-on-azure-teaser.png
 categories:
   - azure
 tags:

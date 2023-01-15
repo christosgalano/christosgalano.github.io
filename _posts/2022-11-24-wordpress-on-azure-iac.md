@@ -2,8 +2,8 @@
 title: "WordPress on Azure: Part 2 - IaC"
 excerpt: "The purpose of this series of articles will be about utilizing Azure, Bicep, and GitHub to host, monitor, and test a WordPress site."
 header:
-  image: /assets/images/wordpress-on-azure/bicep.png
-  teaser: /assets/images/wordpress-on-azure/bicep.png
+  image: /assets/images/wordpress-on-azure-bicep.png
+  teaser: /assets/images/wordpress-on-azure-bicep.png
 categories:
   - azure
 tags:

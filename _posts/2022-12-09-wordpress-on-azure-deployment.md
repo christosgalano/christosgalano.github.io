@@ -2,8 +2,8 @@
 title: "WordPress on Azure: Part 3 - Deployment"
 excerpt: "The purpose of this series of articles will be about utilizing Azure, Bicep, and GitHub to host, monitor, and test a WordPress site."
 header:
-  image: /assets/images/wordpress-on-azure/deployment.png
-  teaser: /assets/images/wordpress-on-azure/deployment.png
+  image: /assets/images/wordpress-on-azure-deployment.png
+  teaser: /assets/images/wordpress-on-azure-deployment.png
 categories:
   - github
   - azure
@@ -85,7 +85,7 @@ cd /home/site/wwwroot && mkdir bin && cd bin
 curl https://cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem -o DigiCertGlobalRootCA.crt.pem
 ```
 
-{% raw %}![kudu-environment]({{ site.url }}{{ site.baseurl }}/assets/images/wordpress-on-azure/kudu.png){% endraw %}
+{% raw %}![kudu-environment]({{ site.url }}{{ site.baseurl }}/assets/images/wordpress-on-azure-kudu.png){% endraw %}
 
 ### Import WordPress image to Azure Container Registry
 
@@ -93,7 +93,7 @@ curl https://cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem -o DigiCertGlobal
 
 * Login to the jumpbox through Bastion using the credentials stored in the Key Vault
 
-{% raw %}![kudu-environment]({{ site.url }}{{ site.baseurl }}/assets/images/wordpress-on-azure/bastion-login.png){% endraw %}
+{% raw %}![kudu-environment]({{ site.url }}{{ site.baseurl }}/assets/images/wordpress-on-azure-bastion-login.png){% endraw %}
 
 * Run the following:
 
