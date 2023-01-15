@@ -1,3 +1,16 @@
+# main links
+main:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "Sample Posts"
+    url: /year-archive/
+  - title: "Sample Collections"
+    url: /collection-archive/
+  - title: "Terms &amp; Privacy Policy"
+    url: /terms/
+
 # example navigation
 foo:
   - title: "Parent Link 1"
@@ -16,21 +29,6 @@ foo:
         url: /child-2-page-url/
       - title: "Child Link 3"
         url: /child-3-page-url/
-
-
-# main links
-main:
-  - title: "Quick-Start Guide"
-    url: /docs/quick-start-guide/
-  - title: "About"
-    url: /about/
-  - title: "Sample Posts"
-    url: /year-archive/
-  - title: "Sample Collections"
-    url: /collection-archive/
-  - title: "Terms &amp; Privacy Policy"
-    url: /terms/
-
 
 # documentation links
 docs:
