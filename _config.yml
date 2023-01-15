@@ -24,7 +24,7 @@ comments:
     category_id: "DIC_kwDOIxriB84CTl6_"
     discussion_term: "pathname"
     reactions_enabled: "1"
-    theme: "dark"
+    theme: "light"
 atom_feed:
   path: # blank (default) uses feed.xml
   hide: true
