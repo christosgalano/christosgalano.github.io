@@ -16,7 +16,7 @@ tags:
 toc: true
 ---
 
-Hello, fellow Azure enthusiasts! In today’s blog post, we look into the deployment of our [Azure infrastructure](Part-1-Architecture.md) and some post-configuration steps.
+Hello, fellow Azure enthusiasts! In today’s blog post, we look into the deployment of our [Azure infrastructure]({% post_url 2022-11-07-wordpress-on-azure-architecture %}) and some post-configuration steps.
 
 We use GitHub Actions to deploy our infrastructure.
 
@@ -93,7 +93,7 @@ curl https://cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem -o DigiCertGlobal
 
 * Login to the jumpbox through Bastion using the credentials stored in the Key Vault
 
-{% raw %}![kudu-environment]({{ site.url }}{{ site.baseurl }}/assets/images/wordpress-on-azure-bastion-login.png){% endraw %}
+![wordpress-on-azure-bastion-login](/assets/images/wordpress-on-azure-bastion-login.png)
 
 * Run the following:
 

@@ -26,6 +26,3 @@ Hello, fellow Azure enthusiasts! I suppose more or less all of us have heard abo
 * [**Part 4: Monitoring & Testing**]({% post_url 2023-01-03-wordpress-on-azure-monitoring-and-testing %})
 
 **GitHub repository** <https://github.com/christosgalano/WordPress-on-Azure>
-
-<!-- {% post_url /subdir/2010-07-21-name-of-post %} -->
-<!-- [Name of Link]({% post_url 2010-07-21-name-of-post %}) -->
