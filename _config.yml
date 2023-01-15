@@ -4,10 +4,10 @@ minimal_mistakes_skin: "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon
 # Site Settings
 locale: "en-US"
 title: "Christos' Blog"
-title_separator: " "
+title_separator: "|"
 subtitle:
 name: &name "Christos Galanopoulos"
-description: &description "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
+description: &description "Christos Galanopoulos' blog."
 url: https://christosgalano.github.io
 baseurl: "" # the subpath of your site, e.g. "/blog"
 repository: "christosgalano/christosgalano.github.io"
