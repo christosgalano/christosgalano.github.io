@@ -1,9 +1,9 @@
 ---
 title: "WordPress on Azure: Part 1 - Architecture"
 excerpt: "In today’s blog post, we look into the Azure architecture of our WordPress deployment."
+tagline: "Azure architecture of our WordPress deployment"
 header:
-  image: /assets/images/wordpress-on-azure/infrastructure.jpg
-  teaser: /assets/images/wordpress-on-azure/infrastructure.jpg
+  overlay_color: "#333"
 related: true
 categories:
   - azure
@@ -13,6 +13,8 @@ tags:
   - cloud
 toc: true
 ---
+
+![infrastructure](/assets/images/wordpress-on-azure/infrastructure.jpg)
 
 ## Overview
 

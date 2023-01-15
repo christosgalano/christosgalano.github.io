@@ -1,9 +1,9 @@
 ---
 title: "WordPress on Azure: Part 4 - Monitoring & Testing"
 excerpt: "In today’s blog post, we set up monitoring and testing for our WordPress site."
+tagline: "Monitor and test our site on Azure"
 header:
-  image: /assets/images/wordpress-on-azure/monitoring-and-testing.jpg
-  teaser: /assets/images/wordpress-on-azure/monitoring-and-testing.jpg
+  overlay_color: "#333"
 related: true
 categories:
   - azure
