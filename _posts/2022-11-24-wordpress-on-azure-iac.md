@@ -1,8 +1,10 @@
 ---
 title: "WordPress on Azure: Part 2 - IaC"
-tagline: "Defining our infrastructure as code"
+excerpt: "In today’s blog post, we look into the code of our infrastructure."
+tagline: "Define the infrastructure as code"
 header:
   overlay_color: "#333"
+  teaser: assets/images/wordpress-on-azure/bicep.png
 related: true
 categories:
   - azure
@@ -25,7 +27,7 @@ We are not going to delve into every single one of the modules; instead, we are 
 <details>
   <summary>Code</summary>
 
-{% highlight csharp linenos %}
+{% highlight terraform %}
 resource webapp 'Microsoft.Web/sites@2022-03-01' = {
   name: name
   location: location
@@ -176,7 +178,7 @@ Because the application expects a pre-existing database with the name *wordpress
 <details>
 <summary>Code</summary>
 
-{% highlight cpp %}
+{% highlight terraform %}
 var private_dns_zone_name = 'privatelink.azurecr.io'
 
 resource private_dns_zone 'Microsoft.Network/privateDnsZones@2020-06-01' = {
@@ -246,7 +248,7 @@ I strongly suggest that you use the **parent** element in order to avoid [resolv
 <details>
   <summary>Code</summary>
 
-{% highlight bicep %}
+{% highlight terraform %}
 resource identity 'Microsoft.ManagedIdentity/userAssignedIdentities@2022-01-31-preview' = {
   name: name
   location: location
@@ -266,7 +268,7 @@ The important thing here is to export all the values that are necessary to perfo
 <details>
   <summary>Code</summary>
 
-```c
+{% highlight terraform %}
 @allowed([
   'Owner'
   'Contributor'
@@ -296,7 +298,7 @@ resource role_assignment 'Microsoft.Authorization/roleAssignments@2022-04-01' = 
     roleDefinitionId: role[built_in_role_type]
   }
 }
-```
+{% endhighlight %}
 
 </details>
 

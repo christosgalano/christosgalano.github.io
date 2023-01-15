@@ -1,9 +1,10 @@
 ---
 title: "WordPress on Azure: Part 3 - Deployment"
 excerpt: "In today’s blog post, we look into the deployment of our Azure infrastructure and the configuration of the application."
-tagline: "Deploying our infrastructure with GitHub Actions"
+tagline: "Deploy the infrastructure with GitHub Actions"
 header:
   overlay_color: "#333"
+    teaser: assets/images/wordpress-on-azure/deployment.jpg
 related: true
 categories:
   - github
