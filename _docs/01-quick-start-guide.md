@@ -25,7 +25,7 @@ Replace `gem "github-pages` or `gem "jekyll"` with `gem "jekyll", "~> 3.5"`. You
 
 [^update-jekyll]: You could also run `bundle update jekyll` to update Jekyll.
 
-Add the Minimal Mistakes theme gem: 
+Add the Minimal Mistakes theme gem:
 
 ```ruby
 gem "minimal-mistakes-jekyll"

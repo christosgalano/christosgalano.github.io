@@ -30,3 +30,6 @@ _site
 
 # VSCode
 **/.vscode/*
+
+# Drafts
+drafts/*
