@@ -110,7 +110,7 @@ Well, this brings the WordPress-on-Azure series to an end. I hope you found the 
 
 **Previous parts:**
 
-* [**Part 0: Introduction**]({% post_url 2022-11-07-wordpress-on-azure-introduction %})
+* [**Part 0: Introduction**]({% post_url 2022-11-06-wordpress-on-azure-introduction %})
 
 * [**Part 1: Architecture**]({% post_url 2022-11-07-wordpress-on-azure-architecture %})
 

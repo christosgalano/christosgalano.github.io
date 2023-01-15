@@ -313,7 +313,7 @@ That about sums up the code modules. In the following part, we will deploy our i
 
 **Previous parts:**
 
-* [**Part 0: Introduction**]({% post_url 2022-11-07-wordpress-on-azure-introduction %})
+* [**Part 0: Introduction**]({% post_url 2022-11-06-wordpress-on-azure-introduction %})
 
 * [**Part 1: Architecture**]({% post_url 2022-11-07-wordpress-on-azure-architecture %})
 
