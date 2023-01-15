@@ -12,6 +12,8 @@ tags:
 toc: true
 ---
 
+## General
+
 Bicep is being used for the IaC; all the templates/modules are available in the **bicep/** folder.
 
 [Nikolaos Antoniou's](https://github.com/nianton) [Azure Naming](https://github.com/nianton/azure-naming) Bicep module has been used to apply the desired naming convention.
@@ -23,7 +25,7 @@ We are not going to delve into every single one of the modules; instead, we are 
 <details>
   <summary>Code</summary>
 
-```bicep
+```csharp
 resource webapp 'Microsoft.Web/sites@2022-03-01' = {
   name: name
   location: location
@@ -108,7 +110,7 @@ Lastly, we need to create the necessary configuration settings regarding the dat
 <details>
   <summary>Code</summary>
 
-```bicep
+```terraform
 var private_dns_zone_name = '${name}.private.mysql.database.azure.com'
 
 resource private_dns_zone 'Microsoft.Network/privateDnsZones@2020-06-01' = {
@@ -174,7 +176,7 @@ Because the application expects a pre-existing database with the name *wordpress
 <details>
 <summary>Code</summary>
 
-```bicep
+```cpp
 var private_dns_zone_name = 'privatelink.azurecr.io'
 
 resource private_dns_zone 'Microsoft.Network/privateDnsZones@2020-06-01' = {
@@ -264,7 +266,7 @@ The important thing here is to export all the values that are necessary to perfo
 <details>
   <summary>Code</summary>
 
-```bicep
+```c
 @allowed([
   'Owner'
   'Contributor'
