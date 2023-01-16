@@ -5,13 +5,13 @@ tagline: "Deploy the infrastructure with GitHub Actions"
 header:
   overlay_color: "#333"
   teaser: assets/images/wordpress-on-azure/deployment.jpg
-related: true
 categories:
   - github
 tags:
   - wordpress
   - github-actions
 toc: true
+related: true
 ---
 
 ## General

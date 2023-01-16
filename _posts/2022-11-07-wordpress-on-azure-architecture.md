@@ -5,13 +5,13 @@ tagline: "Azure architecture of the WordPress deployment"
 header:
   overlay_color: "#333"
   teaser: assets/images/wordpress-on-azure/infrastructure.jpg
-related: true
 categories:
   - azure
 tags:
   - wordpress
   - architecture
 toc: true
+related: true
 ---
 
 ![infrastructure](/assets/images/wordpress-on-azure/infrastructure.jpg)

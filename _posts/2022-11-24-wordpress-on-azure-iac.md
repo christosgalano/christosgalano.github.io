@@ -5,13 +5,13 @@ tagline: "Define the infrastructure as code"
 header:
   overlay_color: "#333"
   teaser: assets/images/wordpress-on-azure/bicep.png
-related: true
 categories:
   - azure
 tags:
   - wordpress
   - iac
 toc: true
+related: true
 ---
 
 ## General

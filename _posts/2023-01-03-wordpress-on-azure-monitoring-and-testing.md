@@ -5,7 +5,6 @@ tagline: "Set up monitoring and testing"
 header:
   overlay_color: "#333"
   teaser: assets/images/wordpress-on-azure/monitoring-and-testing.jpg
-related: true
 categories:
   - azure
 tags:
@@ -13,6 +12,7 @@ tags:
   - monitoring
   - testing
 toc: true
+related: true
 ---
 
 ## General

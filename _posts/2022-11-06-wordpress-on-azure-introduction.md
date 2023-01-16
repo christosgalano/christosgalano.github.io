@@ -5,12 +5,12 @@ tagline: "Host, monitor, and test a WordPress site by utilizing Azure, Bicep, an
 header:
   overlay_color: "#333"
   teaser: assets/images/wordpress-on-azure/wordpress-on-azure.png
-related: true
-toc: true
 categories:
   - azure
 tags:
   - wordpress
+toc: true
+related: true
 ---
 
 ## General
