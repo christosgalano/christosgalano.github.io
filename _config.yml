@@ -163,16 +163,9 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # categories
-  - scope:
-      path: ""
-      type: categories
-    values:
-      layout: category
-      author_profile: true
   # tags
   - scope:
-      path: ""
+      path: "tags"
       type: tags
     values:
       layout: tag
