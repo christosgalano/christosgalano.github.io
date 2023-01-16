@@ -36,28 +36,28 @@ We will go over some of the elements inside the ***deploy.yaml*** workflow.
 
 * According to the [documentation](https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-azure), the following must be included in the workflow file:
 
-```yaml
+{% highlight yaml %}
 permissions:
   id-token: write
   contents: read
-```
+{% endhighlight %}
 
 ### Connect to Azure and set subscription
 
-```yaml
+{% highlight yaml %}
 - name: Azure Login
 uses: Azure/login@v1
 with:
   client-id: ${{ secrets.AZURE_CLIENT_ID }}
   tenant-id: ${{ secrets.AZURE_TENANT_ID }}
   subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-```
+{% endhighlight %}
 
 ### Deploy template
 
 * Before we deploy the template, we first lint and then validate it
 
-```yaml
+{% highlight yaml %}
 - name: Validate template
   working-directory: ${{ github.workspace }}/bicep
   run: |
@@ -70,7 +70,7 @@ with:
                     mysql_admin_password="$ADMIN_PASSWORD" \
                     jumpbox_admin_password="$ADMIN_PASSWORD" \
                     github_runner_object_id="${{ secrets.AZURE_CLIENT_ID }}"
-```
+{% endhighlight %}
 
 ## Post-configuration steps
 
@@ -80,10 +80,10 @@ with:
 
 * Run the following:
 
-```bash
+{% highlight bash %}
 cd /home/site/wwwroot && mkdir bin && cd bin
 curl https://cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem -o DigiCertGlobalRootCA.crt.pem
-```
+{% endhighlight %}
 
 ![kudu-environment](/assets/images/wordpress-on-azure/kudu-environment.png)
 
@@ -97,12 +97,12 @@ curl https://cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem -o DigiCertGlobal
 
 * Run the following:
 
-```bash
+{% highlight bash %}
 az login --identity
 cr_name="{your_registry_name}"
 az acr import -n $cr_name --source docker.io/library/wordpress:latest --image wordpress:latest
 az acr repository list -n $cr_name
-```
+{% endhighlight %}
 
 ### Install WordPress
 

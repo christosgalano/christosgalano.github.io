@@ -29,7 +29,7 @@ We are not going to delve into every single one of the modules; instead, we are 
 <details>
   <summary>Code</summary>
 
-```terraform
+{% highlight terraform %}
 resource webapp 'Microsoft.Web/sites@2022-03-01' = {
   name: name
   location: location
@@ -92,7 +92,7 @@ resource webapp 'Microsoft.Web/sites@2022-03-01' = {
     serverFarmId: app_service_plan_id
   }
 }
-```
+{% endhighlight %}
 
 </details>
 

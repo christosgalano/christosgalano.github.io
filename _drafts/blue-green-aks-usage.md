@@ -52,14 +52,14 @@ In order to deploy the application you need to perform the following steps:
 3. Copy the files from **manifests/podinfo** folder
 4. Run the following block:
 
-```bash
+{% highlight bash %}
 az login --identity
 az aks get-credentials --resource-group <aks-rg-name> --name <blue-aks-name>
 kubectl apply -f namespace.yaml
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
 kubectl apply -f ingress.yaml
-```
+{% endhighlight %}
 
 Do the same for the green cluster.
 
@@ -123,10 +123,10 @@ So, the live application is the one deployed in the green cluster.
 
 Now let's restore the blue endpoint by recreating the ingress resource. Run the following:
 
-```bash
+{% highlight bash %}
 az aks get-credentials --resource-group <aks-rg-name> --name <blue-aks-name>
 kubectl apply -f ingress.yaml
-```
+{% endhighlight %}
 
 After a bit we can see that the blue endpoint has been restored.
 

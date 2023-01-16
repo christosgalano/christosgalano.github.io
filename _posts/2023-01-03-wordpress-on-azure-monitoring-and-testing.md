@@ -73,7 +73,7 @@ The ***web_test*** module was included in the ***main*** deployment template. Th
 
 * In order to destroy the infrastructure, we first require some approvals using the following action:
 
-```yaml
+{% highlight yaml %}
 - name: Manual Workflow Approval
   uses: trstringer/manual-approval@v1.6.0
   with:
@@ -81,7 +81,7 @@ The ***web_test*** module was included in the ***main*** deployment template. Th
     approvers: approver-1,approver-2,...,approver-N  # use commas with no space inbetween
     minimum-approvals: x
     secret: ${{ github.TOKEN }}
-```
+{% endhighlight %}
 
 * This action will open up an ***Issue***, where "x approvers" must respond in a positive manner (as mentioned in the issue's description) in order to proceed to the next step
 
