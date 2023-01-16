@@ -3,3 +3,15 @@
    ========================================================================== */
 
 // Intentionally left blank
+
+/* Colors */
+$background-color: #f3f3f3 !default;
+$text-color: #343434 !default;
+$muted-text-color: #8e8b82 !default;
+$primary-color: #343434 !default;
+$border-color: #b0ada8 !default;
+$footer-background-color: #f2f3f3 !default;
+$link-color: #343434 !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: $text-color !default;
+$navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
