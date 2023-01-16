@@ -10,9 +10,7 @@ categories:
   - azure
 tags:
   - wordpress
-  - bicep
   - iac
-  - cloud
 toc: true
 ---
 

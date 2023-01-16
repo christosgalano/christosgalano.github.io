@@ -11,7 +11,6 @@ categories:
 tags:
   - wordpress
   - github-actions
-  - cloud
 toc: true
 ---
 

@@ -10,7 +10,6 @@ categories:
   - azure
 tags:
   - wordpress
-  - cloud
 ---
 
 ## General

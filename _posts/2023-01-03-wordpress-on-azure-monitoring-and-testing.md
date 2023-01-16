@@ -12,7 +12,6 @@ tags:
   - wordpress
   - monitoring
   - testing
-  - cloud
 toc: true
 ---
 

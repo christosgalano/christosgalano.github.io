@@ -11,7 +11,6 @@ categories:
 tags:
   - wordpress
   - architecture
-  - cloud
 toc: true
 ---
 
