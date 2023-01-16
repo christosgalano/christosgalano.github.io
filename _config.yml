@@ -45,6 +45,7 @@ social:
   type: # Person or Organization (defaults to Person)
   name: # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - "https://github.com/christosgalano"
     - "https://www.linkedin.com/in/christos-galanopoulos/"
 
 # Site Author
@@ -55,17 +56,16 @@ author:
   location: "Athens, Greece"
   links:
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+      # icon: "fas fa-fw fa-envelope-square"
+      icon: "fas fa-envelope"
       url: "mailto:christosgalanop@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/christosgalano"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
+      # icon: "fab fa-fw fa-linkedin"
+      icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/christos-galanopoulos/"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://cloud-on-rails.com/"
 
 # Site Footer
 footer:
@@ -79,9 +79,6 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/christos-galanopoulos/"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://cloud-on-rails.com/"
 
 # Reading Files
 include:
