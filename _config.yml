@@ -14,7 +14,7 @@ repository: "christosgalano/christosgalano.github.io"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs: false
+breadcrumbs: true # false
 words_per_minute: 80
 comments:
   provider: "giscus" # https://giscus.app
@@ -144,12 +144,12 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
-      read_time: true
-      comments: true
       share: true
       related: true
+      comments: true
+      read_time: true
       show_date: true
+      author_profile: true
   # _pages
   - scope:
       path: "_pages"
@@ -157,18 +157,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _docs
-  - scope:
-      path: ""
-      type: docs
-    values:
-      layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "docs"
 
 # Sass/SCSS
 sass:
