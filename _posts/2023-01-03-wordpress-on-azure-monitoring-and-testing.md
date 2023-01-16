@@ -91,7 +91,7 @@ The ***web_test*** module was included in the ***main*** deployment template. Th
 
 ### Destroy the infrastructure
 
-```yaml
+{% highlight yaml %}
 - name: Azure Login
   uses: Azure/login@v1
   with:
@@ -103,7 +103,7 @@ The ***web_test*** module was included in the ***main*** deployment template. Th
   uses: Azure/cli@v1
   with:
     inlineScript: az group delete -n $RG_NAME -y
-```
+{% endhighlight %}
 
 ## Summary
 
