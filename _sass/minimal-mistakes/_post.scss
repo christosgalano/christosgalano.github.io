@@ -10,11 +10,11 @@ figure.highlight pre button {
   right: 0.8rem;
   top: 0.8rem;
   opacity: 1;
+  padding-bottom: 1.5mm;
 
   &:active,
   &:focus,
   &:hover {
-    // background: rgba(0, 0, 0, 0.7);
     background: rgba(169, 128, 200, 0.7);
   }
 }
