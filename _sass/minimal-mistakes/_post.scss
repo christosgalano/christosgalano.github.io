@@ -1,46 +1,22 @@
 figure.highlight {
-  pre {
-    padding: 8px 12px;
-    position: relative;
+  pre>button {
+    border-left: 15px solid #35383c;
+    color: #c1c2c3;
+    overflow: auto;
+    white-space: pre;
+    word-wrap: normal;
 
-    // override skeleton styles
-    >code {
-      border: 0;
-      overflow-x: auto;
-      padding-right: 0;
-      padding-left: 0;
-    }
+    background-color: #222;
+    font-size: 14px;
 
-    button {
-      border-left: 15px solid #35383c;
-      color: #c1c2c3;
-      overflow: auto;
-      white-space: pre;
-      word-wrap: normal;
+    position: absolute;
+    right: 1.2rem;
+    top: 1.2rem;
+    opacity: 0;
 
-      background-color: #222;
-      font-size: 14px;
-    }
-
-    // code to clipboard
-    button {
-      color: #4AF626;
-      position: absolute;
-      right: 1.2rem;
-      top: 1.2rem;
-      opacity: 0;
-
-      &:active,
-      &:focus,
-      &:hover {
-        background: rgba(0, 0, 0, 0.7);
-        opacity: 1;
-      }
-    }
-
-    button:active,
-    button:focus,
-    button:hover {
+    &:active,
+    &:focus,
+    &:hover {
       background: rgba(0, 0, 0, 0.7);
       opacity: 1;
     }
