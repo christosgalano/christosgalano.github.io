@@ -1,5 +1,5 @@
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale: "en-US"
@@ -173,7 +173,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 4 # amount of posts to show
+paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: Europe/Athens
 
