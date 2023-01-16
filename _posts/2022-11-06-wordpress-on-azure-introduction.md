@@ -27,4 +27,4 @@ Hello everyone! I suppose more or less all of us have heard about WordPress or e
 
 * [**Part 4: Monitoring & Testing**]({% post_url 2023-01-03-wordpress-on-azure-monitoring-and-testing %})
 
-## GitHub repository: <https://github.com/christosgalano/WordPress-on-Azure>
+**GitHub repository:** <https://github.com/christosgalano/WordPress-on-Azure>
