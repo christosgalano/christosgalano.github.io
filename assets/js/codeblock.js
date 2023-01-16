@@ -1,4 +1,4 @@
-var codeBlocks = document.querySelectorAll('pre.highlight');
+var codeBlocks = document.querySelectorAll('figure.highlight');
 
 codeBlocks.forEach(function (codeBlock) {
     var copyButton = document.createElement('button');
