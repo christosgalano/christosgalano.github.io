@@ -11,22 +11,19 @@ figure.highlight {
       padding-left: 0;
     }
 
-    & {
+    button {
       border-left: 15px solid #35383c;
       color: #c1c2c3;
       overflow: auto;
       white-space: pre;
       word-wrap: normal;
 
-      &,
-      code {
-        background-color: #222;
-        font-size: 14px;
-      }
+      background-color: #222;
+      font-size: 14px;
     }
 
     // code to clipboard
-    & {
+    button {
       color: #4AF626;
       position: absolute;
       right: 1.2rem;
@@ -41,9 +38,9 @@ figure.highlight {
       }
     }
 
-    &:active,
-    &:focus,
-    &:hover {
+    button:active,
+    button:focus,
+    button:hover {
       background: rgba(0, 0, 0, 0.7);
       opacity: 1;
     }
