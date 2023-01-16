@@ -1,9 +1,10 @@
 figure.highlight pre button {
-  color: #c1c2c3;
+  color: #b2d584;
   overflow: auto;
   white-space: pre;
   word-wrap: normal;
-  background-color: #222;
+  background-color: #3f545e;
+  border-color: #3f545e;
   font-size: 18px;
   position: absolute;
   right: 0.8rem;
@@ -13,6 +14,7 @@ figure.highlight pre button {
   &:active,
   &:focus,
   &:hover {
-    background: rgba(0, 0, 0, 0.7);
+    // background: rgba(0, 0, 0, 0.7);
+    background: rgba(169, 128, 200, 0.7);
   }
 }
