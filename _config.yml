@@ -1,5 +1,5 @@
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale: "en-US"
@@ -34,6 +34,12 @@ search_full_content: false
 search_provider: lunr
 lunr:
   search_within_pages: true # index all pages
+
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-XWR7MHRKBH"
+    anonymize_ip: false # default
 
 social:
   type: # Person or Organization (defaults to Person)

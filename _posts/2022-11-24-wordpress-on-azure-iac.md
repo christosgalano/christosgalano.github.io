@@ -10,11 +10,15 @@ categories:
   - azure
 tags:
   - wordpress
+  - bicep
+  - iac
   - cloud
 toc: true
 ---
 
 ## General
+
+Hello everyone! In today’s blog post we examine the code that will be used to deploy our infrastructure.
 
 Bicep is being used for the IaC; all the templates/modules are available in the **bicep/** folder.
 

@@ -8,7 +8,6 @@ header:
 related: true
 categories:
   - azure
-  - github
 tags:
   - wordpress
   - monitoring
@@ -16,6 +15,8 @@ tags:
   - cloud
 toc: true
 ---
+
+## General
 
 Hello everyone! In today’s blog post, we set up monitoring and testing for our WordPress site.
 

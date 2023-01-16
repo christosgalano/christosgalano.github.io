@@ -17,7 +17,9 @@ toc: true
 
 ![infrastructure](/assets/images/wordpress-on-azure/infrastructure.jpg)
 
-## Overview
+## General
+
+Hello everyone! In today’s blog post, we look into the Azure architecture of our WordPress deployment.
 
 As you can see in the diagram above, the WordPress infrastructure consists of the following key components:
 

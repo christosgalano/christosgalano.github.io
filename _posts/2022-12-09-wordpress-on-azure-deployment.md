@@ -8,15 +8,14 @@ header:
 related: true
 categories:
   - github
-  - azure
 tags:
   - wordpress
   - github-actions
-  - bicep
-  - iac
   - cloud
 toc: true
 ---
+
+## General
 
 Hello everyone! In today’s blog post, we look into the deployment of our [Azure infrastructure]({% post_url 2022-11-07-wordpress-on-azure-architecture %}) and some post-configuration steps.
 
