@@ -12,7 +12,7 @@ url: https://christosgalano.github.io
 baseurl: "" # the subpath of your site, e.g. "/blog"
 repository: "christosgalano/christosgalano.github.io"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo: /assets/images/general/octocat-suit-glasses-laptop-hat.png # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo: /assets/images/general/octocat-suit-glasses-laptop-hat-circled.png # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs: true # false
 words_per_minute: 80
@@ -56,22 +56,20 @@ author:
   location: "Athens, Greece"
   links:
     - label: "Email"
-      # icon: "fas fa-fw fa-envelope-square"
-      icon: "fas fa-envelope"
+      icon: "fas fa-fw fa-envelope"
       url: "mailto:christosgalanop@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/christosgalano"
     - label: "LinkedIn"
-      # icon: "fab fa-fw fa-linkedin"
-      icon: "fab fa-linkedin"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/christos-galanopoulos/"
 
 # Site Footer
 footer:
   links:
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+      icon: "fas fa-fw fa-envelope"
       url: "mailto:christosgalanop@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
