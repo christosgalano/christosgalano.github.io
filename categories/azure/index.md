@@ -1,6 +1,6 @@
 ---
-title: "Azure Category"
+title: "Azure category"
 permalink: /categories/azure/
-layout: categories
+layout: category
 author_profile: true
 ---
