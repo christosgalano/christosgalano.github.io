@@ -1,6 +1,6 @@
 ---
 permalink: /about/
-title: "Improvement through curiosity ..."
+title: "Improvement through curiosity"
 excerpt: "A little bit about the author."
 ---
 
