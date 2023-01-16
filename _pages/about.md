@@ -1,10 +1,7 @@
 ---
 permalink: /about/
-title: "About"
+title: "Improvement through curiosity ..."
 excerpt: "A little bit about the author."
-tagline: "Improving through curiosity ..."
-header:
-  overlay_color: "#333"
 ---
 
 **Hey there! I'm Christos.**
