@@ -39,7 +39,7 @@ analytics:
   provider: "google-gtag"
   google:
     tracking_id: "G-XWR7MHRKBH"
-    # anonymize_ip: false # default
+    anonymize_ip: false
 
 social:
   type: # Person or Organization (defaults to Person)
