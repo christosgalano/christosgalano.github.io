@@ -1,10 +1,10 @@
-# Christos' Blog
+# Christos's Blog
 
 [![deploy-site](https://github.com/christosgalano/christosgalano.github.io/actions/workflows/deploy.yaml/badge.svg?branch=main)](https://github.com/christosgalano/christosgalano.github.io/actions/workflows/deploy.yaml)
 
 ## General
 
-Repository for Christos' Blog.
+Repository for Christos's Blog.
 
 ## License
 
