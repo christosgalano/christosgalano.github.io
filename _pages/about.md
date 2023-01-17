@@ -12,7 +12,7 @@ If someone asked me to describe myself in two words, then those would be *curiou
 
 I hope that you find the content both useful and entertaining. So without further ado, grab yourself a cup of coffee and [let's begin]({{ site.url }}).
 
-{:class="download-cv"}
 [**Download CV**]({{ site.url }}/assets/files/Christos_Galanopoulos_CV.pdf){:target="_blank"}
+{:class="download-cv"}
 
 ![Octocat](/assets/images/general/octocat-suit-glasses-laptop-hat.png)
