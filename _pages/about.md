@@ -12,4 +12,6 @@ If someone asked me to describe myself in two words, then those would be *curiou
 
 I hope that you find the content both useful and entertaining. So without further ado, grab yourself a cup of coffee and [let's begin]({{ site.url }}).
 
+[**Download my CV**]({{ site.url }}/assets/files/Christos_Galanopoulos_CV.pdf)
+
 **Note:** The opinions expressed herein are my own and do not represent my employer’s view in any way.

@@ -3,11 +3,11 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale: "en-US"
-title: "Christos' Blog"
+title: "Christos's Blog"
 title_separator: "|"
 subtitle:
 name: &name "Christos Galanopoulos"
-description: &description "Christos Galanopoulos' blog."
+description: &description "Christos Galanopoulos's blog."
 url: https://christosgalano.github.io
 baseurl: "" # the subpath of your site, e.g. "/blog"
 repository: "christosgalano/christosgalano.github.io"
