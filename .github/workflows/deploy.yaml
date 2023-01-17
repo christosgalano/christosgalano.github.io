@@ -22,10 +22,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
+      - name: Inject values in config
+        working-directory: ${{ github.workspace }}/.github/scripts
+        run: |
+          chmod +x replace_sensitive_values.sh
+          ./replace_sensitive_values ${{ secrets.GISCUS_REPO_ID }} ${{ secrets.GISCUS_CATEGORY_ID }} ${{ secrets.GTAG_TRACKING_ID }}
+
       - name: Setup Pages
         uses: actions/configure-pages@v2
+
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
   deploy:

@@ -12,16 +12,16 @@ url: https://christosgalano.github.io
 baseurl: "" # the subpath of your site, e.g. "/blog"
 repository: "christosgalano/christosgalano.github.io"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo: /assets/images/general/octocat-suit-glasses-laptop-hat_88x88.png # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo: /assets/images/general/octocat-suit-glasses-laptop-hat_88x88.png # masthead logo image
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs: true # false
 words_per_minute: 80
 comments:
   provider: "giscus" # https://giscus.app
   giscus:
-    repo_id: "R_kgDOIxriBw"
+    repo_id: giscus_repo_id_placeholder
     category_name: "General"
-    category_id: "DIC_kwDOIxriB84CTl6_"
+    category_id: giscus_category_id_placeholder
     discussion_term: "pathname"
     reactions_enabled: "1"
     theme: "light"
@@ -38,7 +38,7 @@ lunr:
 analytics:
   provider: "google-gtag"
   google:
-    tracking_id: "G-XWR7MHRKBH"
+    tracking_id: google_gtag_tracking_id_placeholder
     anonymize_ip: false
 
 social:
