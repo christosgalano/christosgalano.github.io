@@ -26,8 +26,8 @@ jobs:
       - name: Inject values in config
         working-directory: ${{ github.workspace }}/.github/scripts
         run: |
-          chmod +x replace_sensitive_values.sh
-          ./replace_sensitive_values ${{ secrets.GISCUS_REPO_ID }} ${{ secrets.GISCUS_CATEGORY_ID }} ${{ secrets.GTAG_TRACKING_ID }}
+          chmod +x inject_values.sh
+          ./inject_values.sh ${{ secrets.GISCUS_REPO_ID }} ${{ secrets.GISCUS_CATEGORY_ID }} ${{ secrets.GTAG_TRACKING_ID }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v2
