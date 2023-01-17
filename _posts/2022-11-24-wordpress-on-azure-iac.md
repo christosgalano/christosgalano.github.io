@@ -3,7 +3,7 @@ title: "WordPress on Azure: Part 2 - IaC"
 excerpt: "In today’s blog post, we look into the code of our infrastructure."
 tagline: "Define the infrastructure as code"
 header:
-  overlay_color: "#333"
+  overlay_color: "#24292f"
   teaser: assets/images/wordpress-on-azure/bicep.png
 categories:
   - azure

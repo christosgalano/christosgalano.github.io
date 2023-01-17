@@ -3,7 +3,7 @@ title: "WordPress on Azure: Part 4 - Monitoring & Testing"
 excerpt: "In today’s blog post, we set up monitoring and testing for our WordPress site."
 tagline: "Set up monitoring and testing"
 header:
-  overlay_color: "#333"
+  overlay_color: "#24292f"
   teaser: assets/images/wordpress-on-azure/monitoring-and-testing.jpg
 categories:
   - azure

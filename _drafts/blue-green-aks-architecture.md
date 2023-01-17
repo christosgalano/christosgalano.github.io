@@ -3,7 +3,7 @@ title: "Blue/Green AKS: Part 1 - Architecture"
 excerpt: "In today’s blog post, we look into the Azure architecture of our blue/green deployment."
 tagline: "Azure architecture of the blue/green deployment"
 header:
-  overlay_color: "#333"
+  overlay_color: "#24292f"
 categories:
   - azure
   - kubernetes

@@ -3,7 +3,7 @@ title: "WordPress on Azure: Part 0 - Introduction"
 excerpt: "The purpose of this series will be about utilizing Azure, Bicep, and GitHub to host, monitor, and test a WordPress site."
 tagline: "Host, monitor, and test a WordPress site by utilizing Azure, Bicep, and GitHub"
 header:
-  overlay_color: "#333"
+  overlay_color: "#24292f"
   teaser: assets/images/wordpress-on-azure/wordpress-on-azure.png
 categories:
   - azure

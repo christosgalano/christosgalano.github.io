@@ -3,7 +3,7 @@ title: "Browser Extensions"
 excerpt: "As an engineer who spends a significant amount of time on the internet, I have come to rely on a number of browser extensions to make my online experience more efficient and enjoyable. In this post, I will share some of my favorites with you."
 tagline: "Useful browser extensions for GitHub and Azure"
 header:
-  overlay_color: "#333"
+  overlay_color: "#24292f"
 categories:
   - general
 tags:

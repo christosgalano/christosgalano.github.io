@@ -3,7 +3,7 @@ title: "Plug-and-Play Hub"
 excerpt: "In today's post we see how someone can deploy a hub containing all the standard, necessary resources."
 tagline: "Azure hub deployment"
 header:
-  overlay_color: "#333"
+  overlay_color: "#24292f"
   teaser: assets/images/plug-and-play-hub/plug-and-play.jpg
 categories:
   - azure

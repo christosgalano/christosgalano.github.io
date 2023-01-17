@@ -3,7 +3,7 @@ title: "Blue/Green AKS: Part 2 - Usage"
 excerpt: "In today’s blog post, we deploy a sample application and test the blue/green capability."
 tagline: "Test the blue/green capability"
 header:
-  overlay_color: "#333"
+  overlay_color: "#24292f"
 categories:
   - azure
   - kubernetes

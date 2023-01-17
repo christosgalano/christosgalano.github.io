@@ -3,7 +3,7 @@ title: "Blue/Green AKS: Part 0 - Introduction"
 excerpt: "In this blog series we will explore how we can deploy a blue/green Kubernetes environment using the Azure Kubernetes Service."
 tagline: "Deploy a blue/green Kubernetes architecture by utilizing Azure, Bicep, and GitHub"
 header:
-  overlay_color: "#333"
+  overlay_color: "#24292f"
 categories:
   - azure
   - kubernetes
