@@ -1,0 +1,23 @@
+// Copy code block button
+figure.highlight pre button {
+    color: #b2d584;
+    overflow: auto;
+    white-space: pre;
+    word-wrap: normal;
+    background-color: #3f545e;
+    border-color: #3f545e;
+    font-size: 18px;
+    position: absolute;
+    right: 0.8rem;
+    top: 0.8rem;
+    opacity: 1;
+    padding-bottom: 1.5mm;
+
+    &:active,
+    &:focus,
+    &:hover {
+        background: rgba(169, 128, 200, 0.7);
+    }
+}
+
+// Download CV link
