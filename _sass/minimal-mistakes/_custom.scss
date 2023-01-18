@@ -28,3 +28,15 @@ p.download-cv {
     vertical-align: middle;
     margin-bottom: 0;
 }
+
+// Author urls social icons
+ul.author__urls.social-icons {
+    color: #343434;
+}
+
+// Page footer social icons
+div.page__footer-follow {
+    .social-icons {
+        color: #f1f1f1;
+    }
+}
