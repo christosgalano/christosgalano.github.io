@@ -32,13 +32,13 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
 }
 
 // Author urls social icons
-ul.author__urls.social-icons {
+.author__urls.social-icons i,
+.author__urls.social-icons .svg-inline--fa {
    color: #343434 !important; // override
 }
 
 // Page footer social icons
-.page__footer-follow {
-   .social-icons {
-       color: #f1f1f1 !important; // override
-   }
+.page__footer-follow .social-icons i,
+.page__footer-follow .social-icons .svg-inline--fa {
+   color: #f1f1f1 !important; // override
 }
