@@ -69,7 +69,8 @@ author:
 footer:
   links:
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+      # icon: "fas fa-fw fa-envelope-square"
+      icon: "fa-light fa-envelope"
       url: "mailto:christosgalanop@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
