@@ -5,22 +5,5 @@ search: false
 
 @charset "utf-8";
 
-// Page footer
-.page__footer {
-    color: #f1f1f1 !important; // override
-}
-
-// Author urls social icons
-ul.author__urls.social-icons {
-    color: #343434 !important; // override
-}
-
-// Page footer social icons
-.page__footer-follow {
-    .social-icons {
-        color: #f1f1f1 !important; // override
-    }
-}
-
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials

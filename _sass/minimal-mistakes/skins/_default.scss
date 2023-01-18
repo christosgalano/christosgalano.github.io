@@ -25,3 +25,20 @@ $link-color: #343434 !default;
 $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: $text-color !default;
 $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
+
+// Page footer
+.page__footer {
+   color: #f1f1f1 !important; // override
+}
+
+// Author urls social icons
+ul.author__urls.social-icons {
+   color: #343434 !important; // override
+}
+
+// Page footer social icons
+.page__footer-follow {
+   .social-icons {
+       color: #f1f1f1 !important; // override
+   }
+}
