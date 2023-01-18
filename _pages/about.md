@@ -14,5 +14,3 @@ I hope that you find the content both useful and entertaining. So without furthe
 
 [**Download CV**]({{ site.url }}/assets/files/Christos_Galanopoulos_CV.pdf){:target="_blank"}
 {:class="download-cv"}
-
-![Christos Galanopoulos](/assets/images/christos-galano-circled.png)
