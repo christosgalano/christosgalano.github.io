@@ -119,4 +119,4 @@ Well, this brings the WordPress-on-Azure series to an end. I hope you found the 
 
 * [**Part 3: Deployment**]({% post_url 2022-12-09-wordpress-on-azure-deployment %})
 
-**GitHub repository:** <https://github.com/christosgalano/WordPress-on-Azure>
+**Related repository:** [WordPress-on-Azure](https://github.com/christosgalano/WordPress-on-Azure)

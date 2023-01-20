@@ -128,4 +128,4 @@ So we deployed our infrastructure and completed the essential post-configuration
 
 * [**Part 2: Infrastructure as Code**]({% post_url 2022-11-24-wordpress-on-azure-iac %})
 
-**GitHub repository:** <https://github.com/christosgalano/WordPress-on-Azure>
+**Related repository:** [WordPress-on-Azure](https://github.com/christosgalano/WordPress-on-Azure)

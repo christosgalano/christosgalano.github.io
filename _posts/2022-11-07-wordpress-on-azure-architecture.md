@@ -62,4 +62,4 @@ That pretty much covers the details of our architecture. In the next part, we ar
 
 * [**Part 0: Introduction**]({% post_url 2022-11-06-wordpress-on-azure-introduction %})
 
-**GitHub repository:** <https://github.com/christosgalano/WordPress-on-Azure>
+**Related repository:** [WordPress-on-Azure](https://github.com/christosgalano/WordPress-on-Azure)
