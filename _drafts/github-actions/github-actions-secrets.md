@@ -4,7 +4,7 @@ excerpt: "In today's post we go over GitHub Actions secrets."
 tagline: "Keep your sensitive information hidden"
 header:
   overlay_color: "#24292f"
-  teaser: assets/images/github-actions/github-actions-2.png
+  teaser: assets/images/github-actions/github-actions-1.png
 categories:
   - github
 tags:

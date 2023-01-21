@@ -31,7 +31,8 @@ There are two main components to an action: the action.yml file and the code fil
 
 Here's the action.yaml for `create-update-label`:
 
-```yaml
+{% highlight yaml %}
+{% raw %}
 name: "Create/Update Label"
 author: "Christos Galanopoulos"
 description: "Create or update a label in all of the user's repositories"
@@ -61,7 +62,8 @@ runs:
           -c ${{ inputs.color }} \
           -d ${{ inputs.description }} \
           -a ${{ inputs.token }}
-```
+{% endraw %}
+{% endhighlight %}
 
 In this example, the action is named "Create/Update Label" and it has four inputs:
 
@@ -74,7 +76,8 @@ The action is `composite` which allows you to package multiple actions together 
 
 The code for this action is located in the `create_update_label.sh` file, which looks something like this:
 
-```bash
+{% highlight bash %}
+{% raw %}
 # Create a label
 function create_label() {
     curl -s \
@@ -99,7 +102,7 @@ function update_label() {
     --output /dev/null)
     if [ "$status_code" -eq 404 ]; then
         create_label
-        printf "Successfully created $name label since in $repo\n"
+        printf "Successfully created $name label in $repo\n"
     else
         printf "Successfully updated $name label in $repo\n"
     fi
@@ -122,7 +125,8 @@ for repo in $repos
 do
     update_label
 done
-```
+{% endraw %}
+{% endhighlight %}
 
 The whole script can be found [**here**](https://github.com/christosgalano/Workflows-Actions-Library/blob/main/.github/actions/create-update-label/create_update_label.sh).
 
@@ -130,7 +134,8 @@ The whole script can be found [**here**](https://github.com/christosgalano/Workf
 
 Once you have created your action, you can use it in a workflow. As you have learned by now, a workflow is a series of actions that are run in a specific order. Here's an example of a workflow that uses the `create-update-label`:
 
-```yaml
+{% highlight yaml %}
+{% raw %}
 name: create-update-label
 on:
   push:
@@ -147,7 +152,8 @@ jobs:
           color: 0075ca  # in hex, without the '#'
           description: "A demo label"
           token: ${{ secrets.GITHUB_PAT }}
-```
+{% endraw %}
+{% endhighlight %}
 
 In this example, the workflow is named "create-update-label" and it is triggered by a push to the main branch. The workflow contains a single job called "create-update-label" that runs on the latest version of Ubuntu. The job has only one step:
 

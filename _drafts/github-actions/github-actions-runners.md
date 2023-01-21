@@ -1,4 +1,17 @@
-# GitHub Actions - Runners
+---
+title: "GitHub Actions - Runners"
+excerpt: "In today's post we go over GitHub Actions runners."
+tagline: "Choose where your workflows are going to run"
+header:
+  overlay_color: "#24292f"
+  teaser: assets/images/github-actions/github-actions-1.png
+categories:
+  - github
+tags:
+  - github-actions
+toc: true
+related: true
+---
 
 ## General
 
@@ -16,35 +29,35 @@ There are two types of runners:
 
 Here's an example of how to specify the runner for a job in a workflow file:
 
-```yaml
+{% highlight yaml %}
 jobs:
   build:
     runs-on: ubuntu-latest
-```
+{% endhighlight %}
 
 In this example, the job is set to run on the latest version of Ubuntu, which is a GitHub-hosted runner.
 
 You can also specify a self-hosted runner by using the name of the runner:
 
-```yaml
+{% highlight yaml %}
 jobs:
   build:
     runs-on: self-hosted
     name: my-runner
-```
+{% endhighlight %}
 
 In this example, the job is set to run on a self-hosted runner named "my-runner".
 
 To run the job on multiple runners, you can also specify a matrix of runners:
 
-```yaml
+{% highlight yaml %}
 jobs:
   build:
     runs-on:
       - windows-latest
       - ubuntu-latest
       - macos-latest
-```
+{% endhighlight %}
 
 In this example, the job is set to run on the latest versions of Windows, Ubuntu, and macOS.
 
@@ -52,7 +65,7 @@ It is important to note that the choice of runner will depend on the specific re
 
 Additionally, you can use the needs keyword to specify dependencies between jobs. For example, you can use it to specify that a job depends on another job being completed before it can start:
 
-```yaml
+{% highlight yaml %}
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -66,7 +79,7 @@ jobs:
     steps:
     - name: Test
       run: make test
-```
+{% endhighlight %}
 
 In this example, the test job will not start until the build job is completed.
 

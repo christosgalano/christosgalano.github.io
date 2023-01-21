@@ -29,7 +29,8 @@ The `strategy` keyword is used to define a parallel strategy for your workflow. 
 
 The example we'll look at can be found [**here**](https://github.com/christosgalano/GitHub-Actions-Deep-Dive/blob/main/.github/workflows/strategy_matrix.yaml):
 
-```yaml
+{% highlight yaml %}
+{% raw %}
 name: strategy-matrix
 on:
   workflow_dispatch:
@@ -57,7 +58,8 @@ jobs:
           echo "OS:" ${{ matrix.os }}
           echo "Version:" ${{ matrix.version }}
           echo "Browser:" ${{ matrix.browser }}
-```
+{% endraw %}
+{% endhighlight %}
 
 Here, the matrix specifies that the workflow should run on three different operating systems (ubuntu-latest, windows-latest, and macos-latest), three different versions (8, 10, and 12) and three different browsers (chrome, firefox, safari). This means that the workflow will run a total of 27 (3^3) combinations in parallel, rather than sequentially.
 

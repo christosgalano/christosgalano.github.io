@@ -4,7 +4,7 @@ excerpt: "In today's post we go over GitHub Actions concurrency."
 tagline: "Optimize the execution time of your workflows"
 header:
   overlay_color: "#24292f"
-  teaser: assets/images/github-actions/github-actions-2.png
+  teaser: assets/images/github-actions/github-actions-1.png
 categories:
   - github
 tags:
@@ -21,7 +21,8 @@ GitHub Actions allows you to optimize the execution time of your workflows by us
 
 The example we'll look at can be found [**here**](https://github.com/christosgalano/GitHub-Actions-Deep-Dive/blob/main/.github/workflows/concurreny.yaml):
 
-```yaml
+{% highlight yaml %}
+{% raw %}
 name: concurrency
 on:
   workflow_dispatch:
@@ -59,8 +60,8 @@ jobs:
           echo "Hello world 3!"
           sleep 5
           echo "Hello world 3 again, no waiting here!"
-
-```
+{% endraw %}
+{% endhighlight %}
 
 Here, the workflow is triggered manually. It has 3 jobs, which simply print a message, sleep for five seconds, and then print another message.
 
@@ -68,7 +69,9 @@ Let's first analyze the `concurrency` keyword on a job scope. We can see that bo
 
 ![concurrency-job-scope](/assets/images/github-actions/concurrency-job-scope.png)
 
+{% raw %}
 Now it's time to understand the `concurrency` keyword on a workflow scope. The preceding workflow is a member of the concurrency group `hello-world-${{ github.ref }}`. The option `cancel-in-progress` gives someone the ability to cancel all on-going jobs and workflows that belong in the specified group and only run the currently triggered one.
+{% endraw %}
 
 This is an example output with `cancel-in-progress: false`:
 
