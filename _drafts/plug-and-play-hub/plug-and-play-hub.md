@@ -97,4 +97,4 @@ After you have successfully configured your hub, you can safely connect a spoke 
 
 So, we went over the hub-spoke architecture and how we can go about deploying a basic hub containing all the standard, necessary resources. I encourage you to deploy, configure, and then experiment with it by connecting several spokes and seeing how it behaves.
 
-**GitHub repository:** <https://github.com/christosgalano/Plug-and-Play-Hub>
+**Related repository:** [Plug-and-Play-Hub](https://github.com/christosgalano/Plug-and-Play-Hub)
