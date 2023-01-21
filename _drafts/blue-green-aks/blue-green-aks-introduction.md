@@ -4,6 +4,7 @@ excerpt: "In this blog series we will explore how we can deploy a blue/green Kub
 tagline: "Deploy a blue/green Kubernetes architecture by utilizing Azure, Bicep, and GitHub"
 header:
   overlay_color: "#24292f"
+  teaser: assets/images/blue-green-aks/blue-green-deployment.jpg
 categories:
   - azure
   - kubernetes
@@ -17,10 +18,8 @@ related: true
 
 Hello, fellow Azure and Kubernetes enthusiasts! In this blog series we will explore how we can deploy a blue/green Kubernetes environment using the Azure Kubernetes Service. There will be 3 posts in the following sequence:
 
-- [**Part 0: Introduction**]({% post_url 2023-xx-yy-blue-green-aks-introduction %})
-
+- **Part 0: Introduction**
 - **Part 1: Architecture**
-
 - **Part 2: Usage**
 
 ## Blue/Green Deployment
@@ -39,4 +38,4 @@ Overall, blue/green deployment is a useful tool for minimizing downtime and risk
 
 - **Part 1: Infrastructure**
 
-**GitHub repository:** <https://github.com/christosgalano/Blue-Green-AKS>
+**Related repository:** [Blue-Green-AKS](https://github.com/christosgalano/Blue-Green-AKS)

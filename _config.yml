@@ -133,7 +133,7 @@ kramdown:
 
 # Collections
 collections:
-  docs:
+  github_actions:
     output: true
     permalink: /:collection/:path/
 

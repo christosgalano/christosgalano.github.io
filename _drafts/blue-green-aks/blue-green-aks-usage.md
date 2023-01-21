@@ -4,13 +4,13 @@ excerpt: "In today’s blog post, we deploy a sample application and test the bl
 tagline: "Test the blue/green capability"
 header:
   overlay_color: "#24292f"
+  teaser: assets/images/blue-green-aks/blue-green-deployment.jpg
 categories:
   - azure
   - kubernetes
 tags:
+  - aks
   - blue-green
-  - github-actions
-  - iac
 toc: true
 related: true
 ---
@@ -144,8 +144,7 @@ Well, this brings the Blue/Green AKS series to an end. I hope you found the info
 
 **Previous parts:**
 
-- [**Part 0: Introduction**]({% post_url 2023-xx-yy-blue-green-aks-introduction %})
-
-- [**Part 1: Infrastructure**]({% post_url 2023-xx-yy-blue-green-aks-architecture %})
+- **Part 0: Introduction**
+- **Part 1: Infrastructure**
   
-**GitHub repository:** <https://github.com/christosgalano/Blue-Green-AKS>
+**Related repository:** [Blue-Green-AKS](https://github.com/christosgalano/Blue-Green-AKS)

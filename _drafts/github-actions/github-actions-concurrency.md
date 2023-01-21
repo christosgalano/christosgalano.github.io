@@ -27,7 +27,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: hello-world-${{ github.ref }
+  group: hello-world-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:

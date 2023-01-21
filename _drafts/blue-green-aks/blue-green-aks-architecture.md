@@ -4,6 +4,7 @@ excerpt: "In today’s blog post, we look into the Azure architecture of our blu
 tagline: "Azure architecture of the blue/green deployment"
 header:
   overlay_color: "#24292f"
+  teaser: assets/images/blue-green-aks/blue-green-deployment.jpg
 categories:
   - azure
   - kubernetes
@@ -115,6 +116,6 @@ That pretty much covers the details of our infrastructure. In the next part, we 
 
 **Previous parts:**
 
-- [**Part 0: Introduction**]({% post_url 2023-xx-yy-blue-green-aks-introduction %})
+- **Part 0: Introduction**
 
-**GitHub repository:** <https://github.com/christosgalano/Blue-Green-AKS>
+**Related repository:** [Blue-Green-AKS](https://github.com/christosgalano/Blue-Green-AKS)

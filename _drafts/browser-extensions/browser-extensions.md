@@ -4,6 +4,7 @@ excerpt: "As an engineer who spends a significant amount of time on the internet
 tagline: "Useful browser extensions for GitHub and Azure"
 header:
   overlay_color: "#24292f"
+  teaser: assets/images/browser-extensions/browser-extensions.jpg
 categories:
   - general
 tags:
@@ -61,4 +62,4 @@ Being a big [Visual Studio Code](https://code.visualstudio.com/) fan i would lik
 
 In conclusion, browser extensions can greatly enhance your online experience by providing additional functionality and improving the overall performance of your favorite websites. The ones that I have mentioned in this post are just a few examples of the many useful extensions that are available. Give some of them a try and see how they can improve your internet experience!
 
-**GitHub repository:** <https://github.com/christosgalano/Browser-Extensions>
+**Related repository:** [Browser-Extensions](https://github.com/christosgalano/Browser-Extensions)

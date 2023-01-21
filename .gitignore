@@ -31,5 +31,5 @@ _site
 # VSCode
 **/.vscode/*
 
-# Drafts
-drafts/*
+# Notes
+notes.md
