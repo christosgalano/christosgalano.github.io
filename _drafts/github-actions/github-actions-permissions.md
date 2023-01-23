@@ -70,7 +70,7 @@ permissions: {}
 
 **NOTE**: If you specify the access for any of these scopes, all of those that are not specified are set to none.
 
-### Examples
+## Examples
 
 The example we'll look at is available [**here**](https://github.com/christosgalano/GitHub-Actions-Deep-Dive/blob/main/.github/workflows/permissions.yaml):
 
@@ -106,7 +106,7 @@ jobs:
 
 In the above example, we set read-all permission for all the jobs in a workflow. We also override that value in `job-3`, where we disable all permissions and so we expect that this job will fail since it can not complete the action of checking out the repository.
 
-![permissions](../../images/permissions.png)
+![permissions](/assets/images/github-actions/permissions.png)
 
 ## Summary
 
