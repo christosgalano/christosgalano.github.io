@@ -1,0 +1,13 @@
+{% if include.id %}
+  {% assign spotify_row = page[include.id] %}
+{% else %}
+  {% assign spotify_row = page.spotify_row %}
+{% endif %}
+
+<div class="spotify-embeds">
+    {% for p in spotify_row %}
+    <div class="spotify-embed">
+        <iframe src="{{ p.url }}" width="340" height="80" frameBorder="0" allowfullscreen="true" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    {% endfor %}
+</div>

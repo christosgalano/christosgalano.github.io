@@ -1,0 +1,25 @@
+.spotify-embeds {
+    width: 100%;
+}
+
+.spotify-embed {
+    left: 0;
+    width: 100%;
+    height: 80px;
+    position: relative;
+
+    &:not(:last-of-type) {
+        margin-bottom: 5px;
+    }
+
+    iframe {
+        display: block;
+        transition: opacity 0.125s;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border: 0;
+    }
+}

@@ -33,7 +33,7 @@ search: true
 search_full_content: false
 search_provider: lunr
 lunr:
-  search_within_pages: true # index all pages
+  search_within_pages: false # index all pages
 
 analytics:
   provider: "google-gtag"
