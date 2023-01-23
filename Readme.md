@@ -4,7 +4,7 @@
 
 ## General
 
-Repository for Christos's Blog.
+Repository for [Christos's Blog](https://christosgalano.github.io/).
 
 ## License
 
