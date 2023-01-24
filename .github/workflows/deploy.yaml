@@ -24,10 +24,9 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Inject values in config
-        working-directory: ${{ github.workspace }}/.github/scripts
         run: |
-          chmod +x inject_values.sh
-          ./inject_values.sh ${{ secrets.GISCUS_REPO_ID }} ${{ secrets.GISCUS_CATEGORY_ID }} ${{ secrets.GTAG_TRACKING_ID }}
+          chmod +x ${{ github.workspace }}/.github/scripts/inject_values.sh
+          ./${{ github.workspace }}/.github/scripts/inject_values.sh ${{ secrets.GISCUS_REPO_ID }} ${{ secrets.GISCUS_CATEGORY_ID }} ${{ secrets.GTAG_TRACKING_ID }} ${{ secrets.GOWNERSHIP_ID }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v2
