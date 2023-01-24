@@ -7,7 +7,7 @@ title: "Christos's Blog"
 title_separator: "|"
 subtitle:
 name: &name "Christos Galanopoulos"
-description: &description "Christos Galanopoulos's blog."
+description: &description "Christos Galanopoulos's blog about GitHub, GitOps, Azure, Kubernetes, and other technologies."
 url: https://christosgalano.github.io
 baseurl: "" # the subpath of your site, e.g. "/blog"
 repository: "christosgalano/christosgalano.github.io"
