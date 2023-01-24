@@ -73,4 +73,7 @@ Finally, we do not want all of the remaining jobs to be cancelled if a matrix-jo
 
 In summary, the `strategy` and `matrix` keywords in GitHub Actions are powerful tools for implementing parallel workflows. These keywords allow you to define multiple combinations of inputs that should be run in parallel, greatly speeding up your workflow and increasing its reliability. By using them, you can easily implement parallel workflows in your own projects and take advantage of the many benefits that concurrency has to offer.
 
-**Related repository:** [GitHub-Actions-Deep-Dive](https://github.com/christosgalano/GitHub-Actions-Deep-Dive)
+## Resources
+
+- **Related repository:** [GitHub-Actions-Deep-Dive](https://github.com/christosgalano/GitHub-Actions-Deep-Dive)
+- **Related documentation:** [Using a matrix for your jobs](https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs)

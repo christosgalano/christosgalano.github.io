@@ -163,7 +163,8 @@ In this example, the workflow is named "create-update-label" and it is triggered
 
 To summarize, GitHub Actions allows users to create and reuse their own actions in their workflows. They can be written in any language and run on any operating system, and they can be used to perform a variety of tasks such as building, deploying code, running tests, and sending notifications. They can be stored in a separate repository, shared and reused across multiple projects and teams, and also versioned to ensure they are tested and working correctly before they are used in production.
 
-**Related repositories:**
+## Resources
 
-- [GitHub-Actions-Deep-Dive](https://github.com/christosgalano/GitHub-Actions-Deep-Dive)
-- [Workflows-Actions-Library](https://github.com/christosgalano/Workflows-Actions-Library)
+- **Related repository:** [GitHub-Actions-Deep-Dive](https://github.com/christosgalano/GitHub-Actions-Deep-Dive)
+- **Related repository:** [Workflows-Actions-Library](https://github.com/christosgalano/Workflows-Actions-Library)
+- **Related documentation:** [About custom actions](https://docs.github.com/en/actions/creating-actions/about-custom-actions)

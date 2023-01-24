@@ -85,4 +85,7 @@ And this is an example output with `cancel-in-progress: true`:
 
 In this blog post, we discussed how to use the `concurrency` keyword in GitHub Actions to speed up workflow execution. By allowing multiple actions to run simultaneously, concurrency can greatly reduce the overall execution time of a workflow. We explained how to set concurrency at the top level of the workflow file, within a specific job, or within a group of jobs, and also provided an example showcasing all of the above.
 
-**Related repository:** [GitHub-Actions-Deep-Dive](https://github.com/christosgalano/GitHub-Actions-Deep-Dive)
+## Resources
+
+- **Related repository:** [GitHub-Actions-Deep-Dive](https://github.com/christosgalano/GitHub-Actions-Deep-Dive)
+- **Related documentation:** [Using concurrency](https://docs.github.com/en/actions/using-jobs/using-concurrency)
