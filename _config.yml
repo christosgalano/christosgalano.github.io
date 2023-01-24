@@ -35,11 +35,15 @@ search_provider: lunr
 lunr:
   search_within_pages: false # index all pages
 
+# Analytics
 analytics:
   provider: "google-gtag"
   google:
     tracking_id: google_gtag_tracking_id_placeholder
     anonymize_ip: false
+
+# SEO
+google_site_verification: google_ownership_id_placeholder
 
 social:
   type: # Person or Organization (defaults to Person)
