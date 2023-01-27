@@ -15,7 +15,7 @@ related: true
 
 ## General
 
-Greetings everybody! I suppose more or less all of us have used, are using, or will use the hub-spoke architecture in our Azure environment. In today's post we see how someone can deploy a hub containing all the standard, necessary resources.
+Greetings everybody! I suppose more or less all of us have used, are using, or will use the hub-and-spoke architecture in our Azure environment. In today's post, we see how someone can deploy a hub containing all the standard, necessary resources.
 
 You can find the Infrastructure as Code files in the [**bicep**](https://github.com/christosgalano/Plug-and-Play-Hub/tree/main/bicep) folder and the deployment script in the [**.github/scripts**](https://github.com/christosgalano/Plug-and-Play-Hub/tree/main/.github/scripts) folder.
 
@@ -27,17 +27,17 @@ In the [**.github/workflows**](https://github.com/christosgalano/Plug-and-Play-H
 
 ### Hub-Spoke architecture
 
-A hub-spoke architecture is a common design pattern in Azure that involves creating a central "hub" resource and connecting multiple "spoke" resources to it. This architecture can be useful for a variety of purposes, including reducing complexity, improving security, and optimizing resource allocation.
+A hub-and-spoke architecture is a common design pattern in Azure that involves creating a central "hub" resource and connecting multiple "spoke" resources to it. This architecture can be useful for a variety of purposes, including reducing complexity, improving security, and optimizing resource allocation.
 
 One common use case for a hub-spoke architecture in Azure is to create a virtual network (VNet) as the hub resource, and then connect various Azure resources, such as virtual machines, storage accounts, and virtual appliances, to it. This allows you to manage all of these resources as a single unit, and to easily apply network security policies, access controls, and other configurations across all of the resources in the hub-spoke design.
 
-Another benefit of a hub-spoke architecture is that it can help reduce complexity in your Azure environment. By centralizing your resources in a single hub, you can more easily manage and maintain them, rather than having to manage each resource individually. This can be especially useful if you have a large number of resources that need to be managed in a consistent way.
+Another benefit of a hub-and-spoke architecture is that it can help reduce complexity in your Azure environment. By centralizing your resources in a single hub, you can more easily manage and maintain them, rather than having to manage each resource individually. This can be especially useful if you have a large number of resources that need to be managed in a consistent way.
 
 In terms of security, a hub-spoke architecture can be beneficial because it allows you to apply security policies and controls at the hub level, which can then be inherited by all of the connected resources. This makes it easier to ensure that all of your resources are secure and compliant, and can reduce the risk of security breaches or other vulnerabilities.
 
 Finally, a hub-spoke architecture can help you optimize resource allocation in your Azure environment. By centralizing your resources in a single hub, you can more easily control resource utilization and ensure that your resources are being used efficiently. This can help reduce costs and improve overall performance.
 
-Overall, a hub-spoke architecture is a useful design pattern to consider when working with Azure, as it can help to reduce complexity, improve security, and optimize resource allocation. Whether you're building a new cloud solution or migrating an existing one to Azure, a hub-spoke architecture is worth considering as a way to simplify your resource management and get the most out of your Azure environment.
+Overall, a hub-spoke architecture is a useful design pattern to consider when working with Azure, as it can help to reduce complexity, improve security, and optimize resource allocation. Whether you're building a new cloud solution or migrating an existing one to Azure, a hub-and-spoke architecture is worth considering as a way to simplify your resource management and get the most out of your Azure environment.
 
 ## Plug-and-Play Hub
 
@@ -70,8 +70,8 @@ Regarding our network topology; we have one virtual network with six subnets:
 
 ### Notes
 
-- The VPN Gateway has two Public IPs since it is in **Active-Active** mode to ensure high availability
-- Both the Key Vault (vault) and the Storage Account (blob, file) have private endpoints; the corresponding private DNS zones are created, linked to the hub virtual network, and filled with records of the private endpoints
+- Because the VPN Gateway is in "active-active" mode, it has two public IP addresses.
+- Both the Key Vault (vault) and the Storage Account (blob, file) have private endpoints; the corresponding private DNS zones are created, linked to the hub virtual network, and filled with records of the private endpoints.
 
 ### Configuration
 
@@ -88,7 +88,7 @@ After you have successfully configured your hub, you can safely connect a spoke 
 
 1. Create a virtual network peering between the two networks.
 2. Create a virtual network link between the forwarding ruleset and the spoke network.
-3. Create a route table configured with a route to the Firewall and associate with the desired spoke subnets.
+3. Create a route table configured with a route to the Firewall and associate it with the desired spoke subnets.
 4. Create rules in the Firewall accordingly.
 
 ## Summary
