@@ -55,7 +55,7 @@ social:
 # Site Author
 author:
   name: *name
-  avatar: "/assets/images/christos-galano.jpg"
+  avatar: "/assets/images/christos-galano.webp"
   bio: "Just another *curious improver*."
   location: "Athens, Greece"
   links:

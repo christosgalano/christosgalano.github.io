@@ -4,7 +4,7 @@ excerpt: "In today's post we see how someone can deploy a hub containing all the
 tagline: "Minimize your hub deployment time"
 header:
   overlay_color: "#24292f"
-  teaser: assets/images/plug-and-play-hub/plug-and-play.png
+  teaser: assets/images/plug-and-play-hub/plug-and-play.webp
 categories:
   - azure
 tags:
@@ -43,7 +43,7 @@ Overall, a hub-spoke architecture is a useful design pattern to consider when wo
 
 So let's go over our hub's architecture:
 
-![architecture](/assets/images/plug-and-play-hub/architecture.jpg)
+![architecture](/assets/images/plug-and-play-hub/architecture.webp)
 
 ### Resources
 
