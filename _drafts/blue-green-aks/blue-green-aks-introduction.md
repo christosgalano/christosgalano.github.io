@@ -4,7 +4,7 @@ excerpt: "In this blog series we will explore how we can deploy a blue/green Kub
 tagline: "Deploy a blue/green Kubernetes architecture by utilizing Azure, Bicep, and GitHub"
 header:
   overlay_color: "#24292f"
-  teaser: assets/images/blue-green-aks/blue-green-deployment.jpg
+  teaser: assets/images/blue-green-aks/blue-green-deployment.webp
 categories:
   - azure
   - kubernetes

@@ -4,7 +4,7 @@ excerpt: "In today’s blog post, we deploy a sample application and test the bl
 tagline: "Test the blue/green capability"
 header:
   overlay_color: "#24292f"
-  teaser: assets/images/blue-green-aks/blue-green-deployment.jpg
+  teaser: assets/images/blue-green-aks/blue-green-deployment.webp
 categories:
   - azure
   - kubernetes
@@ -37,7 +37,7 @@ First of all you need to have your own domain. If you don't have a domain, one s
 
 Next, create a CNAME record in the domain's DNS Zone providing the Traffic Manager's endpoint.
 
-![cname-record](/assets/images/blue-green-aks/cname_record.png)
+![cname-record](/assets/images/blue-green-aks/cname_record.webp)
 
 ## Application deployment
 
@@ -71,7 +71,7 @@ If you did not prove a hostname value when deploying the infrastructure then you
 
 We need to set the hostname under custom header settings to let the Ambassador know to which container application in the Kubernetes cluster it should forward the endpoint monitoring request.
 
-![tf-config](/assets/images/blue-green-aks/tf_config.png)
+![tf-config](/assets/images/blue-green-aks/tf_config.webp)
 
 Replace the existing sample domain with your own.
 
@@ -79,15 +79,15 @@ Replace the existing sample domain with your own.
 
 Initially both endpoints of the Traffic Manager are disabled.
 
-![disabled-endpoints](/assets/images/blue-green-aks/disabled-endpoints.png)
+![disabled-endpoints](/assets/images/blue-green-aks/disabled-endpoints.webp)
 
 Enable both endpoints.
 
-![enable-blue-endpoint](/assets/images/blue-green-aks/enable-blue-endpoint.png)
+![enable-blue-endpoint](/assets/images/blue-green-aks/enable-blue-endpoint.webp)
 
 Now we can see that both endpoints are enabled with an online status.
 
-![online-endpoints](/assets/images/blue-green-aks/online-endpoints.png)
+![online-endpoints](/assets/images/blue-green-aks/online-endpoints.webp)
 
 ## Switch
 
@@ -95,29 +95,29 @@ Now we can see that both endpoints are enabled with an online status.
 
 The Traffic Manager resolves to the blue endpoint since it has lower priority than the green one and it is online.
 
-![blue-dns](/assets/images/blue-green-aks/blue-dns.png)
+![blue-dns](/assets/images/blue-green-aks/blue-dns.webp)
 
 So, the live application is the one deployed in the blue cluster.
 
-![blue-online](/assets/images/blue-green-aks/blue-online.png)
+![blue-online](/assets/images/blue-green-aks/blue-online.webp)
 
-![blue-pod](/assets/images/blue-green-aks/blue-pod.png)
+![blue-pod](/assets/images/blue-green-aks/blue-pod.webp)
 
 ### Perform a switch
 
 Now let's say something goes wrong in the blue cluster. In this case we are going to delete the ingress resource so the blue endpoint becomes degraded.
 
-![delete-blue-ingress](/assets/images/blue-green-aks/delete-blue-ingress.png)
+![delete-blue-ingress](/assets/images/blue-green-aks/delete-blue-ingress.webp)
 
 We can see that after a bit (depends on the Configuration values) the Traffic Manager resolves to the green endpoint which is the one that has the lowest priority and is online.
 
-![green-dns](/assets/images/blue-green-aks/green-dns.png)
+![green-dns](/assets/images/blue-green-aks/green-dns.webp)
 
 So, the live application is the one deployed in the green cluster.
 
-![green-online](/assets/images/blue-green-aks/green-online.png)
+![green-online](/assets/images/blue-green-aks/green-online.webp)
 
-![green-pod](/assets/images/blue-green-aks/green-pod.png)
+![green-pod](/assets/images/blue-green-aks/green-pod.webp)
 
 ### Restore blue endpoint
 
@@ -130,13 +130,13 @@ kubectl apply -f ingress.yaml
 
 After a bit we can see that the blue endpoint has been restored.
 
-![blue-dns-restored](/assets/images/blue-green-aks/blue-dns-restored.png)
+![blue-dns-restored](/assets/images/blue-green-aks/blue-dns-restored.webp)
 
 So, the live application is once again the one deployed in the blue cluster.
 
-![blue-online-restored](/assets/images/blue-green-aks/blue-online-restored.png)
+![blue-online-restored](/assets/images/blue-green-aks/blue-online-restored.webp)
 
-![blue-pod-restored](/assets/images/blue-green-aks/blue-pod-restored.png)
+![blue-pod-restored](/assets/images/blue-green-aks/blue-pod-restored.webp)
 
 ## Summary
 

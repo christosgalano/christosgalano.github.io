@@ -5,7 +5,7 @@ permalink: /music-corner/
 header:
   overlay_color: "#fff"
   overlay_filter: "0.75"
-  overlay_image: assets/images/music-corner/horizontal-vinyl.jpg
+  overlay_image: assets/images/music-corner/horizontal-vinyl.webp
 excerpt: "Pause your learning streak and find inspiration in some tunes"
 work-study:
   - url: https://open.spotify.com/embed/playlist/37i9dQZF1DXaXDsfv6nvZ5?utm_source=generator&theme=0

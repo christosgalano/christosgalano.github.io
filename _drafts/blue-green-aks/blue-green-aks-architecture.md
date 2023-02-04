@@ -4,7 +4,7 @@ excerpt: "In today’s blog post, we look into the Azure architecture of our blu
 tagline: "Azure architecture of the blue/green deployment"
 header:
   overlay_color: "#24292f"
-  teaser: assets/images/blue-green-aks/blue-green-deployment.jpg
+  teaser: assets/images/blue-green-aks/blue-green-deployment.webp
 categories:
   - azure
   - kubernetes
@@ -15,7 +15,7 @@ toc: true
 related: true
 ---
 
-![architecture](/assets/images/blue-green-aks/architecture.jpg)
+![architecture](/assets/images/blue-green-aks/architecture.webp)
 
 ## General
 

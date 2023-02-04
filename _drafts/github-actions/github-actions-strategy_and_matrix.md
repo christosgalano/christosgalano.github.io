@@ -4,7 +4,7 @@ excerpt: "In today's post we go over GitHub Actions strategy and matrix."
 tagline: "Implement parallel workflows"
 header:
   overlay_color: "#24292f"
-  teaser: assets/images/github-actions/github-actions-1.png
+  teaser: assets/images/github-actions/github-actions-1.webp
 categories:
   - github
 tags:
@@ -67,7 +67,7 @@ We also put a limit of 5 to how much jobs can run simultaneously by using `max-p
 
 Finally, we do not want all of the remaining jobs to be cancelled if a matrix-job fails, so we specify `fail-fast: false`.
 
-![strategy-matrix](/assets/images/github-actions/strategy-matrix.png)
+![strategy-matrix](/assets/images/github-actions/strategy-matrix.webp)
 
 ## Summary
 

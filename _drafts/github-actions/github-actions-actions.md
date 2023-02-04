@@ -4,7 +4,7 @@ excerpt: "In today's post we see how can someone create their own GitHub Action.
 tagline: "Create your own actions"
 header:
   overlay_color: "#24292f"
-  teaser: assets/images/github-actions/github-actions-1.png
+  teaser: assets/images/github-actions/github-actions-1.webp
 categories:
   - github
 tags:

@@ -4,7 +4,7 @@ excerpt: "In today's post we go over GitHub Actions runners."
 tagline: "Choose where your workflows are going to run"
 header:
   overlay_color: "#24292f"
-  teaser: assets/images/github-actions/github-actions-1.png
+  teaser: assets/images/github-actions/github-actions-1.webp
 categories:
   - github
 tags:
