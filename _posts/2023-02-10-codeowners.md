@@ -165,4 +165,4 @@ To summarize, the CODEOWNERS file in GitHub is a powerful tool for teams to mana
 
 ## Resources
 
-- **Related documentation:** [About code owners](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners)
+**Related documentation:** [About code owners](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners)
