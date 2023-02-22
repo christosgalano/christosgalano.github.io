@@ -37,20 +37,24 @@ We will go over some of the elements inside the ***deploy.yaml*** workflow.
 * According to the [documentation](https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-azure), the following must be included in the workflow file:
 
 {% highlight yaml %}
+{% raw %}
 permissions:
   id-token: write
   contents: read
+{% endraw %}  
 {% endhighlight %}
 
 ### Connect to Azure and set subscription
 
 {% highlight yaml %}
+{% raw %}
 - name: Azure Login
-uses: Azure/login@v1
-with:
-  client-id: ${{ secrets.AZURE_CLIENT_ID }}
-  tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-  subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+  uses: Azure/login@v1
+  with:
+    client-id: ${{ secrets.AZURE_CLIENT_ID }}
+    tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+    subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+{% endraw %}
 {% endhighlight %}
 
 ### Deploy template
@@ -58,6 +62,7 @@ with:
 * Before we deploy the template, we first lint and then validate it
 
 {% highlight yaml %}
+{% raw %}
 - name: Validate template
   working-directory: ${{ github.workspace }}/bicep
   run: |
@@ -70,6 +75,7 @@ with:
                     mysql_admin_password="$ADMIN_PASSWORD" \
                     jumpbox_admin_password="$ADMIN_PASSWORD" \
                     github_runner_object_id="${{ secrets.AZURE_CLIENT_ID }}"
+{% endraw %}
 {% endhighlight %}
 
 ## Post-configuration steps
