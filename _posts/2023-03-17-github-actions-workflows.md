@@ -4,7 +4,7 @@ excerpt: "In today's post we go over the key components of a GitHub Actions work
 tagline: "Getting familiar with workflows"
 header:
   overlay_color: "#24292f"
-  teaser: assets/images/github-actions/github-actions-1.webp
+  teaser: assets/images/github-actions/github-actions-1.png
 categories:
   - github
 tags:
