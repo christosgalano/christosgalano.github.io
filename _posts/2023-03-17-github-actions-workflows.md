@@ -82,7 +82,7 @@ jobs:
       run: make deploy
 {% endhighlight %}
 
-Here, the `build` and `test` jobs will run in parallel, rather than waiting for one to finish before starting the other. This can greatly speed up your workflow, as the build and test steps can run simultaneously, rather than sequentially.
+Here, all the jobs will run in parallel, rather than waiting for one to finish before starting the other. This can greatly speed up your workflow, as the build,test and deploy steps can run simultaneously, rather than sequentially.
 
 If we wanted to have linear execution based on dependencies, then we would need to use the `needs` keyword. Let's say we want to modify the `build-test-deploy` so that the `test` job executes only if the `build` completes successfully, and also the `deploy` job executes only if the `test` completes without errors:
 
