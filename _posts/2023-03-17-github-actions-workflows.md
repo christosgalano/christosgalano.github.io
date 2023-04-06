@@ -147,5 +147,5 @@ In summary, GitHub Actions workflows consist of triggers, jobs, and steps. Trigg
 
 ## Resources
 
-- **Related repository:** [GitHub-Actions-Deep-Dive](https://github.com/christosgalano/GitHub-Actions-Deep-Dive)
-- **Related documentation:** [About workflows](https://docs.github.com/en/actions/using-workflows/about-workflows)
+- [**GitHub-Actions-Deep-Dive**](https://github.com/christosgalano/GitHub-Actions-Deep-Dive)
+- [**About workflows**](https://docs.github.com/en/actions/using-workflows/about-workflows)

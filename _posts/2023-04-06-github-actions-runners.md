@@ -89,6 +89,6 @@ In conclusion, GitHub Actions runners are an essential component of a GitHub Act
 
 ## Resources
 
-- **Related repository:** [GitHub-Actions-Deep-Dive](https://github.com/christosgalano/GitHub-Actions-Deep-Dive)
-- **Related documentation:** [About GitHub-hosted runners](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners)
-- **Related documentation:** [About self-hosted runners](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners)
+- [**GitHub-Actions-Deep-Dive**](https://github.com/christosgalano/GitHub-Actions-Deep-Dive)
+- [**About GitHub-hosted runners**](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners)
+- [**About self-hosted runners**](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners)
