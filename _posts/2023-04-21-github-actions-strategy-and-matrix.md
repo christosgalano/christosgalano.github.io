@@ -63,7 +63,7 @@ jobs:
 
 Here, the matrix specifies that the workflow should run on three different operating systems (ubuntu-latest, windows-latest, and macos-latest), three different versions (8, 10, and 12) and three different browsers (chrome, firefox, safari). This means that the workflow will run a total of 27 (3^3) combinations in parallel, rather than sequentially.
 
-We also put a limit of 5 to how much jobs can run simultaneously by using `max-parallel: 5`.
+We also put a limit of 5 to how many jobs can run simultaneously by using `max-parallel: 5`.
 
 Finally, we do not want all of the remaining jobs to be cancelled if a matrix-job fails, so we specify `fail-fast: false`.
 
