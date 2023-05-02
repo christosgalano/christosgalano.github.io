@@ -1,5 +1,5 @@
 ---
-title: "GitHub Actions - Workflows"
+title: "GitHub Actions: Workflows"
 excerpt: "In today's post we go over the key components of a GitHub Actions workflow."
 tagline: "Getting familiar with workflows"
 header:
@@ -122,17 +122,18 @@ Here's an example of a step that runs a command, sets an environment variable, a
 
 {% highlight yaml %}
 steps:
-  - name: Checkout
+
+- name: Checkout
     uses: actions/checkout@v3
 
-  - name: Set environment variable
+- name: Set environment variable
     env:
       FOO: bar
 
-  - name: Run tests
+- name: Run tests
     run: make test
 
-  - name: Generate report
+- name: Generate report
     if: failure()
     run: report
 {% endhighlight %}
@@ -145,7 +146,6 @@ It's also worth noting that there are many pre-built actions available in the [G
 
 In summary, GitHub Actions workflows consist of triggers, jobs, and steps. Triggers initiate the workflow and determine when it should run. Jobs are the units of work in a workflow and are made up of one or more steps. Steps are the individual tasks that make up a job and can include a variety of actions, such as running commands, checking out code, and deploying packages. By understanding how triggers, jobs, and steps work together, you can create powerful and efficient workflows that automate your software development process and save valuable time.
 
-## Resources
+## References
 
-- [**GitHub-Actions-Deep-Dive**](https://github.com/christosgalano/GitHub-Actions-Deep-Dive)
 - [**About workflows**](https://docs.github.com/en/actions/using-workflows/about-workflows)

@@ -1,5 +1,5 @@
 ---
-title: "GitHub Actions - Introduction"
+title: "GitHub Actions: Introduction"
 excerpt: "In today's post we get an overview of GitHub Actions and its capabilities."
 tagline: "Introduction to GitHub Actions"
 header:
@@ -35,7 +35,6 @@ To get started with GitHub Actions, all you need is a GitHub account. Once you h
 
 To summarize, GitHub Actions is an essential tool for any software development team. It's a highly customizable, scalable, and versatile platform that allows developers to automate their workflow, streamline their development process, and integrate with other tools and services. It's simple to use, has a wealth of pre-built actions, and is open-source, which makes it an ever-evolving tool that's constantly improving. So, if you haven't already, give GitHub Actions a try and see how it can help your team be more productive and efficient.
 
-## Resources
+## References
 
-- [**GitHub-Actions-Deep-Dive**](https://github.com/christosgalano/GitHub-Actions-Deep-Dive)
 - [**Understanding GitHub Actions**](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions)

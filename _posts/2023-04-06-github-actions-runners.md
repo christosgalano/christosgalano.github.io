@@ -1,5 +1,5 @@
 ---
-title: "GitHub Actions - Runners"
+title: "GitHub Actions: Runners"
 excerpt: "In today's post we go over GitHub Actions runners."
 tagline: "Choose where your workflows are going to run"
 header:
@@ -87,8 +87,7 @@ In this example, the test job will not start until the build job is completed.
 
 In conclusion, GitHub Actions runners are an essential component of a GitHub Actions workflow, providing the environment and resources needed to execute the jobs and steps defined in the workflow file. Whether you choose to use self-hosted or GitHub-hosted runners, you should carefully consider the requirements of your workflow and choose the runner that best fits your needs.
 
-## Resources
+## References
 
-- [**GitHub-Actions-Deep-Dive**](https://github.com/christosgalano/GitHub-Actions-Deep-Dive)
 - [**About GitHub-hosted runners**](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners)
 - [**About self-hosted runners**](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners)

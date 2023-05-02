@@ -98,63 +98,99 @@ By using the CODEOWNERS file in this manner, you can ensure that changes are pro
 Copied from this [GitHub post](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners):
 
 {% highlight bash %}
-# This is a comment.
-# Each line is a file pattern followed by one or more owners.
+
+# This is a comment
+
+# Each line is a file pattern followed by one or more owners
 
 # These owners will be the default owners for everything in
-# the repo. Unless a later match takes precedence,
+
+# the repo. Unless a later match takes precedence
+
 # @global-owner1 and @global-owner2 will be requested for
-# review when someone opens a pull request.
-*       @global-owner1 @global-owner2
+
+# review when someone opens a pull request
+
+- @global-owner1 @global-owner2
 
 # Order is important; the last matching pattern takes the most
+
 # precedence. When someone opens a pull request that only
+
 # modifies JS files, only @js-owner and not the global
-# owner(s) will be requested for a review.
+
+# owner(s) will be requested for a review
+
 *.js    @js-owner #This is an inline comment.
 
 # You can also use email addresses if you prefer. They'll be
+
 # used to look up users just like we do for commit author
-# emails.
+
+# emails
+
 *.go docs@example.com
 
 # Teams can be specified as code owners as well. Teams should
+
 # be identified in the format @org/team-name. Teams must have
-# explicit write access to the repository. In this example,
-# the octocats team in the octo-org organization owns all .txt files.
+
+# explicit write access to the repository. In this example
+
+# the octocats team in the octo-org organization owns all .txt files
+
 *.txt @octo-org/octocats
 
 # In this example, @doctocat owns any files in the build/logs
+
 # directory at the root of the repository and any of its
-# subdirectories.
+
+# subdirectories
+
 /build/logs/ @doctocat
 
 # The `docs/*` pattern will match files like
+
 # `docs/getting-started.md` but not further nested files like
-# `docs/build-app/troubleshooting.md`.
+
+# `docs/build-app/troubleshooting.md`
+
 docs/*  docs@example.com
 
 # In this example, @octocat owns any file in an apps directory
-# anywhere in your repository.
+
+# anywhere in your repository
+
 apps/ @octocat
 
 # In this example, @doctocat owns any file in the `/docs`
+
 # directory in the root of your repository and any of its
-# subdirectories.
+
+# subdirectories
+
 /docs/ @doctocat
 
 # In this example, any change inside the `/scripts` directory
-# will require approval from @doctocat or @octocat.
+
+# will require approval from @doctocat or @octocat
+
 /scripts/ @doctocat @octocat
 
 # In this example, @octocat owns any file in a `/logs` directory such as
+
 # `/build/logs`, `/scripts/logs`, and `/deeply/nested/logs`. Any changes
-# in a `/logs` directory will require approval from @octocat.
+
+# in a `/logs` directory will require approval from @octocat
+
 **/logs @octocat
 
 # In this example, @octocat owns any file in the `/apps`
+
 # directory in the root of your repository except for the `/apps/github`
-# subdirectory, as its owners are left empty.
+
+# subdirectory, as its owners are left empty
+
 /apps/ @octocat
 /apps/github
 {% endhighlight %}
@@ -163,6 +199,6 @@ apps/ @octocat
 
 To summarize, the CODEOWNERS file in GitHub is a powerful tool for teams to manage access to their codebase and maintain control over code changes. Whether you’re working on a small project or a large one, the CODEOWNERS file can help maintain the quality and consistency of the codebase, encourage collaboration, and speed up the development process by specifying the individuals or teams responsible for reviewing and approving changes to specific files or directories.
 
-## Resources
+## References
 
-**Related documentation:** [About code owners](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners)
+- [**About code owners**](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners)
