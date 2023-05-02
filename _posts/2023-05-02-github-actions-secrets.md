@@ -37,7 +37,8 @@ It's also worth noting that GitHub Secrets can also be used to store sensitive d
 
 Let's take a look at an example:
 
-```yaml
+{% highlight yaml %}
+{% raw %}
 name: secrets
 on:
   workflow_dispatch:
@@ -48,7 +49,7 @@ jobs:
     steps:
       - name: Show admin password
         run: echo ${{ secrets.ADMIN_PASSWORD }}
-      
+
       - name: Check admin password content
         run: |
           if [ "${{ secrets.ADMIN_PASSWORD }}" == "password123" ]; then
@@ -56,7 +57,8 @@ jobs:
           else
             echo "Admin password is not password123"
           fi
-```
+{% endraw %}
+{% endhighlight %}
 
 Here is a workflow that shows how to use GitHub Secrets. The workflow contains two steps: one that attempts to show the value of the `ADMIN_PASSWORD` secret and one that checks the value of the `ADMIN_PASSWORD` secret.
 
