@@ -1,7 +1,7 @@
 ---
 title: "GitHub Actions: Workflows"
 excerpt: "In today's post we go over the key components of a GitHub Actions workflow."
-tagline: "Getting familiar with workflows"
+tagline: "Workflows 101"
 header:
   overlay_color: "#24292f"
   teaser: assets/images/github-actions/github-actions-1.webp
@@ -13,9 +13,9 @@ toc: true
 related: true
 ---
 
-## General
+## Overview
 
-As we learned in the last post, GitHub Actions is a powerful tool for automating software development workflows. One of the key features of GitHub Actions is the ability to create workflows that are triggered by specific events, such as a push to a specific branch or the opening of a pull request. In this blog post, we will explore the concepts of triggers, jobs, and steps in GitHub Actions, and provide examples of how to use these features to create powerful and efficient workflows.
+One of the key features of GitHub Actions is the ability to create workflows that are triggered by specific events, such as a push to a specific branch or the opening of a pull request. Here we will explore the concepts of triggers, jobs, and steps in GitHub Actions, and provide examples of how to use these features to create powerful and efficient workflows.
 
 ## Triggers
 
@@ -82,7 +82,7 @@ jobs:
       run: make deploy
 {% endhighlight %}
 
-Here, all the jobs will run in parallel, rather than waiting for one to finish before starting the other. This can greatly speed up your workflow, as the build,test and deploy steps can run simultaneously, rather than sequentially.
+Here, all the jobs will run in parallel, rather than waiting for one to finish before starting the other. This can greatly speed up your workflow, as the build, test, and deploy steps can run simultaneously, rather than sequentially.
 
 If we wanted to have linear execution based on dependencies, then we would need to use the `needs` keyword. Let's say we want to modify the `build-test-deploy` so that the `test` job executes only if the `build` completes successfully, and also the `deploy` job executes only if the `test` completes without errors:
 
@@ -122,18 +122,17 @@ Here's an example of a step that runs a command, sets an environment variable, a
 
 {% highlight yaml %}
 steps:
-
-- name: Checkout
+  - name: Checkout
     uses: actions/checkout@v3
 
-- name: Set environment variable
+  - name: Set environment variable
     env:
       FOO: bar
 
-- name: Run tests
+  - name: Run tests
     run: make test
 
-- name: Generate report
+  - name: Generate report
     if: failure()
     run: report
 {% endhighlight %}

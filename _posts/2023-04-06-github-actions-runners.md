@@ -1,7 +1,7 @@
 ---
 title: "GitHub Actions: Runners"
 excerpt: "In today's post we go over GitHub Actions runners."
-tagline: "Choose where your workflows are going to run"
+tagline: "Understand where your workflows run"
 header:
   overlay_color: "#24292f"
   teaser: assets/images/github-actions/github-actions-1.webp
@@ -13,9 +13,9 @@ toc: true
 related: true
 ---
 
-## General
+## Overview
 
-GitHub Actions runners are the machines that run the jobs and steps in a GitHub Actions workflow. They are responsible for executing the commands defined in the workflow file and providing the necessary resources for the tasks to be completed.
+GitHub Actions runners are the machines that run the jobs and steps in a GitHub Actions workflow. They are responsible for executing the commands defined in the workflow file and providing the necessary References for the tasks to be completed.
 
 ## Runner types
 
@@ -61,7 +61,7 @@ jobs:
 
 In this example, the job is set to run on the latest versions of Windows, Ubuntu, and macOS.
 
-It is important to note that the choice of runner will depend on the specific requirements of your workflow, such as the operating system, software dependencies, and hardware resources needed.
+It is important to note that the choice of runner will depend on the specific requirements of your workflow, such as the operating system, software dependencies, and hardware References needed.
 
 Additionally, you can use the needs keyword to specify dependencies between jobs. For example, you can use it to specify that a job depends on another job being completed before it can start:
 
@@ -85,7 +85,7 @@ In this example, the test job will not start until the build job is completed.
 
 ## Summary
 
-In conclusion, GitHub Actions runners are an essential component of a GitHub Actions workflow, providing the environment and resources needed to execute the jobs and steps defined in the workflow file. Whether you choose to use self-hosted or GitHub-hosted runners, you should carefully consider the requirements of your workflow and choose the runner that best fits your needs.
+In summary, GitHub Actions runners are an essential component of a GitHub Actions workflow, providing the environment and References needed to execute the jobs and steps defined in the workflow file. Whether you choose to use self-hosted or GitHub-hosted runners, you should carefully consider the requirements of your workflow and choose the runner that best fits your needs.
 
 ## References
 
