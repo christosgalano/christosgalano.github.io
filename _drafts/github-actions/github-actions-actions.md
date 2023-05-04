@@ -15,7 +15,7 @@ related: true
 
 ## General
 
-As we have already mentioned, GitHub Actions is a powerful automation tool that allows developers to create custom workflows for their projects. These workflows, or "actions", can be used to automate a wide variety of tasks, such as building and testing code, deploying code to production, and more. In this blog post, we will take a detailed look at what actions are and how to create your own using an example of a custom action that i've written and use regularly. The name of the action is `create-update-label` and its purpose is to update an issue label (or create one if one does not exist) in every repository of a user.
+GitHub Actions is a powerful automation tool that allows developers to create custom workflows for their projects. These workflows, or "actions", can be used to automate a wide variety of tasks, such as building and testing code, deploying code to production, and more. In this blog post, we will take a detailed look at what actions are and how to create your own using an example of a custom action that i've written and use regularly. The name of the action is `create-update-label` and its purpose is to update an issue label (or create one if one does not exist) in every repository of a user.
 
 ## What are GitHub Actions?
 
@@ -78,25 +78,28 @@ The code for this action is located in the `create_update_label.sh` file, which 
 
 {% highlight bash %}
 {% raw %}
+
 # Create a label
+
 function create_label() {
     curl -s \
     -X POST \
     -H "Accept: application/vnd.github+json" \
     -H "Authorization: Bearer $api_token" \
     -H "X-GitHub-Api-Version: 2022-11-28" \
-    https://api.github.com/repos/$repo/labels \
+    <https://api.github.com/repos/$repo/labels> \
     -d "{\"name\": \"$name\", \"description\": \"$description\" , \"color\": \"$color\"}"
 }
 
 # Update a label, if it does not exist create it
+
 function update_label() {
     status_code=$(curl -s \
         -X PATCH \
         -H "Accept: application/vnd.github+json" \
         -H "Authorization: Bearer $api_token" \
         -H "X-GitHub-Api-Version: 2022-11-28" \
-        https://api.github.com/repos/$repo/labels/$name \
+        <https://api.github.com/repos/$repo/labels/$name> \
         -d "{\"name\": \"$name\", \"description\": \"$description\" , \"color\": \"$color\"}" \
         --write-out '%{http_code}' \
     --output /dev/null)
@@ -109,18 +112,22 @@ function update_label() {
 }
 
 # Parse and validate parameters
+
 parse_params "$@"
 validate_params
 
 # Fetch all repositories and keep only their full names (user/repo)
+
 repos=$(curl -s \
     -H "Accept: application/vnd.github+json" \
     -H "Authorization: Bearer $api_token" \
     -H "X-GitHub-Api-Version: 2022-11-28" \
-https://api.github.com/user/repos | jq -r '.[].full_name')
+<https://api.github.com/user/repos> | jq -r '.[].full_name')
 
-# Update the specified label in every repository.
-# If it does not exist then create it.
+# Update the specified label in every repository
+
+# If it does not exist then create it
+
 for repo in $repos
 do
     update_label
@@ -157,14 +164,12 @@ jobs:
 
 In this example, the workflow is named "create-update-label" and it is triggered by a push to the main branch. The workflow contains a single job called "create-update-label" that runs on the latest version of Ubuntu. The job has only one step:
 
-1. Use the `create-update-label` action
+- Use the `create-update-label` action
 
 ## Summary
 
-To summarize, GitHub Actions allows users to create and reuse their own actions in their workflows. They can be written in any language and run on any operating system, and they can be used to perform a variety of tasks such as building, deploying code, running tests, and sending notifications. They can be stored in a separate repository, shared and reused across multiple projects and teams, and also versioned to ensure they are tested and working correctly before they are used in production.
+To summarize, GitHub Actions allows users to create and reuse their own actions in their workflows so that they can automate repetitive tasks and save time. They can be written in any language and run on any operating system, and they can be used to perform a variety of tasks such as building, deploying code, running tests, and sending notifications. They can be stored in a separate repository, shared and reused across multiple projects and teams, and also versioned to ensure they are tested and working correctly before they are used in production.
 
-## Resources
+## References
 
-- **Related repository:** [GitHub-Actions-Deep-Dive](https://github.com/christosgalano/GitHub-Actions-Deep-Dive)
-- **Related repository:** [Workflows-Actions-Library](https://github.com/christosgalano/Workflows-Actions-Library)
-- **Related documentation:** [About custom actions](https://docs.github.com/en/actions/creating-actions/about-custom-actions)
+- [**About custom actions**](https://docs.github.com/en/actions/creating-actions/about-custom-actions)

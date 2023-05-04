@@ -1,7 +1,7 @@
 ---
-title: "GitHub Actions - Concurrency"
+title: "GitHub Actions: Concurrency"
 excerpt: "In today's post we go over GitHub Actions concurrency."
-tagline: "Optimize the execution time of your workflows"
+tagline: "Managing concurrency in GitHub Actions"
 header:
   overlay_color: "#24292f"
   teaser: assets/images/github-actions/github-actions-1.webp
@@ -13,13 +13,21 @@ toc: true
 related: true
 ---
 
-## General
+## Overview
 
-GitHub Actions allows you to optimize the execution time of your workflows by using the `concurrency` keyword. This keyword can be used at the workflow scope, or within a specific job, to specify how many actions can run simultaneously. In this blog post, we will explore the use of the `concurrency` keyword in GitHub Actions and provide some examples to make it clearer.
+As a developer or engineer, you understand the importance of managing concurrency in your workflow to optimize your development process and improve the efficiency and speed of your code. GitHub Actions provides a powerful workflow automation system that allows you to run multiple jobs and workflows simultaneously. However, managing concurrency in GitHub Actions can be a complex task, and it's essential to understand the best practices for optimizing your workflow.
+
+## The concurrency keyword
+
+The `concurrency` keyword can be used to make sure that only one job or workflow using a given concurrency group is running at once. Any string or phrase can be a concurrency group. Only the github context may be used by the expression. For instance, you can build a concurrency group for each branch in your repository using the `github.ref` context. Without a concurrency group, the job or process will start up right away.
+
+You can also specify concurrency at the job level. If you do that, it will override the concurrency group specified at the workflow level.
+
+If another job or workflow utilizing the same concurrency group in the repository is running when a concurrent job or workflow is queued, the queued job or workflow will be in the pending state. The concurrency group will cancel any open jobs or workflows that were previously in progress. With the `cancel-in-progress: true` option, you can also halt any active jobs or workflows in the same concurrency group.
 
 ## Example
 
-The example we'll look at can be found [**here**](https://github.com/christosgalano/GitHub-Actions-Deep-Dive/blob/main/.github/workflows/concurreny.yaml):
+Let's take a look at an example:
 
 {% highlight yaml %}
 {% raw %}
@@ -69,9 +77,7 @@ Let's first analyze the `concurrency` keyword on a job scope. We can see that bo
 
 ![concurrency-job-scope](/assets/images/github-actions/concurrency-job-scope.webp)
 
-{% raw %}
 Now it's time to understand the `concurrency` keyword on a workflow scope. The preceding workflow is a member of the concurrency group `hello-world-${{ github.ref }}`. The option `cancel-in-progress` gives someone the ability to cancel all on-going jobs and workflows that belong in the specified group and only run the currently triggered one.
-{% endraw %}
 
 This is an example output with `cancel-in-progress: false`:
 
@@ -83,9 +89,8 @@ And this is an example output with `cancel-in-progress: true`:
 
 ## Summary
 
-In this blog post, we discussed how to use the `concurrency` keyword in GitHub Actions to speed up workflow execution. By allowing multiple actions to run simultaneously, concurrency can greatly reduce the overall execution time of a workflow. We explained how to set concurrency at the top level of the workflow file, within a specific job, or within a group of jobs, and also provided an example showcasing all of the above.
+In summary. the `concurrency` keyword can be used to make sure that only one job or workflow using a given concurrency group is running at once. You can  set concurrency at the top level of the workflow file, within a specific job, or within a group of jobs.
 
-## Resources
+## References
 
-- **Related repository:** [GitHub-Actions-Deep-Dive](https://github.com/christosgalano/GitHub-Actions-Deep-Dive)
-- **Related documentation:** [Using concurrency](https://docs.github.com/en/actions/using-jobs/using-concurrency)
+- [**Using concurrency**](https://docs.github.com/en/actions/using-jobs/using-concurrency)
