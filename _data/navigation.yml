@@ -6,6 +6,8 @@ main:
     url: /categories/
   - title: "Tags"
     url: /tags/
+  - title: "Speaking"
+    url: /speaking/
   - title: "MC"
     url: /music-corner/
   - title: "About"

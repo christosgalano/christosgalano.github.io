@@ -3,10 +3,9 @@ title: "Music Corner"
 layout: splash
 permalink: /music-corner/
 header:
-  overlay_color: "#fff"
+  overlay_color: "#24292f"
   overlay_filter: "0.75"
   overlay_image: assets/images/music-corner/horizontal-vinyl.webp
-# excerpt: "Pause your learning streak and find inspiration in some tunes"
 playlists:
   - url: https://open.spotify.com/embed/playlist/0Tbqtp2OyYb5WUqAAx4wWd?utm_source=generator&theme=0
   - url: https://open.spotify.com/embed/playlist/4qzTZILeEqxbybKyv0BuPh?utm_source=generator&theme=0
@@ -26,7 +25,6 @@ albums:
   - url: https://open.spotify.com/embed/album/2WT1pbYjLJciAR26yMebkH?utm_source=generator&theme=0
   - url: https://open.spotify.com/embed/album/4vIJFprkZ7vyN6nhcBgQmG?utm_source=generator&theme=0
   - url: https://open.spotify.com/embed/album/7Eoz7hJvaX1eFkbpQxC5PA?utm_source=generator&theme=0
-jazz:
 ---
 
 ## Playlists
