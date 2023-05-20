@@ -55,7 +55,7 @@ social:
 # Site Author
 author:
   name: *name
-  avatar: "/assets/images/christos-galano-speaking.webp"
+  avatar: "/assets/images/speaking.webp"
   bio: "Exploring the devops realm"
   location: "Athens, Greece"
   links:
