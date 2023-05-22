@@ -16,10 +16,12 @@ playlists:
   - url: https://open.spotify.com/embed/playlist/0hsiH639Xa3341pC4wLiMO?utm_source=generator&theme=0
 albums:
   - url: https://open.spotify.com/embed/album/10nuAbOP7HYjJNpHFgPNrR?utm_source=generator&theme=0
+  - url: https://open.spotify.com/embed/album/6sPuKS6aPWv0FIzkE5dxTS?utm_source=generator&theme=0
   - url: https://open.spotify.com/embed/album/5lVqgXqdoIH3W1wUM2hzPx?utm_source=generator&theme=0
   - url: https://open.spotify.com/embed/album/6QwMfYLtg44zGItVtYB8mP?utm_source=generator&theme=0
   - url: https://open.spotify.com/embed/album/2ge28dEPCwqWMdxS4Qpvbx?utm_source=generator&theme=0
   - url: https://open.spotify.com/embed/album/6AQ7FKotXSiSQaYfZBHTdd?utm_source=generator&theme=0
+  - url: https://open.spotify.com/embed/album/4pYvRFog3iS3UPipDzkKQZ?utm_source=generator&theme=0
   - url: https://open.spotify.com/embed/album/1J8QW9qsMLx3staWaHpQmU?utm_source=generator&theme=0
   - url: https://open.spotify.com/embed/album/132qAo1cDiEJdA3fv4xyNK?utm_source=generator&theme=0
   - url: https://open.spotify.com/embed/album/2WT1pbYjLJciAR26yMebkH?utm_source=generator&theme=0
