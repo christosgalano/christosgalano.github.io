@@ -4,7 +4,7 @@ title: "About"
 excerpt: "A little bit about the author."
 ---
 
-Hey there! I'm Christos, a 21-year-old DevOps engineer working at [Performance Technologies](https://www.performance.gr/). I have a deep passion for technology and a constant drive for improvement. I'm dedicated to exploring and mastering various tools and technologies that empower software development and cloud computing.
+Hey there! I'm Christos, a dedicated DevOps engineer working at [Performance Technologies](https://www.performance.gr/). I have a deep passion for technology and a constant drive for improvement. I'm dedicated to exploring and mastering various tools and technologies that empower software development and cloud computing.
 
 ## The purpose of this blog
 
