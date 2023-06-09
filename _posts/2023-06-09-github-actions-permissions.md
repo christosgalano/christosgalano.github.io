@@ -65,11 +65,9 @@ permissions:
   statuses: read|write|none
 
 # Define read or write access for all of the available scopes
-
 permissions: read-all|write-all
 
 # Disable permissions for all of the available scopes
-
 permissions: {}
 {% endraw %}
 {% endhighlight %}
