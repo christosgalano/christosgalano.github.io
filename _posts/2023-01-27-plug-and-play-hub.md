@@ -8,7 +8,7 @@ header:
 categories:
   - azure
 tags:
-  - architecture
+  - bicep
 toc: true
 related: true
 ---

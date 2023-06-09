@@ -9,7 +9,7 @@ categories:
   - azure
 tags:
   - wordpress
-  - iac
+  - bicep
 toc: true
 related: true
 ---

@@ -9,8 +9,6 @@ categories:
   - azure
 tags:
   - wordpress
-  - monitoring
-  - testing
 toc: true
 related: true
 ---
@@ -75,10 +73,12 @@ The ***web_test*** module was included in the ***main*** deployment template. Th
 
 {% highlight yaml %}
 {% raw %}
-- name: Manual Workflow Approval
+* name: Manual Workflow Approval
   uses: trstringer/manual-approval@v1.6.0
   with:
-    # All approvers must be contributors in the repository
+
+# All approvers must be contributors in the repository
+
     approvers: approver-1,approver-2,...,approver-N  # use commas with no space inbetween
     minimum-approvals: x
     secret: ${{ github.TOKEN }}
@@ -95,14 +95,14 @@ The ***web_test*** module was included in the ***main*** deployment template. Th
 
 {% highlight yaml %}
 {% raw %}
-- name: Azure Login
+* name: Azure Login
   uses: Azure/login@v1
   with:
     client-id: ${{ secrets.AZURE_CLIENT_ID }}
     tenant-id: ${{ secrets.AZURE_TENANT_ID }}
     subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
-- name: Delete the resource group and all of its resources
+* name: Delete the resource group and all of its resources
   uses: Azure/cli@v1
   with:
     inlineScript: az group delete -n $RG_NAME -y

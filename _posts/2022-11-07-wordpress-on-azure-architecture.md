@@ -9,7 +9,6 @@ categories:
   - azure
 tags:
   - wordpress
-  - architecture
 toc: true
 related: true
 ---
