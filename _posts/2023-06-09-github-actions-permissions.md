@@ -1,7 +1,7 @@
 ---
-title: "GitHub Actions - Permissions"
+title: "GitHub Actions: Permissions"
 excerpt: "In this blog post, we will take a detailed look at how someone can have granular control over the actions that their workflows take."
-tagline: "Granularity of permissions for your workflows"
+tagline: "Fine-tune the access that workflow jobs have within your repository"
 header:
   overlay_color: "#24292f"
   teaser: assets/images/github-actions/github-actions-1.webp
