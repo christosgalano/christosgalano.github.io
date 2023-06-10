@@ -74,7 +74,7 @@ permissions: {}
 
 **NOTE**: If you specify the access for any of these scopes, all of those that are not specified are set to none.
 
-## Examples
+## Example
 
 Let's take a look at an example:
 
