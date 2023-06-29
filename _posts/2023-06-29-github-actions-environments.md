@@ -1,6 +1,6 @@
 ---
 title: "GitHub Actions: Environments"
-excerpt: "In today's post we go over GitHub Actions environments."
+excerpt: "In today's post we go over GitHub Environments."
 tagline: "A guide to streamlining your development workflow"
 header:
   overlay_color: "#24292f"
