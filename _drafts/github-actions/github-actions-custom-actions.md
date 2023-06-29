@@ -4,7 +4,7 @@ excerpt: "In today's post we look at how someone can create custom actions in Gi
 tagline: "A guide to creating your own actions"
 header:
   overlay_color: "#24292f"
-  teaser: assets/images/github-actions/github-actions-1.webp
+  teaser: assets/images/github/actions/github-actions-1.webp
 categories:
   - github
 tags:
@@ -71,7 +71,7 @@ runs:
     steps:
       - run: echo "Hello ${{ inputs.who-to-greet }}!"
         shell: bash
-    
+
       - id: time 
         run: echo "TIME=$(date)" >> $GITHUB_OUTPUT
         shell: bash
@@ -93,27 +93,34 @@ Let's take a look at some examples of how to reference an action in your workflo
 {% highlight yaml %}
 {% raw %}
 steps:
-  # Published actions
-    
-  ## Referencing major release tag
-  - uses: actions/javascript-action@v1
 
-  ## Referencing full release tag (MAJOR.MINOR.PATCH)
-  - uses: christosgalano/delete-workflow-runs@v1.0.0
+# Published actions
 
-  ## Referencing a branch
-  - uses: christosgalano/delete-workflow-runs@main
-    
-  ## Referencing a commit's SHA
-  - uses: actions/javascript-action@a824008085750b8e136effc585c3cd6082bd575f
+## Referencing major release tag
 
-  # Unpublished actions
-    
-  ## Referencing your own action from the same repository
-  - uses: ./.github/actions/my-action
-    
-  ## Referencing your own action from a different repository
-  - uses: owner/repo-name/.github/actions/my-action@main
+- uses: actions/javascript-action@v1
+
+## Referencing full release tag (MAJOR.MINOR.PATCH)
+
+- uses: christosgalano/delete-workflow-runs@v1.0.0
+
+## Referencing a branch
+
+- uses: christosgalano/delete-workflow-runs@main
+
+## Referencing a commit's SHA
+
+- uses: actions/javascript-action@a824008085750b8e136effc585c3cd6082bd575f
+
+# Unpublished actions
+
+## Referencing your own action from the same repository
+
+- uses: ./.github/actions/my-action
+
+## Referencing your own action from a different repository
+
+- uses: owner/repo-name/.github/actions/my-action@main
 {% endraw %}
 {% endhighlight %}
 
@@ -137,7 +144,7 @@ inputs:
     required: true
   token:
     description: "Specify the token used to get and delete the workflow runs"
-    default: ${{ github.token }}}
+    default: ${{ github.token }}
     required: true
   workflow:
     description: "Specify the workflow name to delete the runs for"
@@ -212,7 +219,7 @@ jobs:
 
 And here is a possible output of the above workflow:
 
-![delete-workflow-runs](/assets//images/actions/delete-workflow-runs.png)
+![delete-workflow-runs](/assets/images/github/actions/delete-workflow-runs.webp)
 
 ## Summary
 

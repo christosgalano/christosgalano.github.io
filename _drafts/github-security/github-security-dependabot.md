@@ -4,7 +4,7 @@ excerpt: "In today's post we go over GitHub Dependabot."
 tagline: "Keep your dependencies secure and up-to-date"
 header:
   overlay_color: "#24292f"
-  teaser: assets/images/github-security/github-bug-bounty.webp
+  teaser: assets/images/github/security/github-bug-bounty.webp
 categories:
   - github
 tags:
@@ -53,7 +53,8 @@ The following example configures Dependabot to scan for updates to GitHub Action
 {% raw %}
 version: 2
 updates:
-  - package-ecosystem: "github-actions"
+
+- package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "daily" # only on weekdays
@@ -68,7 +69,7 @@ updates:
 
 And here is an example pull request that dependabot created:
 
-![dependabot-pr](/assets/images/github-security/dependabot-pr.webp)
+![dependabot-pr](/assets/images/github/security/dependabot-pr.webp)
 
 ## Summary
 

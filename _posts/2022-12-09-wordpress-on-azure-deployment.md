@@ -1,10 +1,10 @@
 ---
 title: "WordPress on Azure: Part 3 - Deployment"
-excerpt: "In today’s blog post, we look into the deployment of our Azure infrastructure and the configuration of the application."
+excerpt: "In today's blog post, we look into the deployment of our Azure infrastructure and the configuration of the application."
 tagline: "Deploy the infrastructure with GitHub Actions"
 header:
   overlay_color: "#24292f"
-  teaser: assets/images/wordpress-on-azure/deployment.jpg
+  teaser: assets/images/azure/wordpress-on-azure/deployment.jpg
 categories:
   - github
 tags:
@@ -16,7 +16,7 @@ related: true
 
 ## General
 
-Hello everyone! In today’s blog post, we look into the deployment of our [Azure infrastructure]({% post_url 2022-11-07-wordpress-on-azure-architecture %}) and some post-configuration steps.
+Hello everyone! In today's blog post, we look into the deployment of our [Azure infrastructure]({% post_url 2022-11-07-wordpress-on-azure-architecture %}) and some post-configuration steps.
 
 We use GitHub Actions to deploy our infrastructure.
 
@@ -91,7 +91,7 @@ cd /home/site/wwwroot && mkdir bin && cd bin
 curl https://cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem -o DigiCertGlobalRootCA.crt.pem
 {% endhighlight %}
 
-![kudu-environment](/assets/images/wordpress-on-azure/kudu-environment.png)
+![kudu-environment](/assets/images/azure/wordpress-on-azure/kudu-environment.png)
 
 ### Import WordPress image to Azure Container Registry
 
@@ -99,7 +99,7 @@ curl https://cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem -o DigiCertGlobal
 
 * Login to the jumpbox through Bastion using the credentials stored in the Key Vault
 
-![bastion-login](/assets/images/wordpress-on-azure/bastion-login.png)
+![bastion-login](/assets/images/azure/wordpress-on-azure/bastion-login.png)
 
 * Run the following:
 

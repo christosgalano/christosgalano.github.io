@@ -1,14 +1,14 @@
 ---
-title: "GitHub Branches: Deployment Models"
+title: "Branch Deployment Models"
 excerpt: "In today's post we look at ways to deploy your code."
 tagline: "Deploy with confidence"
 header:
   overlay_color: "#24292f"
-  teaser: assets/images/github-security/github-bug-bounty.webp
+  teaser: assets/images/github/branches/branch-deploy-model.webp
 categories:
   - github
 tags:
-  - github-security
+  - github-branches
 toc: true
 related: true
 ---
@@ -28,7 +28,7 @@ The classic merge deploy model consists of the following steps:
 5. Merge the pull request into the main branch
 6. Deploy the main branch
 
-![merge-deploy-model](/assets/images/branches/merge-deploy-model.jpeg)
+![merge-deploy-model](/assets/images/github/branches/merge-deploy-model.webp)
 
 ## Branch deploy model
 
@@ -42,7 +42,7 @@ The branch deploy model consists of the following steps:
 6. Check whether the deployed changes are acceptable
 7. Merge the pull request into the main branch
 
-![branch-deploy-model](/assets/images/branches/branch-deploy-model.jpeg)
+![branch-deploy-model](/assets/images/github/branches/branch-deploy-model.webp)
 
 ## Comparison
 
@@ -67,3 +67,4 @@ The branch deploy model is a more reliable and secure deployment model than the 
 ## References
 
 - [**Enabling branch deployments through IssueOps with GitHub Actions**](https://github.blog/2023-02-02-enabling-branch-deployments-through-issueops-with-github-actions/)
+- [**terraform-template-repo**](https://github.com/christosgalano/terraform-template-repo)

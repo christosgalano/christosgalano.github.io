@@ -4,7 +4,7 @@ excerpt: "In today's post we see how can someone manage Code Ownership in GitHub
 tagline: "Granular control over the code in your repository"
 header:
   overlay_color: "#24292f"
-  teaser: assets/images/codeowners/codeowners.webp
+  teaser: assets/images/github/codeowners/codeowners.webp
 categories:
   - github
 toc: true

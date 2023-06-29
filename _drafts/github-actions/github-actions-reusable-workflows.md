@@ -4,7 +4,7 @@ excerpt: "In this blog post, we will take a detailed look at how someone can uti
 tagline: "Maximizing efficiency with reusable workflows"
 header:
   overlay_color: "#24292f"
-  teaser: assets/images/github-actions/github-actions-1.webp
+  teaser: assets/images/github/actions/github-actions-1.webp
 categories:
   - github
 tags:
@@ -93,7 +93,7 @@ jobs:
 
 Now let's see the output of the caller workflow:
 
-![caller](/assets/images/github-actions/caller.webp)
+![caller](/assets/images/github/actions/caller.webp)
 
 ## Benefits of Reusable Workflows
 

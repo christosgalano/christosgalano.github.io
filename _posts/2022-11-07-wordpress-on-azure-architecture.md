@@ -1,10 +1,10 @@
 ---
 title: "WordPress on Azure: Part 1 - Architecture"
-excerpt: "In today’s blog post, we look into the Azure architecture of our WordPress deployment."
+excerpt: "In today's blog post, we look into the Azure architecture of our WordPress deployment."
 tagline: "Azure architecture of the WordPress deployment"
 header:
   overlay_color: "#24292f"
-  teaser: assets/images/wordpress-on-azure/infrastructure.jpg
+  teaser: assets/images/azure/wordpress-on-azure/infrastructure.jpg
 categories:
   - azure
 tags:
@@ -13,11 +13,11 @@ toc: true
 related: true
 ---
 
-![infrastructure](/assets/images/wordpress-on-azure/infrastructure.jpg)
+![infrastructure](/assets/images/azure/wordpress-on-azure/infrastructure.jpg)
 
 ## General
 
-Hello everyone! In today’s blog post, we look into the Azure architecture of our WordPress deployment.
+Hello everyone! In today's blog post, we look into the Azure architecture of our WordPress deployment.
 
 As you can see in the diagram above, the WordPress infrastructure consists of the following key components:
 

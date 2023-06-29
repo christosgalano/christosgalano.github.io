@@ -4,7 +4,7 @@ excerpt: "In today's post we go over GitHub Secret Scanning."
 tagline: "Protect your secrets"
 header:
   overlay_color: "#24292f"
-  teaser: assets/images/github-security/github-bug-bounty.webp
+  teaser: assets/images/github/security/github-bug-bounty.webp
 categories:
   - github
 tags:
@@ -45,7 +45,7 @@ Let's look at an example of how Secret Scanning works. Suppose you have a reposi
 
 As we mentioned Secret Scanning will scan your repository and identify any potential secrets, creating an alert in your repository. So a possible alert will look like this:
 
-![secret-scanning](/assets/images/github-security/secret-scanning.webp)
+![secret-scanning](/assets/images/github/security/secret-scanning.webp)
 
 You can now investigate the alert and take appropriate action to remediate the issue.
 

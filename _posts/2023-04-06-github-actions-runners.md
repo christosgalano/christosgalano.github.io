@@ -4,7 +4,7 @@ excerpt: "In today's post we go over GitHub Actions runners."
 tagline: "Understand where your workflows run"
 header:
   overlay_color: "#24292f"
-  teaser: assets/images/github-actions/github-actions-1.webp
+  teaser: assets/images/github/actions/github-actions-1.webp
 categories:
   - github
 tags:

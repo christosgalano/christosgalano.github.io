@@ -4,7 +4,7 @@ excerpt: "In today's post we go over GitHub Actions secrets."
 tagline: "Keep your sensitive information hidden"
 header:
   overlay_color: "#24292f"
-  teaser: assets/images/github-actions/github-actions-1.webp
+  teaser: assets/images/github/actions/github-actions-1.webp
 categories:
   - github
 tags:
@@ -64,7 +64,7 @@ Here is a workflow that shows how to use GitHub Secrets. The workflow contains t
 
 The output logs of the workflow are shown below:
 
-![secrets](/assets/images/github-actions/secrets.webp)
+![secrets](/assets/images/github/actions/secrets.webp)
 
 We can see that although the conditional evaluates to true, nowhere in the output logs is our password exposed. This is because the value of the `ADMIN_PASSWORD` secret is encrypted and stored securely on GitHub's servers.
 

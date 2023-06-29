@@ -4,7 +4,7 @@ excerpt: "In this blog post, we will take a detailed look at how someone can hav
 tagline: "Fine-tune the access that workflow jobs have within your repository"
 header:
   overlay_color: "#24292f"
-  teaser: assets/images/github-actions/github-actions-1.webp
+  teaser: assets/images/github/actions/github-actions-1.webp
 categories:
   - github
 tags:
@@ -15,7 +15,7 @@ related: true
 
 ## Overview
 
-One of the key features of GitHub Actions is the ability to authenticate and authorize actions using GitHub Tokens, such as the GITHUB_TOKEN. Additionally, GitHub Actions also allows repository owners to fine-tune the access that workflow jobs have using the `permissions` keyword. In this blog post, we will take a detailed look at how someone can have granular control over the actions that their workflows take.
+One of the key features of GitHub Actions is the ability to authenticate and authorize actions using GitHub Tokens, such as the GITHUB_TOKEN. Additionally, GitHub Actions also allows repository owners to fine-tune the access that workflow jobs have using the `permissions` keyword. In this blog post, we will take a detailed look at how someone can have granular control over the actions that their workflows take.
 
 ## GITHUB_TOKEN
 
@@ -112,7 +112,7 @@ jobs:
 
 In the above example, we set read-all permission for all the jobs in a workflow. We also override that value in `job-3`, where we disable all permissions and so we expect that this job will fail since it can not complete the action of checking out the repository.
 
-![permissions](/assets/images/github-actions/permissions.webp)
+![permissions](/assets/images/github/actions/permissions.webp)
 
 ## Summary
 

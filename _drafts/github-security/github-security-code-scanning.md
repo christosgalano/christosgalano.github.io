@@ -4,7 +4,7 @@ excerpt: "In today's post we go over code scanning capabilities in GitHub."
 tagline: "Secure your codebase"
 header:
   overlay_color: "#24292f"
-  teaser: assets/images/github-security/github-bug-bounty.webp
+  teaser: assets/images/github/security/github-bug-bounty.webp
 categories:
   - github
 tags:
@@ -43,7 +43,8 @@ You can configure Code Scanning to scan your repositories automatically or manua
 
 The example below uses Code Scanning to scan a repository for security vulnerabilities. It uses the CodeQL Action to analyze the codebase and provide feedback on potential vulnerabilities.
 
-```yaml
+{% highlight yaml %}
+{% raw %}
 name: codeql
 
 on:
@@ -70,17 +71,18 @@ jobs:
       uses: github/codeql-action/analyze@v2
       with:
         category: "/language:python"
-```
+{% endraw %}
+{% endhighlight %}
 
 Here is an example output when everything is working correctly:
 
-![code-scanning-1](/assets/images/github-security/code-scanning-1.webp)
+![code-scanning-1](/assets/images/github/security/code-scanning-1.webp)
 
 ### Example 2
 
 Now let's say we were developing a different application in Javascript. Here's how Code Scanning would report a vulnerability in our code:
 
-![code-scanning-2](/assets/images/github-security/code-scanning-2.webp)
+![code-scanning-2](/assets/images/github/security/code-scanning-2.webp)
 
 ## Summary
 

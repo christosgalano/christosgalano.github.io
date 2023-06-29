@@ -1,10 +1,10 @@
 ---
 title: "WordPress on Azure: Part 2 - IaC"
-excerpt: "In today’s blog post, we look into the code of our infrastructure."
+excerpt: "In today's blog post, we look into the code of our infrastructure."
 tagline: "Define the infrastructure as code"
 header:
   overlay_color: "#24292f"
-  teaser: assets/images/wordpress-on-azure/bicep.png
+  teaser: assets/images/azure/wordpress-on-azure/bicep.png
 categories:
   - azure
 tags:
@@ -16,7 +16,7 @@ related: true
 
 ## General
 
-Hello everyone! In today’s blog post we examine the code that will be used to deploy our infrastructure.
+Hello everyone! In today's blog post we examine the code that will be used to deploy our infrastructure.
 
 Bicep is being used for the IaC; all the templates/modules are available in the **bicep/** folder.
 

@@ -4,7 +4,7 @@ excerpt: "The purpose of this series will be about utilizing Azure, Bicep, and G
 tagline: "Host, monitor, and test a WordPress site by utilizing Azure, Bicep, and GitHub"
 header:
   overlay_color: "#24292f"
-  teaser: assets/images/wordpress-on-azure/wordpress-on-azure.png
+  teaser: assets/images/azure/wordpress-on-azure/wordpress-on-azure.png
 categories:
   - azure
 tags:

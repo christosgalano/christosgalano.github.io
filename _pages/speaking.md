@@ -18,7 +18,7 @@ global_azure_athens_may_2023:
   - image_path: assets/images/speaking/global-azure-athens-2023.webp
     alt: "Global Azure Athens 2023"
     title: "Global Azure Athens, May 2023"
-    excerpt: 'In May 2023, I had the pleasure of speaking at the “Global Azure Athens” event. As a DevOps engineer, I addressed why and how we should embrace and integrate the development flow into cloud operations. It was an enriching experience connecting with professionals who share a passion for cloud computing, devops, and cutting-edge technologies in general. Here you can find the [**presentation**](/assets/files/global_azure_presentation.pdf) and the corresponding [**repository**](https://github.com/christosgalano/devops-with-github-example).'
+    excerpt: 'In May 2023, I had the pleasure of speaking at the "Global Azure Athens" event. As a DevOps engineer, I addressed why and how we should embrace and integrate the development flow into cloud operations. It was an enriching experience connecting with professionals who share a passion for cloud computing, devops, and cutting-edge technologies in general. Here you can find the [**presentation**](/assets/files/global_azure_presentation.pdf) and the corresponding [**repository**](https://github.com/christosgalano/devops-with-github-example).'
 cloud_technology_tuesdays_may_2023:
   - image_path: assets/images/speaking/cloud-technology-tuesdays-2023.webp
     alt: "Cloud Technology Tuesdays 2023"

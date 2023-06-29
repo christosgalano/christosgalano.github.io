@@ -4,7 +4,7 @@ excerpt: "In today's post we go over GitHub Actions concurrency."
 tagline: "Managing concurrency in GitHub Actions"
 header:
   overlay_color: "#24292f"
-  teaser: assets/images/github-actions/github-actions-1.webp
+  teaser: assets/images/github/actions/github-actions-1.webp
 categories:
   - github
 tags:
@@ -75,17 +75,17 @@ Here, the workflow is triggered manually. It has 3 jobs, which simply print a me
 
 Let's first analyze the `concurrency` keyword on a job scope. We can see that both the `hello-world-1` and the `hello-world-2` belong to the same concurrency group, which is called `hello-world`. So, when we trigger the workflow, we expect two jobs to run simultaneously, one of which will be `hello-world-3` since it does not belong to any concurrency group and does need to wait for another job to finish. A possible sequence of execution is the following one:
 
-![concurrency-job-scope](/assets/images/github-actions/concurrency-job-scope.webp)
+![concurrency-job-scope](/assets/images/github/actions/concurrency-job-scope.webp)
 
 Now it's time to understand the `concurrency` keyword on a workflow scope. The preceding workflow is a member of the concurrency group `hello-world-${{ github.ref }}`. The option `cancel-in-progress` gives someone the ability to cancel all on-going jobs and workflows that belong in the specified group and only run the currently triggered one.
 
 This is an example output with `cancel-in-progress: false`:
 
-![concurrency-workflow-scope-no-cancel](/assets/images/github-actions/concurrency-workflow-scope-no-cancel.webp)
+![concurrency-workflow-scope-no-cancel](/assets/images/github/actions/concurrency-workflow-scope-no-cancel.webp)
 
 And this is an example output with `cancel-in-progress: true`:
 
-![concurrency-workflow-scope-with-cancel](/assets/images/github-actions/concurrency-workflow-scope-with-cancel.webp)
+![concurrency-workflow-scope-with-cancel](/assets/images/github/actions/concurrency-workflow-scope-with-cancel.webp)
 
 ## Summary
 

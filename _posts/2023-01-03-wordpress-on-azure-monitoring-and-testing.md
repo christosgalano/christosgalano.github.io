@@ -1,10 +1,10 @@
 ---
 title: "WordPress on Azure: Part 4 - Monitoring & Testing"
-excerpt: "In today’s blog post, we set up monitoring and testing for our WordPress site."
+excerpt: "In today's blog post, we set up monitoring and testing for our WordPress site."
 tagline: "Set up monitoring and testing"
 header:
   overlay_color: "#24292f"
-  teaser: assets/images/wordpress-on-azure/monitoring-and-testing.jpg
+  teaser: assets/images/azure/wordpress-on-azure/monitoring-and-testing.jpg
 categories:
   - azure
 tags:
@@ -15,7 +15,7 @@ related: true
 
 ## General
 
-Hello everyone! In today’s blog post, we set up monitoring and testing for our WordPress site.
+Hello everyone! In today's blog post, we set up monitoring and testing for our WordPress site.
 
 ## Set up monitoring
 
@@ -23,17 +23,17 @@ Hello everyone! In today’s blog post, we set up monitoring and testing for our
 
 * Go to the Application Insights resource and copy its Instrumentation Key
 
-![get-instrumentation-key](/assets/images/wordpress-on-azure/get-instrumentation-key.png)
+![get-instrumentation-key](/assets/images/azure/wordpress-on-azure/get-instrumentation-key.png)
 
 * Login to WordPress at <https://{{app-service-name}}.azurewebsites.net/login>
 
 * Go to Plugins, install and activate the **Application Insights** plugin
 
-![install-plugin](/assets/images/wordpress-on-azure/install-plugin.png)
+![install-plugin](/assets/images/azure/wordpress-on-azure/install-plugin.png)
 
 * Go to **Settings -> Application Insights** and set the Instrumentation Key
 
-![set-instrumentation-key](/assets/images/wordpress-on-azure/set-instrumentation-key.png)
+![set-instrumentation-key](/assets/images/azure/wordpress-on-azure/set-instrumentation-key.png)
 
 * Wait 5 minutes for the integration to take place
 
@@ -47,7 +47,7 @@ The ***web_test*** module was included in the ***main*** deployment template. Th
 
 * Click on the test and enable it
 
-![enable-availability-test](/assets/images/wordpress-on-azure/enable-availability-test.png)
+![enable-availability-test](/assets/images/azure/wordpress-on-azure/enable-availability-test.png)
 
 ### Perform a Load Test
 
@@ -63,7 +63,7 @@ The ***web_test*** module was included in the ***main*** deployment template. Th
 
 * Create and run the load test
 
-![load-test-results](/assets/images/wordpress-on-azure/load-test-results.png)
+![load-test-results](/assets/images/azure/wordpress-on-azure/load-test-results.png)
 
 ## Teardown the infrastructure using the *destroy.yaml* workflow
 
@@ -73,6 +73,7 @@ The ***web_test*** module was included in the ***main*** deployment template. Th
 
 {% highlight yaml %}
 {% raw %}
+
 * name: Manual Workflow Approval
   uses: trstringer/manual-approval@v1.6.0
   with:
@@ -89,12 +90,13 @@ The ***web_test*** module was included in the ***main*** deployment template. Th
 
 * If at least one approver responds negatively, the workflow fails
 
-![approve-teardown](/assets/images/wordpress-on-azure/approve-teardown.png)
+![approve-teardown](/assets/images/azure/wordpress-on-azure/approve-teardown.png)
 
 ### Destroy the infrastructure
 
 {% highlight yaml %}
 {% raw %}
+
 * name: Azure Login
   uses: Azure/login@v1
   with:
