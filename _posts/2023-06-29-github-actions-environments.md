@@ -63,7 +63,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Deploy to development
         run: |
-          echo "Deploying to ${{ vars.ENV}} ..."
+          echo "Deploying to ${{ vars.ENV }} ..."
   prod:
     runs-on: ubuntu-latest
     environment: production
@@ -72,7 +72,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Deploy to production
         run: |
-          echo "Deploying to ${{ vars.ENV}} ..."
+          echo "Deploying to ${{ vars.ENV }} ..."
 {% endraw %}
 {% endhighlight %}
 

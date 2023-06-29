@@ -1,7 +1,7 @@
 ---
-title: "GitHub Actions - Actions"
-excerpt: "In today's post we see how can someone create their own GitHub Action."
-tagline: "Create your own actions"
+title: "GitHub Actions: Custom Actions"
+excerpt: "In today's post we look at how someone can create custom actions in GitHub."
+tagline: "A guide to creating your own actions"
 header:
   overlay_color: "#24292f"
   teaser: assets/images/github-actions/github-actions-1.webp
@@ -13,158 +13,206 @@ toc: true
 related: true
 ---
 
-## General
+## Overview
 
-GitHub Actions is a powerful automation tool that allows developers to create custom workflows for their projects. These workflows, or "actions", can be used to automate a wide variety of tasks, such as building and testing code, deploying code to production, and more. In this blog post, we will take a detailed look at what actions are and how to create your own using an example of a custom action that i've written and use regularly. The name of the action is `create-update-label` and its purpose is to update an issue label (or create one if one does not exist) in every repository of a user.
+GitHub Actions provides a flexible and powerful platform for automating tasks in your repository. With custom actions, you can write code that interacts with your repository, leveraging GitHub's APIs and third-party integrations. Whether it's publishing npm modules, sending alerts, or deploying code, custom actions extend the functionality of GitHub Actions to meet your specific needs.
 
-## What are GitHub Actions?
+Custom actions can be used in your own workflows or shared with the GitHub community (requires public repository). Actions can run directly on a machine or within a Docker container, and you can define inputs, outputs, and environment variables to customize their behavior.
 
-In GitHub, actions are individual, reusable pieces of code that can be run in a workflow. These actions can be written in a variety of programming languages, such as JavaScript, Python, and more. Each action has a specific purpose, such as building code, running tests, or deploying code to a production environment.
+Sharing your custom actions fosters collaboration within the GitHub community, while leveraging actions developed by others saves time and effort. With custom actions, you can tailor automation workflows, promote knowledge sharing, and benefit from the expertise of the GitHub community.
 
-Actions can be built and shared by the community, and also can be built by yourself. To create your own action, you will first need to create a new repository in GitHub. This repository will contain the code for your action, as well as any necessary configuration files. Once your repository is created, you can start writing your action.
+## Types of custom actions
 
-You can build Docker containers, JavaScript, and composite actions. Actions require a metadata file to define the inputs, outputs, and main entrypoint for your action. The metadata filename must be either `action.yml` or `action.yaml`.
+There are three types of custom actions:
 
-## Components of an Action
+- Docker container
+- JavaScript
+- Composite
 
-There are two main components to an action: the action.yml file and the code file. The action.yml file is a configuration file that contains information about the action, such as its name, inputs, and outputs. The code file is where the actual code for the action is located.
+### Docker container actions
 
-Here's the action.yaml for `create-update-label`:
+Docker container actions package the environment along with the GitHub Actions code, ensuring consistency and reliability. You can use specific versions of the operating system, dependencies, tools, and code within a Docker container. This is particularly useful when actions require specific environment configurations. Keep in mind that Docker container actions can only run on runners with a Linux operating system, and self-hosted runners must have Docker installed.
+
+### JavaScript actions
+
+JavaScript actions run directly on the runner machine and separate the action code from the environment used to run it. They execute faster than Docker container actions and are compatible with all GitHub-hosted runners (Ubuntu, Windows, and macOS). When creating JavaScript actions, it's best to rely on pure JavaScript code without depending on other binaries. If you're developing a Node.js project, consider using the GitHub Actions Toolkit packages to speed up development.
+
+### Composite actions
+
+Composite actions allow you to combine multiple workflow steps within a single action. They are useful for bundling commands into a single step and simplifying complex workflows. By creating composite actions, you can improve the readability and maintainability of your workflows.
+
+## Metadata syntax
+
+All custom actions must contain a metadata file named `action.yml` in the root directory of the repository. This file contains information about the action, including its name, description, inputs, and outputs. The metadata file is written in YAML syntax. The basic components of the metadata file are as follows:
+
+- `name`: The name of the action. This is displayed in the Actions tab when the action is used in a workflow.
+- `description`: A short description of the action. This is displayed in the Actions tab when the action is used in a workflow.
+- `inputs`: A list of input parameters that the action accepts. Each input parameter has a name, description, and default value. The default value is used if the input parameter is not specified in the workflow file.
+- `outputs`: A list of output parameters that the action returns. Each output parameter has a name and description.
+- `runs`: The command or executable that runs when the action is executed. This can be either a shell command or an executable. If the action is a Docker container action, this is the entrypoint for the container.
+
+The following example shows the metadata file for a custom, composite action named `hello-world-action`:
 
 {% highlight yaml %}
 {% raw %}
-name: "Create/Update Label"
-author: "Christos Galanopoulos"
-description: "Create or update a label in all of the user's repositories"
+name: 'Hello World Action'
+description: 'Greet someone and record the time'
 inputs:
-  name:
-    description: "Specify label name"
+  who-to-greet:  # id of input
+    description: 'Who to greet'
     required: true
-  color:
-    description: "Specify label color"
+    default: 'World'
+outputs:
+  time: # id of output
+    description: 'The time of the greeting'
+    value: ${{ steps.time.outputs.TIME }}
+runs:
+    using: 'composite'
+    steps:
+      - run: echo "Hello ${{ inputs.who-to-greet }}!"
+        shell: bash
+    
+      - id: time 
+        run: echo "TIME=$(date)" >> $GITHUB_OUTPUT
+        shell: bash
+{% endraw %}
+{% endhighlight %}
+
+We can see that the purpose of the above action is to greet someone and record the time. The action accepts a single input parameter named `who-to-greet`, which has a default value of `World`. The action returns a single output parameter named `time`, which contains the time of the greeting.
+
+The action is composite and basically what it does is run two steps: the first step prints the greeting, and the second step records the time.
+
+## Choosing a location for your action
+
+If you intend to share your action with others, it's recommended to keep it in its own public repository. This allows you to version, track, and release the action independently. Storing the action separately facilitates its discovery by the GitHub community, simplifies issue fixing and extension development, and decouples the action's versioning from other application code. However, if you're building an action for personal use, you can store it in any location within your repository. To combine action, workflow, and application code in a single repository, it's advisable to store actions in the `.github` directory, such as `.github/actions/action-a` and `.github/actions/action-b`.
+
+## Referencing an action
+
+Let's take a look at some examples of how to reference an action in your workflow file:
+
+{% highlight yaml %}
+{% raw %}
+steps:
+  # Published actions
+    
+  ## Referencing major release tag
+  - uses: actions/javascript-action@v1
+
+  ## Referencing full release tag (MAJOR.MINOR.PATCH)
+  - uses: christosgalano/delete-workflow-runs@v1.0.0
+
+  ## Referencing a branch
+  - uses: christosgalano/delete-workflow-runs@main
+    
+  ## Referencing a commit's SHA
+  - uses: actions/javascript-action@a824008085750b8e136effc585c3cd6082bd575f
+
+  # Unpublished actions
+    
+  ## Referencing your own action from the same repository
+  - uses: ./.github/actions/my-action
+    
+  ## Referencing your own action from a different repository
+  - uses: owner/repo-name/.github/actions/my-action@main
+{% endraw %}
+{% endhighlight %}
+
+## Example
+
+Now let's go over a GitHub Action that i wrote and published to the GitHub Marketplace. The action is called [delete-workflow-runs](https://github.com/christosgalano/delete-workflow-runs) and its purpose is to delete the workflow runs for a given repository (whether it is a specific workflow or all the runs of the repository).
+
+The metadata file for the action is as follows:
+
+{% highlight yaml %}
+{% raw %}
+name: "Delete Workflows Runs"
+author: "Christos Galanopoulos"
+description: "Delete the workflow runs for a given repository"
+inputs:
+  owner:
+    description: "Specify the repository owner"
     required: true
-  description:
-    description: "Specify label description"
+  repo:
+    description: "Specify the repository name"
     required: true
   token:
-    description: "Specify GitHub Personal Access Token"
+    description: "Specify the token used to get and delete the workflow runs"
+    default: ${{ github.token }}}
     required: true
+  workflow:
+    description: "Specify the workflow name to delete the runs for"
+    default: "all"
+    required: false
 branding:
-  icon: edit-2
+  icon: delete
   color: gray-dark
 runs:
   using: "composite"
   steps:
     - shell: bash
+      env:
+        OWNER: ${{ inputs.owner }}
+        REPO: ${{ inputs.repo }}
+        TOKEN: ${{ inputs.token }}
+        WORKFLOW: ${{ inputs.workflow }}
       run: |
-        ${{ github.action_path }}/create_update_label.sh \
-          -n ${{ inputs.name }} \
-          -c ${{ inputs.color }} \
-          -d ${{ inputs.description }} \
-          -a ${{ inputs.token }}
+        ${{ github.action_path }}/delete_workflow_runs.sh \
+          -o ${{ env.OWNER }} \
+          -r ${{ env.REPO }} \
+          -t ${{ env.TOKEN }} \
+          -w ${{ env.WORKFLOW }}
 {% endraw %}
 {% endhighlight %}
 
-In this example, the action is named "Create/Update Label" and it has four inputs:
+We can see that the action accepts four input parameters: `owner`, `repo`, `token`, and `workflow`. The `owner` and `repo` parameters are required, while the `token` and `workflow` parameters are optional. The `token` parameter has a default value of `${{ github.token }}`. The `workflow` parameter has a default value of `all`, which means that if the user does not specify a workflow name, all the workflow runs of the repository will be deleted.
 
-- `name`: which is the label's name
-- `color`: which is the color that is going to be used for the label
-- `description`: which is the label's description
-- `token`: which is a GitHub Personal Access Token with the necessary permissions (specifically you need **Read access to code and metadata** and **Read and Write access to issues** on a scope that includes all repositories to which you want to add the label)
+The action is composite and basically what it does is run a single step, which is a [**shell script**](https://github.com/christosgalano/delete-workflow-runs/blob/main/delete_workflow_runs.sh) that deletes the workflow runs for the given repository.
 
-The action is `composite` which allows you to package multiple actions together into a single action, making it easy to reuse and share those actions across multiple workflows.
-
-The code for this action is located in the `create_update_label.sh` file, which looks something like this:
-
-{% highlight bash %}
-{% raw %}
-
-# Create a label
-
-function create_label() {
-    curl -s \
-    -X POST \
-    -H "Accept: application/vnd.github+json" \
-    -H "Authorization: Bearer $api_token" \
-    -H "X-GitHub-Api-Version: 2022-11-28" \
-    <https://api.github.com/repos/$repo/labels> \
-    -d "{\"name\": \"$name\", \"description\": \"$description\" , \"color\": \"$color\"}"
-}
-
-# Update a label, if it does not exist create it
-
-function update_label() {
-    status_code=$(curl -s \
-        -X PATCH \
-        -H "Accept: application/vnd.github+json" \
-        -H "Authorization: Bearer $api_token" \
-        -H "X-GitHub-Api-Version: 2022-11-28" \
-        <https://api.github.com/repos/$repo/labels/$name> \
-        -d "{\"name\": \"$name\", \"description\": \"$description\" , \"color\": \"$color\"}" \
-        --write-out '%{http_code}' \
-    --output /dev/null)
-    if [ "$status_code" -eq 404 ]; then
-        create_label
-        printf "Successfully created $name label in $repo\n"
-    else
-        printf "Successfully updated $name label in $repo\n"
-    fi
-}
-
-# Parse and validate parameters
-
-parse_params "$@"
-validate_params
-
-# Fetch all repositories and keep only their full names (user/repo)
-
-repos=$(curl -s \
-    -H "Accept: application/vnd.github+json" \
-    -H "Authorization: Bearer $api_token" \
-    -H "X-GitHub-Api-Version: 2022-11-28" \
-<https://api.github.com/user/repos> | jq -r '.[].full_name')
-
-# Update the specified label in every repository
-
-# If it does not exist then create it
-
-for repo in $repos
-do
-    update_label
-done
-{% endraw %}
-{% endhighlight %}
-
-The whole script can be found [**here**](https://github.com/christosgalano/Workflows-Actions-Library/blob/main/.github/actions/create-update-label/create_update_label.sh).
-
-## Using Actions in a Workflow
-
-Once you have created your action, you can use it in a workflow. As you have learned by now, a workflow is a series of actions that are run in a specific order. Here's an example of a workflow that uses the `create-update-label`:
+A possible workflow file that uses the above action is as follows:
 
 {% highlight yaml %}
 {% raw %}
-name: create-update-label
+name: delete-workflow-runs
+run-name: ${{ github.workflow }}
 on:
-  push:
-    branches:
-    - main
+  workflow_dispatch:
+    inputs:
+      repo_name:
+        description: "Specify the name of the repository"
+        required: true
+        type: string
+      workflow_name:
+        description: "Specify the name of the workflow"
+        required: false
+        type: string
 
 jobs:
-  create-update-label:
+  delete-specific-workflow-runs:
+    if: inputs.workflow_name != ''
     runs-on: ubuntu-latest
     steps:
-      - uses: christosgalano/Workflows-Actions-Library/.github/actions/create-update-label@main
+      - uses: christosgalano/delete-workflow-runs@v1.0.0
         with:
-          name: demo
-          color: 0075ca  # in hex, without the '#'
-          description: "A demo label"
-          token: ${{ secrets.GITHUB_PAT }}
+          owner: ${{ github.repository_owner }}
+          repo: ${{ inputs.repo_name }}
+          token: ${{ secrets.WORKFLOWS_MANAGER_PAT }}
+          workflow: ${{ inputs.workflow_name }}
+  
+  delete-all-workflow-runs:
+    if: inputs.workflow_name == ''
+    runs-on: ubuntu-latest
+    steps:
+      - uses: christosgalano/delete-workflow-runs@v1.0.0
+        with:
+          owner: ${{ github.repository_owner }}
+          repo: ${{ inputs.repo_name }}
+          token: ${{ secrets.WORKFLOWS_MANAGER_PAT }}
 {% endraw %}
 {% endhighlight %}
 
-In this example, the workflow is named "create-update-label" and it is triggered by a push to the main branch. The workflow contains a single job called "create-update-label" that runs on the latest version of Ubuntu. The job has only one step:
+And here is a possible output of the above workflow:
 
-- Use the `create-update-label` action
+![delete-workflow-runs](/assets//images/actions/delete-workflow-runs.png)
 
 ## Summary
 
@@ -172,4 +220,4 @@ To summarize, GitHub Actions allows users to create and reuse their own actions 
 
 ## References
 
-- [**About custom actions**](https://docs.github.com/en/actions/creating-actions/about-custom-actions)
+- [**Creating actions**](https://docs.github.com/en/actions/creating-actions)
