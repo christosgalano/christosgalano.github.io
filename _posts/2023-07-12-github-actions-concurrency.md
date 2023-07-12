@@ -77,7 +77,9 @@ Let's first analyze the `concurrency` keyword on a job scope. We can see that bo
 
 ![concurrency-job-scope](/assets/images/github/actions/concurrency-job-scope.webp)
 
+{% raw %}
 Now it's time to understand the `concurrency` keyword on a workflow scope. The preceding workflow is a member of the concurrency group `hello-world-${{ github.ref }}`. The option `cancel-in-progress` gives someone the ability to cancel all on-going jobs and workflows that belong in the specified group and only run the currently triggered one.
+{% endraw %}
 
 This is an example output with `cancel-in-progress: false`:
 
