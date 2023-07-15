@@ -4,11 +4,11 @@ title: "About"
 excerpt: "A little bit about the author."
 ---
 
-Hey there! I'm Christos, a dedicated DevOps engineer working at [Performance Technologies](https://www.performance.gr/). I have a deep passion for technology and a constant drive for improvement. I'm dedicated to exploring and mastering various tools and technologies that empower software development and cloud computing.
+Hey there! I'm Christos, a dedicated devops engineer working at [Performance Technologies](https://www.performance.gr/). I have a deep passion for technology and a constant drive for improvement. I'm dedicated to exploring and mastering various tools and technologies that empower software development and cloud computing.
 
 ## The purpose of this blog
 
-This blog serves as a platform for me to share my knowledge, experiences, and insights related to the technologies that fascinate me the most. I strongly believe in the power of sharing information, and my goal is to provide valuable content to fellow enthusiasts, developers, and aspiring DevOps engineers who want to stay current with the latest trends and gain practical knowledge about these tools.
+This blog serves as a platform for me to share my knowledge, experiences, and insights related to the technologies that fascinate me the most. I strongly believe in the power of sharing information, and my goal is to provide valuable content to fellow enthusiasts, developers, and aspiring devops engineers who want to stay current with the latest trends and gain practical knowledge about these tools.
 
 ## What to expect
 
@@ -18,7 +18,7 @@ I encourage you to explore the blog and make the most of the available content. 
 
 ## Get in touch
 
-I'm always excited to connect with like-minded individuals who share a passion for technology and are eager to explore the fascinating world of DevOps. If you have any questions, suggestions, or just want to say hello, don't hesitate to reach out. You can contact me through the provided email or connect with me on social media platforms.
+I'm always excited to connect with like-minded individuals who share a passion for technology and are eager to explore the fascinating world of devops. If you have any questions, suggestions, or just want to say hello, don't hesitate to reach out. You can contact me through the provided email or connect with me on social media platforms.
 
 Thank you for visiting my blog, and I hope you find the content insightful and inspiring. Let's embark on this knowledge-sharing journey together and unlock the full potential of these incredible technologies!
 
