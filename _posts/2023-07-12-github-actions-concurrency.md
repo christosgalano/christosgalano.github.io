@@ -73,7 +73,7 @@ jobs:
 
 Here, the workflow is triggered manually. It has 3 jobs, which simply print a message, sleep for five seconds, and then print another message.
 
-Let's first analyze the `concurrency` keyword on a job scope. We can see that both the `hello-world-1` and the `hello-world-2` belong to the same concurrency group, which is called `hello-world`. So, when we trigger the workflow, we expect two jobs to run simultaneously, one of which will be `hello-world-3` since it does not belong to any concurrency group and does need to wait for another job to finish. A possible sequence of execution is the following one:
+Let's first analyze the `concurrency` keyword on a job scope. We can see that both the `hello-world-1` and the `hello-world-2` belong to the same concurrency group, which is called `hello-world`. So, when we trigger the workflow, we expect two jobs to run simultaneously, one of which will be `hello-world-3` since it does not belong to any concurrency group and does not need to wait for another job to finish. A possible sequence of execution is the following one:
 
 ![concurrency-job-scope](/assets/images/github/actions/concurrency-job-scope.webp)
 
