@@ -59,6 +59,6 @@ That pretty much covers the details of our architecture. In the next part, we ar
 
 **Previous parts:**
 
-* [**Part 0: Introduction**]({% post_url 2022-11-06-wordpress-on-azure-introduction %})
+* [**Part 0: Introduction**]({% post_url 2022-10-20-wordpress-on-azure-introduction %})
 
 **Related repository:** [WordPress-on-Azure](https://github.com/christosgalano/WordPress-on-Azure)
