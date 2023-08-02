@@ -171,7 +171,9 @@ runs:
 {% endraw %}
 {% endhighlight %}
 
+{% raw %}
 We can see that the action accepts four input parameters: `owner`, `repo`, `token`, and `workflow`. The `owner` and `repo` parameters are required, while the `token` and `workflow` parameters are optional. The `token` parameter has a default value of `${{ github.token }}`. The `workflow` parameter has a default value of `all`, which means that if the user does not specify a workflow name, all the workflow runs of the repository will be deleted.
+{% endraw %}
 
 The action is composite and basically what it does is run a single step, which is a [**shell script**](https://github.com/christosgalano/delete-workflow-runs/blob/main/delete_workflow_runs.sh) that deletes the workflow runs for the given repository.
 
