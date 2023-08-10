@@ -46,8 +46,8 @@ You can reference a workflow from another repository by using the `uses` keyword
 
 For example, if you want to reference a workflow called `test.yaml` from:
 
-- the same repository, you would use the following syntax: `uses: ./.github/workflows/test.yaml`
-- a different repository, you would use the following syntax: `uses: some-repo/.github/workflows/test.yaml@main`
+- the same repository: `uses: ./.github/workflows/test.yaml`
+- a different repository: `uses: some-repo/.github/workflows/test.yaml@main`
 
 ### Example
 
