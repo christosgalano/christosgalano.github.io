@@ -1,14 +1,12 @@
 ---
 title: "Branch Deployment Models"
-excerpt: "In today's post we look at ways to deploy your code."
+excerpt: "In today's post we look at ways to deploy our code."
 tagline: "Deploy with confidence"
 header:
   overlay_color: "#24292f"
   teaser: assets/images/github/branches/branch-deploy-model.webp
 categories:
   - github
-tags:
-  - github-branches
 toc: true
 related: true
 ---
