@@ -44,7 +44,7 @@ jobs:
     runs-on: ubuntu-latest
     concurrency: hello-world # same group with hello-world-2
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - run: |
           echo "Hello world 1!"
           sleep 5
@@ -54,7 +54,7 @@ jobs:
     runs-on: ubuntu-latest
     concurrency: hello-world # same group with hello-world-1
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - run: |
           echo "Hello world 2!"
           sleep 5
@@ -63,7 +63,7 @@ jobs:
   hello-world-3:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - run: |
           echo "Hello world 3!"
           sleep 5

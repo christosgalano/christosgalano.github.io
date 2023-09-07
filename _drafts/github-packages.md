@@ -61,7 +61,7 @@ publish-docker-image:
     packages: write
   steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Log in to the Container registry
       uses: docker/login-action@v2
@@ -89,7 +89,7 @@ deploy-application:
     contents: read
   steps:
     - name: Checkout repository
-      uses: actions/checkout@v3  
+      uses: actions/checkout@v4  
 
     - name: Azure login
       uses: Azure/login@v1
