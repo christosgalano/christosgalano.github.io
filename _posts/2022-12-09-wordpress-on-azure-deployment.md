@@ -128,7 +128,7 @@ So we deployed our infrastructure and completed the essential post-configuration
 
 **Previous parts:**
 
-* [**Part 0: Introduction**]({% post_url 2022-10-20-wordpress-on-azure-introduction %})
+* [**Part 0: Introduction**]({% post_url 2022-10-15-wordpress-on-azure-introduction %})
 
 * [**Part 1: Architecture**]({% post_url 2022-11-07-wordpress-on-azure-architecture %})
 
