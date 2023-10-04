@@ -163,8 +163,11 @@ Useful tools for application code:
 
 - [OWASP ZAP](https://www.zaproxy.org/)
 - [OpenVAS](https://www.openvas.org/)
+- [Bandit](https://github.com/PyCQA/bandit)
 - [Nikto](https://cirt.net/Nikto2)
+- [DevSkim](https://github.com/microsoft/DevSkim)
 - [MSDO](https://github.com/microsoft/security-devops-action)
+- [Ethical Check](https://www.ethicalcheck.dev/)
 
 Useful tools for infrastructure code:
 
@@ -172,6 +175,8 @@ Useful tools for infrastructure code:
 - [Terrascan](https://runterrascan.io/)
 - [tfsec](https://aquasecurity.github.io/tfsec)
 - [MSDO](https://github.com/microsoft/security-devops-action)
+- [OpenSSF Scorecard](https://github.com/ossf/scorecard)
+- [Kubesec](https://kubesec.io/)
 
 ### Dry run
 
