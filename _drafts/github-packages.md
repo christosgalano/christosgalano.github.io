@@ -6,9 +6,9 @@ header:
   overlay_color: "#24292f"
   teaser: assets/images/github/packages/github-packages.webp
 categories:
-  - github
+  - general
 tags:
-  - github-packages
+  - github
 toc: true
 related: true
 ---

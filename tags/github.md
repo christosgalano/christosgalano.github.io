@@ -1,7 +1,7 @@
 ---
 title: GitHub
-layout: category
-permalink: /categories/github/
+layout: tag
+permalink: /tags/github/
 taxonomy: github
 author_profile: true
 ---

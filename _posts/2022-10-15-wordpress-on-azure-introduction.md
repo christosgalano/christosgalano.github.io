@@ -6,9 +6,9 @@ header:
   overlay_color: "#24292f"
   teaser: assets/images/azure/wordpress-on-azure/wordpress-on-azure.png
 categories:
-  - azure
+  - cloud
 tags:
-  - wordpress
+  - azure
 toc: true
 related: true
 ---

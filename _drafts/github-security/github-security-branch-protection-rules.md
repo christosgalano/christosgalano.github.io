@@ -6,10 +6,9 @@ header:
   overlay_color: "#24292f"
   teaser: assets/images/github/security/github-security.webp
 categories:
-  - github
+  - security
 tags:
-  - github-security
-  - github-branches
+  - github
 toc: true
 related: true
 ---

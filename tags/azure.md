@@ -1,7 +1,7 @@
 ---
 title: Azure
-layout: category
-permalink: /categories/azure/
+layout: tag
+permalink: /tags/azure/
 taxonomy: azure
 author_profile: true
 ---

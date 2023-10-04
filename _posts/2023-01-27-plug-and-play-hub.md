@@ -6,9 +6,10 @@ header:
   overlay_color: "#24292f"
   teaser: assets/images/azure/plug-and-play-hub/plug-and-play.webp
 categories:
-  - azure
+  - cloud
 tags:
-  - bicep
+  - azure
+  - iac
 toc: true
 related: true
 ---

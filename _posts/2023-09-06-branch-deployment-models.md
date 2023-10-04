@@ -6,7 +6,7 @@ header:
   overlay_color: "#24292f"
   teaser: assets/images/github/branches/branch-deploy-model.webp
 categories:
-  - github
+  - ci-cd
 toc: true
 related: true
 ---

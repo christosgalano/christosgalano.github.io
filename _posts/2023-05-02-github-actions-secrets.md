@@ -6,9 +6,9 @@ header:
   overlay_color: "#24292f"
   teaser: assets/images/github/actions/github-actions-1.webp
 categories:
-  - github
+  - ci-cd
 tags:
-  - github-actions
+  - github
 toc: true
 related: true
 ---

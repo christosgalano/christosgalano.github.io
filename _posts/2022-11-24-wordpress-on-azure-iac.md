@@ -6,10 +6,10 @@ header:
   overlay_color: "#24292f"
   teaser: assets/images/azure/wordpress-on-azure/bicep.png
 categories:
-  - azure
+  - cloud
 tags:
-  - wordpress
-  - bicep
+  - azure
+  - iac
 toc: true
 related: true
 ---

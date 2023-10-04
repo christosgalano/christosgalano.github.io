@@ -6,6 +6,8 @@ header:
   overlay_color: "#24292f"
   teaser: assets/images/github/codeowners/codeowners.webp
 categories:
+  - general
+tags:
   - github
 toc: true
 ---

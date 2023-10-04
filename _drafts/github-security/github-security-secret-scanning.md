@@ -6,9 +6,9 @@ header:
   overlay_color: "#24292f"
   teaser: assets/images/github/security/github-bug-bounty.webp
 categories:
-  - github
+  - security
 tags:
-  - github-security
+  - github
 toc: true
 related: true
 ---

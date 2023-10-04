@@ -6,10 +6,11 @@ header:
   overlay_color: "#24292f"
   teaser: assets/images/azure/wordpress-on-azure/deployment.jpg
 categories:
-  - github
+  - cloud
+  - ci-cd
 tags:
-  - wordpress
-  - github-actions
+  - azure
+  - github
 toc: true
 related: true
 ---
@@ -48,7 +49,8 @@ permissions:
 
 {% highlight yaml %}
 {% raw %}
-- name: Azure Login
+
+* name: Azure Login
   uses: Azure/login@v1
   with:
     client-id: ${{ secrets.AZURE_CLIENT_ID }}
@@ -63,7 +65,8 @@ permissions:
 
 {% highlight yaml %}
 {% raw %}
-- name: Validate template
+
+* name: Validate template
   working-directory: ${{ github.workspace }}/bicep
   run: |
     az deployment sub validate \
@@ -88,7 +91,7 @@ permissions:
 
 {% highlight bash %}
 cd /home/site/wwwroot && mkdir bin && cd bin
-curl https://cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem -o DigiCertGlobalRootCA.crt.pem
+curl <https://cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem> -o DigiCertGlobalRootCA.crt.pem
 {% endhighlight %}
 
 ![kudu-environment](/assets/images/azure/wordpress-on-azure/kudu-environment.png)
