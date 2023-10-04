@@ -1,6 +1,6 @@
 {
     "code-block-style": {
-        "style": "fenced"
+        "style": "indented"
     },
     "code-fence-style": {
         "style": "backtick"
