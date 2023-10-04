@@ -150,6 +150,7 @@ Useful tools:
 - [JMeter](https://jmeter.apache.org/)
 - [Gatling](https://gatling.io/)
 - [Locust](https://locust.io/)
+- [Chaos Monkey](https://github.com/Netflix/chaosmonkey)
 
 ### Security tests
 
