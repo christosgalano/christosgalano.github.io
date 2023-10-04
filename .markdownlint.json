@@ -1,0 +1,42 @@
+{
+    "code-block-style": {
+        "style": "fenced"
+    },
+    "code-fence-style": {
+        "style": "backtick"
+    },
+    "emphasis-style": {
+        "style": "asterisk"
+    },
+    "fenced-code-language": {
+        "language_only": true
+    },
+    "heading-style": {
+        "style": "atx"
+    },
+    "hr-style": {
+        "style": "---"
+    },
+    "line-length": {
+        "strict": false,
+        "code_blocks": false,
+        "line_length": 1000
+    },
+    "no-duplicate-heading": {
+        "siblings_only": true
+    },
+    "ol-prefix": {
+        "style": "ordered"
+    },
+    "strong-style": {
+        "style": "asterisk"
+    },
+    "ul-style": {
+        "style": "dash"
+    },
+    "single-h1": false,
+    "heading-increment": false,
+    "no-inline-html": false,
+    "no-trailing-punctuation": false,
+    "no-hard-tabs": false
+}
