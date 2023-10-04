@@ -5,7 +5,7 @@ tagline: "Deploy with confidence"
 header:
   overlay_color: "#24292f"
   teaser: assets/images/github/branches/branch-deploy-model.webp
-categories:
+tags:
   - ci-cd
 toc: true
 related: true

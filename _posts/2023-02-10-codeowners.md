@@ -5,10 +5,9 @@ tagline: "Granular control over the code in your repository"
 header:
   overlay_color: "#24292f"
   teaser: assets/images/github/codeowners/codeowners.webp
-categories:
-  - general
 tags:
   - github
+  - code-ownership
 toc: true
 ---
 

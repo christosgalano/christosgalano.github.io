@@ -5,10 +5,9 @@ tagline: "A guide to one of GitHub's best features"
 header:
   overlay_color: "#24292f"
   teaser: assets/images/github/security/github-security.webp
-categories:
-  - security
 tags:
   - github
+  - security
 toc: true
 related: true
 ---

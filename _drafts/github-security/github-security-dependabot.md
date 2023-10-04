@@ -5,10 +5,9 @@ tagline: "Keep your dependencies secure and up-to-date"
 header:
   overlay_color: "#24292f"
   teaser: assets/images/github/security/github-bug-bounty.webp
-categories:
-  - security
 tags:
   - github
+  - security
 toc: true
 related: true
 ---

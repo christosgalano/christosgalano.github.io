@@ -5,10 +5,10 @@ tagline: "Secure your codebase"
 header:
   overlay_color: "#24292f"
   teaser: assets/images/github/security/github-bug-bounty.webp
-categories:
-  - security
 tags:
   - github
+  - security
+  - ci-cd
 toc: true
 related: true
 ---

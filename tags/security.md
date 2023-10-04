@@ -1,7 +1,7 @@
 ---
 title: Security
-layout: category
-permalink: /categories/security/
+layout: tag
+permalink: /tags/security/
 taxonomy: security
 author_profile: true
 ---

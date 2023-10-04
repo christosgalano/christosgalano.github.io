@@ -5,7 +5,7 @@ tagline: "Introduction to CI/CD"
 header:
   overlay_color: "#24292f"
   teaser: assets/images/ci-cd/cicd-1.webp
-categories:
+tags:
   - ci-cd
 toc: true
 related: true

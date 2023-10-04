@@ -5,8 +5,6 @@ tagline: "Simplifying package management"
 header:
   overlay_color: "#24292f"
   teaser: assets/images/github/packages/github-packages.webp
-categories:
-  - general
 tags:
   - github
 toc: true

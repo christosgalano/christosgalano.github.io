@@ -5,11 +5,9 @@ tagline: "Define the infrastructure as code"
 header:
   overlay_color: "#24292f"
   teaser: assets/images/azure/wordpress-on-azure/bicep.png
-categories:
-  - cloud
 tags:
-  - azure
   - iac
+  - azure
 toc: true
 related: true
 ---
@@ -104,10 +102,10 @@ Next, both the **vnetImagePullEnabled** and the **acrUseManagedIdentityCreds** o
 
 Lastly, we need to create the necessary configuration settings regarding the database:
 
-* WORDPRESS_DB_NAME, WORDPRESS_DB_HOST, WORDPRESS_DB_USER
-* WORDPRESS_DB_PASSWORD (keyvault reference using system-assigned identity)
-* MYSQL_SSL_CA is the path to the DB certificate (the steps to download and store the certificate will be in Part 3)
-* WORDPRESS_CONFIG_EXTRA with some extra options in order to use the certificate and enforce SSL
+- WORDPRESS_DB_NAME, WORDPRESS_DB_HOST, WORDPRESS_DB_USER
+- WORDPRESS_DB_PASSWORD (keyvault reference using system-assigned identity)
+- MYSQL_SSL_CA is the path to the DB certificate (the steps to download and store the certificate will be in Part 3)
+- WORDPRESS_CONFIG_EXTRA with some extra options in order to use the certificate and enforce SSL
 
 ## MySQL Server
 
@@ -314,12 +312,12 @@ That about sums up the code modules. In the following part, we will deploy our i
 
 **Next part:**
 
-* [**Part 3: Deployment**]({% post_url 2022-12-09-wordpress-on-azure-deployment %})
+- [**Part 3: Deployment**]({% post_url 2022-12-09-wordpress-on-azure-deployment %})
 
 **Previous parts:**
 
-* [**Part 0: Introduction**]({% post_url 2022-10-15-wordpress-on-azure-introduction %})
+- [**Part 0: Introduction**]({% post_url 2022-10-15-wordpress-on-azure-introduction %})
 
-* [**Part 1: Architecture**]({% post_url 2022-11-07-wordpress-on-azure-architecture %})
+- [**Part 1: Architecture**]({% post_url 2022-11-07-wordpress-on-azure-architecture %})
 
 **Related repository:** [WordPress-on-Azure](https://github.com/christosgalano/WordPress-on-Azure)

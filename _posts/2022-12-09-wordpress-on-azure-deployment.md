@@ -5,11 +5,9 @@ tagline: "Deploy the infrastructure with GitHub Actions"
 header:
   overlay_color: "#24292f"
   teaser: assets/images/azure/wordpress-on-azure/deployment.jpg
-categories:
-  - cloud
-  - ci-cd
 tags:
   - azure
+  - ci-cd
   - github
 toc: true
 related: true
@@ -29,13 +27,13 @@ We will go over some of the elements inside the ***deploy.yaml*** workflow.
 
 ### Prerequisites to connect to Azure
 
-* Create [an Azure Active Directory application and service principal](https://learn.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal)
+- Create [an Azure Active Directory application and service principal](https://learn.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal)
 
-* Set up [federation](https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure?tabs=azure-portal%2Cwindows) and update the repository secrets
+- Set up [federation](https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure?tabs=azure-portal%2Cwindows) and update the repository secrets
 
-* Make sure you give ***Owner*** permissions over the subscription (to be more secure you can use [PIM](https://learn.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-configure))
+- Make sure you give ***Owner*** permissions over the subscription (to be more secure you can use [PIM](https://learn.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-configure))
 
-* According to the [documentation](https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-azure), the following must be included in the workflow file:
+- According to the [documentation](https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-azure), the following must be included in the workflow file:
 
 {% highlight yaml %}
 {% raw %}
@@ -50,7 +48,7 @@ permissions:
 {% highlight yaml %}
 {% raw %}
 
-* name: Azure Login
+- name: Azure Login
   uses: Azure/login@v1
   with:
     client-id: ${{ secrets.AZURE_CLIENT_ID }}
@@ -61,12 +59,12 @@ permissions:
 
 ### Deploy template
 
-* Before we deploy the template, we first lint and then validate it
+- Before we deploy the template, we first lint and then validate it
 
 {% highlight yaml %}
 {% raw %}
 
-* name: Validate template
+- name: Validate template
   working-directory: ${{ github.workspace }}/bicep
   run: |
     az deployment sub validate \
@@ -85,9 +83,9 @@ permissions:
 
 ### Download database certificate in Kudo environment
 
-* Go to <https://{{app-service-name}}.scm.azurewebsites.net/DebugConsole>
+- Go to <https://{{app-service-name}}.scm.azurewebsites.net/DebugConsole>
 
-* Run the following:
+- Run the following:
 
 {% highlight bash %}
 cd /home/site/wwwroot && mkdir bin && cd bin
@@ -98,13 +96,13 @@ curl <https://cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem> -o DigiCertGlob
 
 ### Import WordPress image to Azure Container Registry
 
-* Allow your IP from the Key Vault's firewall and give yourself permission to get and list secrets through access policies
+- Allow your IP from the Key Vault's firewall and give yourself permission to get and list secrets through access policies
 
-* Login to the jumpbox through Bastion using the credentials stored in the Key Vault
+- Login to the jumpbox through Bastion using the credentials stored in the Key Vault
 
 ![bastion-login](/assets/images/azure/wordpress-on-azure/bastion-login.png)
 
-* Run the following:
+- Run the following:
 
 {% highlight bash %}
 az login --identity
@@ -115,11 +113,11 @@ az acr repository list -n $cr_name
 
 ### Install WordPress
 
-* Wait 2-3 minutes after you import the image in the ACR
+- Wait 2-3 minutes after you import the image in the ACR
   
-* Go to <https://{{app-service-name}}.azurewebsites.net>
+- Go to <https://{{app-service-name}}.azurewebsites.net>
 
-* Follow the instructions mentioned
+- Follow the instructions mentioned
 
 ## Summary
 
@@ -127,14 +125,14 @@ So we deployed our infrastructure and completed the essential post-configuration
 
 **Next part:**
 
-* [**Part 4: Monitoring & Testing**]({% post_url 2023-01-03-wordpress-on-azure-monitoring-and-testing %})
+- [**Part 4: Monitoring & Testing**]({% post_url 2023-01-03-wordpress-on-azure-monitoring-and-testing %})
 
 **Previous parts:**
 
-* [**Part 0: Introduction**]({% post_url 2022-10-15-wordpress-on-azure-introduction %})
+- [**Part 0: Introduction**]({% post_url 2022-10-15-wordpress-on-azure-introduction %})
 
-* [**Part 1: Architecture**]({% post_url 2022-11-07-wordpress-on-azure-architecture %})
+- [**Part 1: Architecture**]({% post_url 2022-11-07-wordpress-on-azure-architecture %})
 
-* [**Part 2: Infrastructure as Code**]({% post_url 2022-11-24-wordpress-on-azure-iac %})
+- [**Part 2: Infrastructure as Code**]({% post_url 2022-11-24-wordpress-on-azure-iac %})
 
 **Related repository:** [WordPress-on-Azure](https://github.com/christosgalano/WordPress-on-Azure)

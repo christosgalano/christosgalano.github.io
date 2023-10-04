@@ -5,9 +5,8 @@ tagline: "A guide to streamlining your development workflow"
 header:
   overlay_color: "#24292f"
   teaser: assets/images/github/actions/github-actions-1.webp
-categories:
-  - ci-cd
 tags:
+  - ci-cd
   - github
 toc: true
 related: true

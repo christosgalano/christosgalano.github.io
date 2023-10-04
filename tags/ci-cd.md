@@ -1,7 +1,7 @@
 ---
 title: CI/CD
-layout: category
-permalink: /categories/ci-cd/
+layout: tag
+permalink: /tags/ci-cd/
 taxonomy: ci-cd
 author_profile: true
 ---
