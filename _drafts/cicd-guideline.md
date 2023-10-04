@@ -114,6 +114,7 @@ Useful tools for application code:
 Useful tools for infrastructure code:
 
 - [PSRule](https://microsoft.github.io/PSRule)
+- [Template Analyzer](https://github.com/Azure/template-analyzer)
 - [Terratest](https://terratest.gruntwork.io/)
 - [Checkov](https://www.checkov.io/)
 - [tflint](https://github.com/terraform-linters/tflint)
@@ -163,12 +164,14 @@ Useful tools for application code:
 - [OWASP ZAP](https://www.zaproxy.org/)
 - [OpenVAS](https://www.openvas.org/)
 - [Nikto](https://cirt.net/Nikto2)
+- [MSDO](https://github.com/microsoft/security-devops-action)
 
 Useful tools for infrastructure code:
 
 - [Snyk](https://snyk.io/)
 - [Terrascan](https://runterrascan.io/)
 - [tfsec](https://aquasecurity.github.io/tfsec)
+- [MSDO](https://github.com/microsoft/security-devops-action)
 
 ### Dry run
 
