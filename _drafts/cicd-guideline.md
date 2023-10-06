@@ -229,7 +229,7 @@ If your CI/CD processes have reached a certain level of maturity, it is advisabl
 
 6. **Continuous Monitoring:** Set up comprehensive monitoring and alerting to track the performance of your application in production. Detect issues proactively and respond swiftly.
 
-7. **Deployment Pipelines:** Create deployment pipelines that include multiple stages (e.g., development, testing, staging) to ensure rigorous testing before changes reach production. You can explore different branch deployment models to optimize your pipeline approach. Check out my article on [Branch Deployment Models](https://your-article-url.com) for insights into the best approaches when deploying through pipelines.
+7. **Deployment Pipelines:** Create deployment pipelines that include multiple stages (e.g., development, testing, staging) to ensure rigorous testing before changes reach production. You can explore different branch deployment models to optimize your pipeline approach. Check out my article on [Branch Deployment Models](https://christosgalano.github.io/branch-deployment-models/) for insights into the best approaches when deploying through pipelines.
 
 8. **Configuration Management:** Manage configuration settings separately from code to allow for easy changes without code modifications. Tools like environment variables or configuration files can help.
 
