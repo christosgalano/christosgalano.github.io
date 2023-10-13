@@ -1,6 +1,6 @@
 ---
 title: "GitHub Security: Branch Protection Rules"
-excerpt: "In today's post we look at ways to protect your branches."
+excerpt: "In today's post we look at ways to protect our branches."
 tagline: "A guide to one of GitHub's best features"
 header:
   overlay_color: "#24292f"
