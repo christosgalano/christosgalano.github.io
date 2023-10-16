@@ -26,9 +26,9 @@ subgraph common
     C --> SC[Security scan]
 end
 subgraph application-code
-    SC --> B[Build]
-    B --> STAA[Static tests]
-    STAA --> FUN[Functional tests]
+    SC --> STAA[Static tests]
+    STAA --> B[Build]
+    B --> FUN[Functional tests]
 end
 subgraph infrastructure-code
     SC --> STAI[Static tests]
@@ -125,7 +125,9 @@ Useful tools for infrastructure code:
 Functional tests are designed to verify that the application or library behaves as expected. Examples of functional tests include:
 
 - **unit tests**: test individual units of code, such as functions or classes, in isolation
+- **smoke tests**: test the critical components of the application to ensure that it is functioning as expected
 - **integration tests**: test the interaction between different components of the application
+- **regression tests**: test the application to ensure that new changes do not break existing functionality
 - **end-to-end tests**: test the application or library as a whole, and are typically used to simulate real-world scenarios
 
 Useful tools:
