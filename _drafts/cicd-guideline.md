@@ -119,6 +119,7 @@ Useful tools for infrastructure code:
 - [tflint](https://github.com/terraform-linters/tflint)
 - [Ansible-lint](https://ansible-lint.readthedocs.io/)
 - [Conftest](https://github.com/open-policy-agent/conftest)
+- [Kubeconform](https://github.com/yannh/kubeconform)
 
 ### Functional tests
 
