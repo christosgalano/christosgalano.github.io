@@ -115,10 +115,10 @@ Useful tools for infrastructure code:
 
 - [PSRule](https://microsoft.github.io/PSRule)
 - [Template Analyzer](https://github.com/Azure/template-analyzer)
-- [Terratest](https://terratest.gruntwork.io/)
 - [Checkov](https://www.checkov.io/)
 - [tflint](https://github.com/terraform-linters/tflint)
 - [Ansible-lint](https://ansible-lint.readthedocs.io/)
+- [Conftest](https://github.com/open-policy-agent/conftest)
 
 ### Functional tests
 
@@ -130,11 +130,18 @@ Functional tests are designed to verify that the application or library behaves 
 - **regression tests**: test the application to ensure that new changes do not break existing functionality
 - **end-to-end tests**: test the application or library as a whole, and are typically used to simulate real-world scenarios
 
-Useful tools:
+Useful tools for application code:
 
 - [Selenium](https://www.selenium.dev/)
 - [JUnit](https://junit.org/junit5/)
-- [Mocha](https://mochajs.org/)
+- [Cypress](https://www.cypress.io/)
+- [Playwright](https://playwright.dev/)
+- [Karate](https://github.com/karatelabs/karate)
+
+Useful tools for infrastructure code:
+
+- [Terratest](https://terratest.gruntwork.io/)
+- [Kitchen-Terraform](https://github.com/newcontext-oss/kitchen-terraform)
 
 ### Non-functional tests
 
@@ -152,7 +159,7 @@ Useful tools:
 - [JMeter](https://jmeter.apache.org/)
 - [Gatling](https://gatling.io/)
 - [Locust](https://locust.io/)
-- [Chaos Monkey](https://github.com/Netflix/chaosmonkey)
+- [Chaos Mesh](https://chaos-mesh.org/)
 
 ### Security tests
 
