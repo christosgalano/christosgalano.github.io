@@ -27,12 +27,12 @@ subgraph common
     C --> SC[Security scan]
 end
 subgraph application-code
-    SC --> STAA[Static tests]
+    SC --> STAA[Static analysis]
     STAA --> B[Build]
     B --> FUN[Functional tests]
 end
 subgraph infrastructure-code
-    SC --> STAI[Static tests]
+    SC --> STAI[Static analysis]
     STAI --> SECI[Security tests]
 end
 </div>
@@ -101,9 +101,9 @@ There are two key benefits to this approach. Firstly, the application is built i
 
 To ensure efficiency and reliability, the build step in a CI pipeline should be fully automated, without requiring manual intervention. This allows for consistent and reproducible builds, minimizing human error and enabling developers to focus on other tasks while the build process runs autonomously.
 
-### Static tests
+### Static analysis
 
-Static tests are checks performed on the codebase without executing the code. They help identify potential issues, ensure code quality, and verify adherence to standards. These tests can include linters, code formatters, and static analysis tools. The goal is to catch potential problems early in the development process. For infrastructure code, static tests can be used to identify potential misconfigurations or security issues. They can also validate that the code adheres to the required standards and best practices.
+Static analysis involves examining the codebase without code execution. Its purpose is to spot potential issues, ensure code quality, and confirm compliance with standards. This process includes the use of linters, code formatters, and static analysis tools. Static analysis aims to catch problems early in the development process. In the case of infrastructure code, it helps detect misconfigurations and security issues while ensuring alignment with required standards and best practices.
 
 Useful tools for application code:
 
