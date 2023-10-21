@@ -1,6 +1,6 @@
 ---
 title: "Chaos Engineering"
-excerpt: "Chaos Engineering is a disciplined approach to identifying failures before they result in outages. By proactively testing how a system responds under stress, you can identify and fix failures before they become headline news."
+excerpt: "Discovering the principles and benefits of chaos engineering."
 tagline: "Enhancing system resilience through controlled chaos"
 header:
   overlay_color: "#24292f"

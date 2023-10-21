@@ -1,7 +1,7 @@
 ---
-title: "Static Analysis and Testing for Infrastructure as Code"
-excerpt: "Exploring the Synergy of Static Analysis and Testing in Infrastructure as Code (IaC)."
-tagline: "Enhancing IaC Quality and Reliability through Systematic Examination"
+title: "Static Analysis and Testing IaC"
+excerpt: "Exploring the synergy of static analysis and testing in infrastructure code."
+tagline: "Enhancing IaC quality and reliability through systematic examination"
 header:
   overlay_color: "#24292f"
   teaser: assets/images/testing/bug-testing.webp
