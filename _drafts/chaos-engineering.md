@@ -1,7 +1,7 @@
 ---
 title: "Chaos Engineering"
-excerpt: "Shaping Resilient Systems in a Complex World"
-tagline: "Enhancing System Resilience through Controlled Chaos"
+excerpt: "Chaos Engineering is a disciplined approach to identifying failures before they result in outages. By proactively testing how a system responds under stress, you can identify and fix failures before they become headline news."
+tagline: "Enhancing system resilience through controlled chaos"
 header:
   overlay_color: "#24292f"
   teaser: assets/images/testing/chaos-engineering.webp
@@ -86,7 +86,7 @@ By following this logical progression, teams can identify vulnerabilities and pr
 
 ## Summary
 
-Chaos Engineering is a practical approach for enhancing the reliability and resilience of modern digital systems. By identifying and addressing vulnerabilities systematically, it equips organizations to confidently navigate the complexities of distributed systems, ensuring uninterrupted services, efficient operations, and improved customer experiences. Embrace Chaos Engineering to build stronger, more dependable systems in today's dynamic digital landscape.
+Chaos Engineering is a practical approach for enhancing the reliability and resilience of modern digital systems. By identifying and addressing vulnerabilities systematically, you can confidently navigate the complexities of distributed systems, ensuring uninterrupted services, efficient operations, and improved customer experience. After all, we all need a little chaos in our lives ...
 
 ## Resources
 
