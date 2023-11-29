@@ -38,5 +38,6 @@
     "heading-increment": false,
     "no-inline-html": false,
     "no-trailing-punctuation": false,
-    "no-hard-tabs": false
+    "no-hard-tabs": false,
+    "blanks-around-headings": false
 }

@@ -43,9 +43,7 @@ Deployment stacks can be created using Azure CLI, Azure PowerShell, or the Azure
 
 {% highlight bash %}
 {% raw %}
-
 # Create a deployment stack at resource group scope
-
 az stack group create \
   --name "$deployment_stack_name" \
   --resource-group "$resource_group_name" \
@@ -53,7 +51,6 @@ az stack group create \
   --deny-settings-mode "none"
 
 # Create a deployment stack at subscription scope
-
 az stack sub create \
   --name "$deployment_stack_name" \
   --location "$location" \
@@ -62,7 +59,6 @@ az stack sub create \
   --deployment-resource-group-name "$resource_group_name" # if not specified the managed resources are stored in subscription scope - can be skipped if the template explicitly specifies a resource group
 
 # Create a deployment stack at management group scope
-
 az stack mg create \
   --name "$deployment_stack_name" \
   --location "$location" \
@@ -93,9 +89,7 @@ Deployment stacks can be updated to add, remove or update resources. To modify t
 
 {% highlight bash %}
 {% raw %}
-
 # Update a deployment stack using Azure CLI
-
 az stack group create \
   --name "$deployment_stack_name" \
   --resource-group "$resource_group_name" \
@@ -103,7 +97,6 @@ az stack group create \
   --deny-settings-mode "none"
 
 # Update a deployment stack using Powershell
-
 Set-AzResourceGroupDeploymentStack `
   --name "$deployment_stack_name" `
   -ResourceGroupName "$resource_group_name" `
@@ -188,9 +181,7 @@ Instead, to create a deployment stack we use the command below:
 
 {% highlight bash %}
 {% raw %}
-
 # Create a stack at resource group scope
-
 az stack group create \
   --name "demo-deployment-stack" \
   --resource-group "rg-deployment-stacks" \
@@ -211,9 +202,7 @@ Now, let's say we want to remove the network security group from the deployment 
 
 {% highlight bash %}
 {% raw %}
-
 # Update the stack by removing the resource (detaches nsg)
-
 az stack group create -n "demo-deployment-stack" -g "rg-deployment-stacks" -f "main.bicep" --deny-settings-mode "none" --yes{% endraw %}{% endhighlight %}
 
 ![rg-stack-nsg-detached](/assets/images/azure/deployment-stacks/rg-stack-nsg-detached.webp)
@@ -222,9 +211,7 @@ If instead we wanted to not only detach the network security group but also dele
 
 {% highlight bash %}
 {% raw %}
-
 # Update the stack by removing the resource (detaches nsg) and this time delete the resource (--delete-resources)
-
 az stack group create -n "demo-deployment-stack" -g "rg-deployment-stacks" -f "main.bicep" --deny-settings-mode "none" --delete-resources --yes{% endraw %}{% endhighlight %}
 
 ![rg-stack-nsg-deleted](/assets/images/azure/deployment-stacks/rg-stack-nsg-deleted.webp)
@@ -242,18 +229,14 @@ resource nsg 'Microsoft.Network/networkSecurityGroups@2023-05-01' = {
 
 {% highlight bash %}
 {% raw %}
-
 # Update the stack by adding a new resource (attaches nsg)
-
 az stack group create -n "demo-deployment-stack" -g "rg-deployment-stacks" -f "main.bicep" --deny-settings-mode "none" --yes{% endraw %}{% endhighlight %}
 
 Finally, to delete the deployment stack and all managed resources we can use the delete command.
 
 {% highlight bash %}
 {% raw %}
-
 # Delete the stack and all the managed resources (no need to specify a template)
-
 az stack group delete -n "demo-deployment-stack" -g "rg-deployment-stacks" --delete-resources --yes{% endraw %}{% endhighlight %}
 
 ### Subscription Scope
@@ -282,9 +265,7 @@ module main 'main.bicep' = {
 
 {% highlight bash %}
 {% raw %}
-
 # Create a stack at subscription scope
-
 az stack sub create -n "demo-deployment-stack" -f "subscription_scope.bicep" -l "northeurope" --deny-settings-mode "none" --yes{% endraw %}{% endhighlight %}
 
 ![sub-stack-created](/assets/images/azure/deployment-stacks/sub-stack-created.webp)
@@ -294,9 +275,7 @@ Now, let's update the stack in order to prevent the deletion of managed resource
 
 {% highlight bash %}
 {% raw %}
-
 # Update the stack to not allow the deletion of its resources
-
 az stack sub create -n "demo-deployment-stack" -f "subscription_scope.bicep" -l "northeurope" --deny-settings-mode "denyDelete" --yes{% endraw %}{% endhighlight %}
 
 ![sub-stack-deny-delete](/assets/images/azure/deployment-stacks/sub-stack-deny-delete.webp)
@@ -311,13 +290,10 @@ Finally, to delete the deployment stack and all managed resources we can use the
 
 {% highlight bash %}
 {% raw %}
-
 # Update the stack to allow the deletion of its managed resources
-
 az stack sub create -n "demo-deployment-stack" -f "main.bicep" -l "northeurope" --deny-settings-mode "none" --yes
 
 # Delete the stack (all resources will be deleted, including the resource groups and their resources)
-
 az stack sub delete -n "demo-deployment-stack" --delete-all{% endraw %}{% endhighlight %}
 
 ![sub-stack-deletion](/assets/images/azure/deployment-stacks/sub-stack-deletion.webp)
