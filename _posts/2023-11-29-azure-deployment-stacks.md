@@ -27,11 +27,11 @@ Deployment stacks provide a number of benefits, including:
 - **Simplified Resource Management:** Deployment stacks function as a unified entity for managing resources across scopes, streamlining provisioning and management.
 - **Prevention of Undesired Modifications:** Using deny settings, deployment stacks safeguard managed resources, preventing unintended changes and maintaining control.
 - **Efficient Environment Cleanup:** Delete flags in deployment stack updates enable efficient resource removal, simplifying the cleanup process after project completion.
-- **Template Standardization:** Deployment stacks allow the use of standard templates such as Bicep, ARM templates, or Template specs, promoting consistency in resource deployment.
+- **Template Standardization:** Deployment stacks allow the use of standard templates such as Bicep, ARM templates, promoting consistency in resource deployment.
 
 ## Deployment Stacks Usage
 
-Deployment stacks can be created using Azure CLI, Azure PowerShell, or the Azure portal. They can be deployed at resource group, subscription, or management group scope. The template provided during stack creation defines resources to be managed or updated at the specified scope. The stack can be updated to add or remove resources, and it can be deleted to remove all managed resources.
+Deployment stacks can be created using Azure CLI, Azure PowerShell, or the Azure portal. They can be deployed at resource group, subscription, or management group scope. The template provided during stack creation defines resources to be managed or updated at the specified scope.
 
 ### Deployment Scopes
 
@@ -68,7 +68,7 @@ az stack mg create \
 
 ### Managed and Detached Resources
 
-Managed resources are resources that are managed by a deployment stack. Detached resources are tracked or managed by the deployment stack but still exists within Azure. By default, deployment stacks detach but do not delete unmanaged resources when they are no longer contained within the stack's management scope. In order to delete unmanaged resources, the appropriate delete flag must be set in the deployment stack update. The delete flag can be set to one of the following values:
+Managed resources are resources that are managed by a deployment stack. Detached resources are not tracked or managed by the deployment stack but still exist within Azure. By default, deployment stacks detach but do not delete unmanaged resources when they are no longer contained within the stack's management scope. In order to delete unmanaged resources, the appropriate delete flag must be set in the deployment stack update. The delete flag can be set to one of the following values:
 
 - `delete-all`: Use delete for managed resources and resource groups.
 - `delete-resources`: Use delete for managed resources only.
