@@ -304,5 +304,5 @@ Deployment Stacks, offer a streamlined approach to managing Azure resources. Cre
 
 ## Resources
 
-- [Azure Deployment Stacks](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-stacks)
-- [Deployment Stacks Deep Dive](https://youtu.be/d1AE8qLwBYw?si=B5fFebWU4DrbgB7U)
+- [**Azure Deployment Stacks**](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deployment-stacks)
+- [**Deployment Stacks Deep Dive**](https://youtu.be/d1AE8qLwBYw?si=B5fFebWU4DrbgB7U)

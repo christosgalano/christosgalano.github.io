@@ -258,8 +258,8 @@ As you embark on your CI/CD journey, remember that it's not solely about reachin
 
 ## Resources
 
-- [The fundamentals of continuous integration in DevOps](https://resources.github.com/devops/fundamentals/ci-cd/integration/)
-- [What is a DevOps pipeline? A complete guide](https://resources.github.com/devops/pipeline/)
-- [Branch Deployment Models](https://christosgalano.github.io/branch-deployment-models/)
-- [terraform-template-repo](https://github.com/christosgalano/terraform-template-repo)
-- [devops-with-github-example](https://github.com/christosgalano/devops-with-github-example)
+- [**The fundamentals of continuous integration in DevOps**](https://resources.github.com/devops/fundamentals/ci-cd/integration/)
+- [**What is a DevOps pipeline? A complete guide**](https://resources.github.com/devops/pipeline/)
+- [**Branch Deployment Models**](https://christosgalano.github.io/branch-deployment-models/)
+- [**terraform-template-repo**](https://github.com/christosgalano/terraform-template-repo)
+- [**devops-with-github-example**](https://github.com/christosgalano/devops-with-github-example)

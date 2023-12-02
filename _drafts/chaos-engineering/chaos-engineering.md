@@ -7,7 +7,7 @@ header:
   teaser: assets/images/testing/chaos-engineering.webp
 tags:
   - testing
-  - security
+  - chaos-engineering
 toc: true
 related: true
 ---
@@ -90,4 +90,4 @@ Chaos Engineering is a practical approach for enhancing the reliability and resi
 
 ## Resources
 
-- [Principles of Chaos Engineering](https://principlesofchaos.org/)
+- [**Principles of Chaos Engineering**](https://principlesofchaos.org/)
