@@ -98,7 +98,7 @@ az stack group create \
 
 # Update a deployment stack using Powershell
 Set-AzResourceGroupDeploymentStack `
-  --name "$deployment_stack_name" `
+  -Name "$deployment_stack_name" `
   -ResourceGroupName "$resource_group_name" `
   -TemplateFile "$template_file_path" `
   -DenySettingsMode "none"{% endraw %}{% endhighlight %}
