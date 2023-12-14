@@ -24,7 +24,9 @@ But what are the key principles of Chaos Engineering? Let's delve into the detai
 
 ## Chaos in Practice
 
-Chaos Engineering aims to address the uncertainty of distributed systems at scale. It facilitates experiments to uncover systemic weaknesses, following a four-step approach:
+Chaos Engineering involves a systematic approach to understanding and enhancing the resilience of distributed systems. In this process, the control group represents the stable, expected behavior of the system, serving as a reference point. The experimental group, on the other hand, is subjected to intentional disruptions or chaos events. The goal is to identify weaknesses in the system by comparing the behavior of the control and experimental group.
+
+In order to achieve this goal, Chaos Engineering experiments are conducted following a four-step approach:
 
 1. **Steady State Definition:** Start by defining *steady state* as a measurable output of the system indicating normal behavior.
 
