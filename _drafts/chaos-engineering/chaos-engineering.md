@@ -14,19 +14,19 @@ related: true
 
 ## Overview
 
-With the rise of microservices and distributed cloud architectures, the web has grown increasingly complex. We've become more dependent on these systems than ever before, yet failures have become harder to predict. These failures not only affect companies but also impact customers who rely on these services for their daily tasks. Even brief outages can have a significant impact on a company's bottom line. Given the high stakes, waiting for the next costly outage is not an option. To tackle this challenge head-on, more and more companies are turning to Chaos Engineering.
+With the surge of microservices and distributed cloud architectures, the web has evolved into a more intricate landscape. Our reliance on these systems has heightened, yet predicting failures has become increasingly challenging. These disruptions not only affect companies but also impact customers who rely on these services for their daily tasks. Even brief outages can significantly affect the overall health of an organization. Given the high stakes, waiting for the next costly outage is not an option. To tackle this challenge head-on, more and more companies are turning to Chaos Engineering.
 
 ## Chaos Engineering is Preventive Medicine
 
 Chaos Engineering is a disciplined approach to identifying failures before they result in outages. By proactively testing how a system responds under stress, you can identify and fix failures before they become headline news. In essence, Chaos Engineering involves breaking things intentionally to learn how to build more resilient systems.
 
-But what are the key principles of Chaos Engineering? Let's delve into the details:
+But what are the key principles of Chaos Engineering? Let's delve into the details ...
 
 ## Chaos in Practice
 
 Chaos Engineering aims to address the uncertainty of distributed systems at scale. It facilitates experiments to uncover systemic weaknesses, following a four-step approach:
 
-1. **Steady State Definition:** Start by defining 'steady state' as a measurable output of the system indicating normal behavior.
+1. **Steady State Definition:** Start by defining *steady state* as a measurable output of the system indicating normal behavior.
 
 2. **Hypothesis Formation:** Hypothesize that this steady state will continue in both the control and the experimental group.
 
@@ -65,13 +65,13 @@ Advanced principles define an ideal application of Chaos Engineering, strengthen
 
 In the Chaos Engineering realm, it's crucial to prioritize experiments in a logical order:
 
-1. **Known Knowns**: These are things you are aware of and fully understand.
+1. **Known Knowns (KK)**: These are things you are aware of and fully understand.
 
-2. **Known Unknowns**: These are scenarios you are aware of but don't fully comprehend.
+2. **Known Unknowns (KU)**: These are scenarios you are aware of but don't fully comprehend.
 
-3. **Unknown Knowns**: These are things you understand but are not aware of.
+3. **Unknown Knowns (UK)**: These are things you understand but are not aware of.
 
-4. **Unknown Unknowns**: These are scenarios you neither know nor fully understand.
+4. **Unknown Unknowns (UU)**: These are scenarios you neither know nor fully understand.
 
 By following this logical progression, teams can identify vulnerabilities and prepare for different failure scenarios.
 
