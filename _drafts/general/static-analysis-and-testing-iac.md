@@ -6,8 +6,8 @@ header:
   overlay_color: "#24292f"
   teaser: assets/images/testing/bug-testing.webp
 tags:
+  - iac
   - testing
-  - infrastructure-as-code
 toc: true
 related: true
 ---

@@ -6,8 +6,8 @@ header:
   overlay_color: "#24292f"
   teaser: assets/images/azure/deployment-stacks/stack.webp
 tags:
+  - iac
   - azure
-  - infrastructure-as-code
 toc: true
 related: true
 ---
