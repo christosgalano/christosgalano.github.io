@@ -329,7 +329,6 @@ First, we need to install the Go plugin for Protocol Buffers:
 
 {% highlight bash %}
 {% raw %}
-export GO111MODULE=on
 go install google.golang.org/protobuf/cmd/protoc-gen-go
 {% endraw %}
 {% endhighlight %}
@@ -456,3 +455,4 @@ In summary, Protocol Buffers are a great way to serialize and deserialize data. 
 ## References
 
 - [**Protobuf**](https://protobuf.dev/)
+- [**Buf**](https://buf.build/docs)
