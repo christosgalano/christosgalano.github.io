@@ -43,9 +43,9 @@ Experiments are the heart of Azure Chaos Studio; an orchestrated approach to inj
 
 **Selectors** serve as precision tools, strategically grouping target resources for fault injection, exemplified by scenarios like the AllNonProdWestEuropeVMs selector. These selectors enable engineers to target specific groups of resources, providing a nuanced approach to fault injection.
 
-On the other hand, the **logic** section orchestrates chaos with structured sequencing—steps, branches, and actions—forming a narrative that guides disruptions through sequential phases, parallel narratives, and granular actions, offering a purposeful exploration of an application's resilience. Specifically, the logic section is composed of steps, branches, and actions.
+On the other hand, the **logic** section orchestrates chaos with structured sequencing—steps, branches, and actions — forming a narrative that guides disruptions through various phases and granular actions, offering a purposeful exploration of an application's resilience. Specifically, the logic section is composed of steps, branches, and actions.
 
-**Steps** are the building blocks of an experiment, each containing a set of branches that are executed in parallel. Steps are executed sequentially, and the experiment proceeds to the next step only after all branches in the current step have completed. These steps provide a structured framework, ensuring a systematic and logical approach to introducing disruptions.
+**Steps** are the building blocks of an experiment, each containing a set of branches that are executed in parallel. Steps are executed sequentially, and the experiment proceeds to the next step only after all branches in the current step have been completed. These steps provide a structured framework, ensuring a systematic and logical approach to introducing disruptions.
 
 **Branches** are the parallel narratives of an experiment, each containing a set of actions.
 
@@ -53,9 +53,9 @@ On the other hand, the **logic** section orchestrates chaos with structured sequ
 
 **Time delays** are the pauses between actions, allowing the experiment to simulate real-world scenarios. For example, a time delay can be used to simulate the time it takes for a service to recover from a fault.
 
-**Faults** are the actual disruptions injected into the target resources for a specified time period, causing failures like network latency, CPU spikes, process termination, and more. There are two types of faults: **service-based** and **agent-based**.
+**Faults** are the actual disruptions injected into the target resources for a specified period, causing failures like network latency, CPU spikes, process termination, and more. There are two types of faults: **service-based** and **agent-based**.
 
-**Service-based** faults operate directly on Azure resources without additional installation or instrumentation. Examples include actions like rebooting an Azure Cache for Redis cluster or introducing network latency to Azure Kubernetes Service pods.
+**Service-based** faults operate directly on Azure resources without additional installation or instrumentation. Examples include actions like rebooting an Azure Cache for a Redis cluster or introducing network latency to Azure Kubernetes Service pods.
 
 **Agent-based** faults require the installation of the Chaos Studio agent and delve into the intricacies within virtual machines (VMs) or virtual machine scale sets. These faults allow for in-guest failures, such as applying virtual memory pressure or terminating a specific process.
 
@@ -83,7 +83,7 @@ Before chaos can be injected into a resource, the resource must undergo onboardi
 
 ## Private Networking
 
-While chaos engineering demands controlled disruption, it also requires a secure and isolated environment. Azure Chaos Studio introduces features for private networking, allowing chaos engineers to orchestrate controlled chaos within the confines of a virtual network. Azure Chaos studio supports virtual network injection, enabling private link for both service-direct and agent-based experiments. This feature ensures that chaos experiments are executed within a private network, minimizing exposure to external networks. However, not all resource types are eligible for virtual network injection at the moment.
+While chaos engineering demands controlled disruption, it also requires a secure and isolated environment. Azure Chaos Studio introduces features for private networking, allowing chaos engineers to orchestrate controlled chaos within the confines of a virtual network. Azure Chaos Studio supports virtual network injection, enabling private links for both service-direct and agent-based experiments. This feature ensures that chaos experiments are executed within a private network, minimizing exposure to external networks. However, not all resource types are eligible for virtual network injection at the moment.
 
 ## Example
 
@@ -102,9 +102,9 @@ We can enable these targets by clicking on the **Enable targets** button.
 
 ![enable-targets](/assets/images/azure/chaos-studio/enable-targets.webp)
 
-All of our resources can be enabled as service-based targets, whereas only the virtual machine and virtual machine scale set can be enabled as agent-based targets. That is because an agent (Chaos Studio agent) needs to be installed on the virtual machine and virtual machine scale set in order to be able to inject agent-based faults.
+All of our resources can be enabled as service-based targets, whereas only the virtual machine and virtual machine scale set can be enabled as agent-based targets. That is because an agent (Chaos Studio agent) needs to be installed on the virtual machine and the virtual machine scale set to be able to inject agent-based faults.
 
-In order to enable the agent-based targets we need to create a user-assigned managed identity and assign it to them. This identity will be used by the Chaos Studio agent to execute the agent-based faults.
+To enable the agent-based targets we need to create a user-assigned managed identity and assign it to them. This identity will be used by the Chaos Studio agent to execute the agent-based faults.
 
 ![vm-chaos-id](/assets/images/azure/chaos-studio/vm-chaos-id.webp)
 
@@ -118,16 +118,16 @@ As mentioned before, an experiment is composed of selectors and logic. The selec
 
 ![create-experiment-identity](/assets/images/azure/chaos-studio/create-experiment-identity.webp)
 
-We are going to create an experiment with two steps named *Service-based Faults* and *Agent-based Faults*. The first step needs to complete successfully before the second step can be executed.
+We are going to create an experiment with two steps named *Service-based Faults* and *Agent-based Faults*. The first step needs to be completed successfully before the second step can be executed.
 
-The service-based faults step has three branches which execute in parallel.
+The service-based faults step has three branches that execute in parallel.
 The first branch has two actions and essentially shutdowns for ten minutes the virtual machine and then the virtual machine scale set.
 The second branch stops the app service for ten minutes.
 The third branch stops the key vault from accepting requests for ten minutes.
 
 ![service-based-faults](/assets/images/azure/chaos-studio/service-based-faults.webp)
 
-The agent-based faults step has two branches which execute in parallel.
+The agent-based faults step has two branches that execute in parallel.
 The first branch has one action which applies CPU pressure to the virtual machine for fifteen minutes.
 The second branch has one action which applies CPU pressure to the virtual machine scale set for fifteen minutes.
 
@@ -137,9 +137,9 @@ Here is the overview of the experiment:
 
 ![experiment-overview](/assets/images/azure/chaos-studio/experiment-overview.webp)
 
-When we create the experiment, a new resource is created in our resource group. This resource is of type **Chaos Studio Experiment** and has the same name as the experiment.
+When we create the experiment, a new resource is created in our resource group. This resource is of the type **Chaos Studio Experiment** and has the same name as the experiment.
 
-In order for the experiment to be execute successfully, we need to assign the appropriate permissions to the experiment identity. Here are some of the recommended permissions based on actions taken:
+For the experiment to execute successfully, we need to assign the appropriate permissions to the experiment identity. Here are some of the recommended permissions based on actions taken:
 
 ![role-assignments](/assets/images/azure/chaos-studio/role-assignments.webp)
 
