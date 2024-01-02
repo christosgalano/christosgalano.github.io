@@ -6,9 +6,8 @@ header:
   overlay_color: "#24292f"
   teaser: assets/images/ci-cd/cicd-1.webp
 tags:
+  - article
   - ci-cd
-  - security
-  - testing
 toc: true
 related: true
 mermaid: true

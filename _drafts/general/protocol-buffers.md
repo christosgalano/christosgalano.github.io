@@ -5,6 +5,8 @@ tagline: "A new page to data serialization"
 header:
   overlay_color: "#24292f"
   teaser: /assets/images/protobuf/protobuf.webp
+tags:
+  - miscellaneous
 toc: true
 related: true
 ---

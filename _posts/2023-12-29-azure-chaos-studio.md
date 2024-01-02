@@ -7,7 +7,6 @@ header:
   teaser: assets/images/azure/chaos-studio/azure-chaos-studio.webp
 tags:
   - azure
-  - chaos-engineering
   - testing
 toc: true
 related: true
