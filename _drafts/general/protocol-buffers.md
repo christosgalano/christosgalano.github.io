@@ -248,7 +248,7 @@ import "person.proto";
 
 Now that we have covered the basics, let's look at an example to see how all these concepts come together.
 
-For those of you who don't know or haven't the site's [Music Corner](https://christosgalano.github.io/music-corner/) yet, I am a big fan of classical music.
+For those of you who don't know or haven't visited the site's [Music Corner](https://christosgalano.github.io/music-corner/) yet, I am a big fan of classical music.
 
 So, let's create a simple library for classical music. The main entities we will be working with are song, composer, and library.
 
@@ -265,7 +265,7 @@ Then, we need to create a workspace for our project. Let's call it `protobuf`.
 mkdir protobuf && cd protobuf
 touch main.go
 go mod init github.com/christosgalano/protobuf # replace with your own github name
-mkdir model && touh model/music.proto
+mkdir model && touch model/music.proto
 {% endraw %}
 {% endhighlight %}
 
@@ -390,8 +390,7 @@ func main() {
   fmt.Printf("Protobuf data (size: %d): %v\n\n", len(data), data)
 
   // Write to file
-  err = os.WriteFile("chaconne.protobuf", data, 0644)
-  if err != nil {
+  if err := os.WriteFile("chaconne.protobuf", data, 0644); err != nil {
     log.Fatalf("error writing chaconne.protobuf: %v", err)
   }
 
@@ -454,7 +453,7 @@ As you can see, the protobuf encoding is much more compact than the JSON encodin
 
 In summary, Protocol Buffers are a great way to serialize and deserialize data. They are language-agnostic, efficient, and easy to use. These benefits make them ideal for scenarios where performance and data size are critical, such as microservices architectures, web APIs, and big data processing pipelines.
 
-## References
+## Resources
 
 - [**Protobuf**](https://protobuf.dev/)
 - [**Buf**](https://buf.build/docs)
