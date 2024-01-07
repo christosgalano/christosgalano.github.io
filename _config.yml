@@ -1,30 +1,30 @@
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+remote_theme: 'mmistakes/minimal-mistakes@4.24.0'
+minimal_mistakes_skin: 'default' # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale: "en-US"
+locale: 'en-US'
 title: "Christos's Blog"
-title_separator: "|"
+title_separator: '|'
 subtitle:
-name: &name "Christos Galanopoulos"
+name: &name 'Christos Galanopoulos'
 description: &description "Christos Galanopoulos's blog about GitHub, Azure, Kubernetes, and other technologies."
 url: https://christosgalano.github.io
-baseurl: "" # the subpath of your site, e.g. "/blog"
-repository: "christosgalano/christosgalano.github.io"
+baseurl: '' # the subpath of your site, e.g. "/blog"
+repository: 'christosgalano/christosgalano.github.io'
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: # masthead logo image
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs: false
 words_per_minute: 200 # average reading speed
 comments:
-  provider: "giscus" # https://giscus.app
+  provider: 'giscus' # https://giscus.app
   giscus:
     repo_id: giscus_repo_id_placeholder
-    category_name: "General"
+    category_name: 'General'
     category_id: giscus_category_id_placeholder
-    discussion_term: "pathname"
-    reactions_enabled: "1"
-    theme: "light"
+    discussion_term: 'pathname'
+    reactions_enabled: '1'
+    theme: 'light'
 atom_feed:
   path: # blank (default) uses feed.xml
   hide: true
@@ -37,7 +37,7 @@ lunr:
 
 # Analytics
 analytics:
-  provider: "google-gtag"
+  provider: 'google-gtag'
   google:
     tracking_id: google_gtag_tracking_id_placeholder
     anonymize_ip: false
@@ -49,46 +49,46 @@ social:
   type: # Person or Organization (defaults to Person)
   name: # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-    - "https://github.com/christosgalano"
-    - "https://www.linkedin.com/in/christos-galanopoulos/"
+    - 'https://github.com/christosgalano'
+    - 'https://www.linkedin.com/in/christos-galanopoulos/'
 
 # Site Author
 author:
   name: *name
-  avatar: "/assets/images/self/speaking.webp"
-  bio: "Exploring the devops realm"
-  location: "Athens, Greece"
+  avatar: '/assets/images/self/speaking.webp'
+  bio: 'Innovating with purpose'
+  location: 'Athens, Greece'
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope"
-      url: "mailto:christosgalano@outlook.com"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/christosgalano"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/christos-galanopoulos/"
+    - label: 'Email'
+      icon: 'fas fa-fw fa-envelope'
+      url: 'mailto:christosgalano@outlook.com'
+    - label: 'GitHub'
+      icon: 'fab fa-fw fa-github'
+      url: 'https://github.com/christosgalano'
+    - label: 'LinkedIn'
+      icon: 'fab fa-fw fa-linkedin'
+      url: 'https://www.linkedin.com/in/christos-galanopoulos/'
 
 # Site Footer
 footer:
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope"
-      url: "mailto:christosgalano@outlook.com"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/christosgalano"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/christos-galanopoulos/"
+    - label: 'Email'
+      icon: 'fas fa-fw fa-envelope'
+      url: 'mailto:christosgalano@outlook.com'
+    - label: 'GitHub'
+      icon: 'fab fa-fw fa-github'
+      url: 'https://github.com/christosgalano'
+    - label: 'LinkedIn'
+      icon: 'fab fa-fw fa-linkedin'
+      url: 'https://www.linkedin.com/in/christos-galanopoulos/'
 
 # Reading Files
 include:
   - .htaccess
   - _pages
 exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
+  - '*.sublime-project'
+  - '*.sublime-workspace'
   - vendor
   - .asset-cache
   - .bundle
@@ -113,8 +113,8 @@ exclude:
 keep_files:
   - .git
   - .svn
-encoding: "UTF-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+encoding: 'UTF-8'
+markdown_ext: 'markdown,mkdown,mkdn,mkd,md'
 
 # Conversion
 markdown: kramdown
@@ -145,7 +145,7 @@ collections:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: ''
       type: posts
     values:
       layout: single
@@ -157,14 +157,14 @@ defaults:
       author_profile: true
   # _pages
   - scope:
-      path: "_pages"
+      path: '_pages'
       type: pages
     values:
       layout: single
       author_profile: true
   # tags
   - scope:
-      path: "tags"
+      path: 'tags'
       type: tags
     values:
       layout: tag
