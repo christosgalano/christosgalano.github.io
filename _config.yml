@@ -15,7 +15,7 @@ teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: # masthead logo image
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs: false
-words_per_minute: 200 # average reading speed
+words_per_minute: 120 # average reading speed
 comments:
   provider: 'giscus' # https://giscus.app
   giscus:
