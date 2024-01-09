@@ -3,7 +3,7 @@ minimal_mistakes_skin: 'default' # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale: 'en-US'
-title: "Christos's Blog"
+title: 'Christos Galanopoulos'
 title_separator: '|'
 subtitle:
 name: &name 'Christos Galanopoulos'
