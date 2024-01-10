@@ -8,8 +8,6 @@ header:
 tags:
   - ci-cd
   - github
-toc: true
-related: true
 ---
 
 ## Overview
@@ -34,6 +32,6 @@ To get started with GitHub Actions, all you need is a GitHub account. Once you h
 
 GitHub Actions is an essential tool for any software development team. It's a highly customizable, scalable, and versatile platform that allows developers to automate their workflow, streamline their development process, and integrate with other tools and services. It's simple to use, has a wealth of pre-built actions, and is open-source, which makes it an ever-evolving tool that's constantly improving. So, if you haven't already, give GitHub Actions a try and see how it can help your team be more productive and efficient.
 
-## References
+## Resources
 
 - [**Understanding GitHub Actions**](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions)

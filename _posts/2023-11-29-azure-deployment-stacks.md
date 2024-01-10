@@ -8,8 +8,6 @@ header:
 tags:
   - iac
   - azure
-toc: true
-related: true
 ---
 
 ## Overview
@@ -39,7 +37,7 @@ Deployment stacks can be created using Azure CLI, Azure PowerShell, or the Azure
 - **Subscription:** A stack at this scope deploys the template to either a specified resource group or the same subscription scope.
 - **Management Group:** A stack at this scope deploys the template to the specified subscription scope.
 
-**Important:** When creating a deployment stack the name of the deployment stack must be unique within its management scope. This means that the name of the deployment stack must be unique within the resource group, subscription or management group where the deployment stack is created. So, proper conventions must be used to avoid naming conflicts and ensure meaningful names.
+**Important:** When creating a deployment stack the name of the deployment stack must be unique within its management scope. This means that the name of the deployment stack must be unique within the resource group, subscription, or management group where the deployment stack is created. So, proper conventions must be used to avoid naming conflicts and ensure meaningful names.
 
 {% highlight bash %}
 {% raw %}
@@ -300,7 +298,7 @@ az stack sub delete -n "demo-deployment-stack" --delete-all{% endraw %}{% endhig
 
 ## Summary
 
-Deployment Stacks, offer a streamlined approach to managing Azure resources. Create atomic units at different scopes, implement deny settings for security, and control detachment and deletion. Efficiently update stacks by modifying Bicep files and choosing between update and create commands. This integration simplifies the management lifecycle of resources, enhancing control and security in Azure environments. Given its ease of use and the associated benefits, there is little justification for persisting with regular deployments for resource management. Deployment stacks should be preferred whenever feasible.
+Deployment Stacks offer a streamlined approach to managing Azure resources. Create atomic units at different scopes, implement deny security settings, and control detachment and deletion. Efficiently update stacks by modifying Bicep files and choosing between update and create commands. This integration simplifies the management lifecycle of resources, enhancing control and security in Azure environments. Given its ease of use and the associated benefits, there is little justification for persisting with regular deployments for resource management. Deployment stacks should be preferred whenever feasible.
 
 ## Resources
 

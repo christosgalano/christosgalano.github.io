@@ -8,8 +8,6 @@ header:
 tags:
   - azure
   - testing
-toc: true
-related: true
 ---
 
 ## Overview

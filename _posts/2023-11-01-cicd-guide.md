@@ -8,8 +8,6 @@ header:
 tags:
   - article
   - ci-cd
-toc: true
-related: true
 mermaid: true
 ---
 
@@ -164,7 +162,7 @@ Useful tools:
 
 ### Security tests
 
-Security tests are designed to identify potential vulnerabilities and weaknesses in your application's security, and ensure that it meets the required security standards. Examples of security tests include:
+Security tests are designed to identify potential vulnerabilities and weaknesses in your application's security and ensure that it meets the required security standards. Examples of security tests include:
 
 - **vulnerability scanning:** scan the application for known vulnerabilities
 - **penetration testing:** simulate real-world attacks to identify potential vulnerabilities and assess the effectiveness of security measures
@@ -201,9 +199,9 @@ Examples of dry runs:
 
 ### Smoke tests
 
-Smoke testing comprises of relatively shallow yet wide tests that validate the application's critical components. It is often a short and low-cost test that may rapidly assess if the application has properly launched in production.
+Smoke testing comprises relatively shallow yet wide tests that validate the application's critical components. It is often a short and low-cost test that may rapidly assess if the application has properly launched in production.
 
-If your CI/CD processes have reached a certain level of maturity, it is advisable to include a step for smoke testing. In this step you deploy your infrastructure changes to a temporary environment. By leveraging this approach, you can ensure that the changes behave as expected, ensure that the infrastructure is provisioned and configured as intended,  and finally minimize the risk of introducing unforeseen issues or disruptions in the live system.
+If your CI/CD processes have reached a certain level of maturity, it is advisable to include a step for smoke testing. In this step, you deploy your infrastructure changes to a temporary environment. By leveraging this approach, you can ensure that the changes behave as expected, ensure that the infrastructure is provisioned and configured as intended,  and finally minimize the risk of introducing unforeseen issues or disruptions in the live system.
 
 ## Best practices
 
@@ -223,7 +221,7 @@ If your CI/CD processes have reached a certain level of maturity, it is advisabl
 
 7. **Implement Continuous Feedback:** Provide feedback to developers as soon as possible. Utilize tools like code quality reports and test coverage reports to give developers insights into the health of their code.
 
-8. **Artifact Management:** Store build artifacts in a central repository for easy access and versioning. This ensures that you can deploy specific versions of your application with confidence.
+8. **Artifact Management**:** Store builds artifacts in a central repository for easy access and versioning. This ensures that you can deploy specific versions of your application with confidence.
 
 ### Continuous Delivery/Deployment
 
@@ -251,7 +249,7 @@ If your CI/CD processes have reached a certain level of maturity, it is advisabl
 
 In summary, this CI/CD guide provides essential guidelines and introduces engineers to the world of Continuous Integration and Continuous Deployment. It offers a comprehensive framework for modern software development and deployment practices, emphasizing the significance of continuous improvement, streamlined code integration, automated testing, and dependable delivery processes.
 
-By embracing these principles and adopting best practices, teams can cultivate collaboration, enhance code quality, fortify security measures, and accelerate software releases. CI/CD isn't just a methodology; it represents a cultural shift that empowers organizations to adapt swiftly in the rapidly evolving technology landscape.
+By embracing these principles and adopting best practices, teams can cultivate collaboration, enhance code quality, fortify security measures, and accelerate software releases. CI/CD isn't just a methodology; it represents a cultural shift that empowers organizations to adapt swiftly to the rapidly evolving technology landscape.
 
 As you embark on your CI/CD journey, remember that it's not solely about reaching the final destination but equally about embracing the learning journey itself. Each step forward brings you closer to achieving excellence in software development and delivery.
 

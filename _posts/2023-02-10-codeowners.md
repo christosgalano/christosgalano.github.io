@@ -7,7 +7,6 @@ header:
   teaser: assets/images/github/codeowners/codeowners.webp
 tags:
   - github
-toc: true
 ---
 
 ## Overview
@@ -61,6 +60,6 @@ src/ @developers
 
 To summarize, the CODEOWNERS file in GitHub is a powerful tool for teams to manage access to their codebase and maintain control over code changes. Whether you're working on a small project or a large one, the CODEOWNERS file can help maintain the quality and consistency of the codebase, encourage collaboration, and speed up the development process by specifying the individuals or teams responsible for reviewing and approving changes to specific files or directories.
 
-## References
+## Resources
 
 - [**About code owners**](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners)

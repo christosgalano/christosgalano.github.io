@@ -9,8 +9,6 @@ tags:
   - azure
   - ci-cd
   - github
-toc: true
-related: true
 ---
 
 ## General

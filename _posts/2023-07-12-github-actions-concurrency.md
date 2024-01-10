@@ -8,8 +8,6 @@ header:
 tags:
   - ci-cd
   - github
-toc: true
-related: true
 ---
 
 ## Overview
@@ -92,6 +90,6 @@ And this is an example output with `cancel-in-progress: true`:
 
 In summary. the `concurrency` keyword can be used to make sure that only one job or workflow using a given concurrency group is running at once. You can  set concurrency at the top level of the workflow file, within a specific job, or within a group of jobs.
 
-## References
+## Resources
 
 - [**Using concurrency**](https://docs.github.com/en/actions/using-jobs/using-concurrency)

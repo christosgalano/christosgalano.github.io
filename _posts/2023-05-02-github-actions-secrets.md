@@ -8,8 +8,6 @@ header:
 tags:
   - ci-cd
   - github
-toc: true
-related: true
 ---
 
 ## Overview
@@ -72,6 +70,6 @@ We can see that although the conditional evaluates to true, nowhere in the outpu
 GitHub Secrets provide a secure and convenient way to manage and use sensitive information in your workflows. By using secrets, you can ensure that your workflows are secure and that your
 sensitive information is protected. Whether you're deploying code to servers or authenticating with external services, GitHub secrets offer a flexible and powerful way to manage your secrets.
 
-## References
+## Resources
 
 - [**Encrypted secrets**](https://docs.github.com/en/actions/security-guides/encrypted-secrets)

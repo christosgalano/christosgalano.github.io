@@ -7,8 +7,6 @@ header:
   teaser: assets/images/github/packages/github-packages.webp
 tags:
   - github
-toc: true
-related: true
 ---
 
 ## Overview
@@ -116,6 +114,6 @@ Here is also the published package in GitHub:
 
 GitHub Packages provides a powerful and convenient package management solution that integrates seamlessly with your GitHub repositories. It streamlines the process of sharing, versioning, and distributing software packages, enhancing collaboration and ensuring reliable and consistent builds. By leveraging GitHub Packages, developers can focus on building innovative solutions while benefiting from the vast ecosystem of packages within the GitHub community.
 
-## References
+## Resources
 
 - [**GitHub Packages**](https://docs.github.com/en/packages)

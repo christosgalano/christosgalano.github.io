@@ -8,8 +8,6 @@ header:
 tags:
   - ci-cd
   - github
-toc: true
-related: true
 ---
 
 ## Overview
@@ -105,6 +103,6 @@ Now let's see the output of the caller workflow:
 
 GitHub Workflows are a powerful tool for automating repetitive tasks and improving efficiency in the development process. By using reusable workflows, you can save time, ensure consistency, and increase flexibility. With these best practices, you can create workflows that are easy to maintain, scalable, and adaptable to your specific needs. By embracing reusable workflows, you can maximize your efficiency and focus on what really matters - building great software.
 
-## References
+## Resources
 
 - [**Reusing workflows**](https://docs.github.com/en/actions/using-workflows/reusing-workflows)

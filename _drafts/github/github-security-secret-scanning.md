@@ -8,8 +8,6 @@ header:
 tags:
   - github
   - security
-toc: true
-related: true
 ---
 
 ## Overview
@@ -52,6 +50,6 @@ You can now investigate the alert and take appropriate action to remediate the i
 
 GitHub Secret Scanning is an essential tool for any developer concerned with the security of their codebase. It helps you automate the process of scanning code for potential secrets, improving the overall security of your applications. Secret Scanning is easy to configure and integrate into your workflow, saving you time and reducing technical debt. By using Secret Scanning, you can ensure the security and maintainability of your codebase.
 
-## References
+## Resources
 
 - [**GitHub Secret Scanning**](https://docs.github.com/en/code-security/secret-scanning)

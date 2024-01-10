@@ -8,8 +8,6 @@ header:
 tags:
   - iac
   - azure
-toc: true
-related: true
 ---
 
 ## General

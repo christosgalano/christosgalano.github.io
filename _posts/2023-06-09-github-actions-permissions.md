@@ -8,8 +8,6 @@ header:
 tags:
   - ci-cd
   - github
-toc: true
-related: true
 ---
 
 ## Overview
@@ -117,7 +115,7 @@ In the above example, we set read-all permission for all the jobs in a workflow.
 
 In summary, the combination of `GITHUB_TOKEN` and `permissions` is a powerful tool that allows the fine-tuned access of workflow jobs. When assigning permissions, always remember to follow security best practices.
 
-## References
+## Resources
 
 - [**Assigning permissions to jobs**](https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs)
 - [**Authentication in a workflow**](https://docs.github.com/en/actions/reference/authentication-in-a-workflow)

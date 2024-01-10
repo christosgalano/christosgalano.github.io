@@ -8,8 +8,6 @@ header:
 tags:
   - github
   - security
-toc: true
-related: true
 ---
 
 ## Overview
@@ -48,7 +46,7 @@ Here is an example of the above rule:
 
 ![require-pull-request](/assets/images/github/security/require-pull-request.webp)
 
-In order for someone to able to merge into the main branch, they must first:
+For for someone to able to merge into the main branch, they must first:
 
 - create a pull request
 - have the pull request approved by at least two persons
@@ -88,11 +86,11 @@ Just as with status checks, one can require that deployments succeed before merg
 
 ![require-deployments](/assets/images/github/security/require-deployments.webp)
 
-So, following this logic, we can see that in order to merge into the main branch, the deployments of both the development and production environments must succeed.
+So, following this logic, we can see that to merge into the main branch, the deployments of both the development and production environments must succeed.
 
 ### Do not allow bypassing the above settings
 
-By default all these rules do not apply to administrators and custom roles with the "bypass branch protections" permission. In order to enforce these rules for all users, you can enable the "Do not allow bypassing the above settings" option.
+By default all these rules do not apply to administrators and custom roles with the "bypass branch protections" permission. To enforce these rules for all users, you can enable the "Do not allow bypassing the above settings" option.
 
 ![do-not-allow-bypassing](/assets/images/github/security/do-not-allow-bypassing.webp)
 
@@ -100,7 +98,7 @@ By default all these rules do not apply to administrators and custom roles with 
 
 GitHub's Branch Protection Rules offer engineers and teams a range of powerful features to enhance collaboration and maintain high-quality code. By enforcing best practices, automating processes, and promoting thorough code reviews, these rules streamline development workflows and contribute to the overall success of projects.
 
-## References
+## Resources
 
 - [**About protected branches**](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches)
 - [**Managing a branch protection rule**](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule)

@@ -39,5 +39,6 @@
     "no-inline-html": false,
     "no-trailing-punctuation": false,
     "no-hard-tabs": false,
+    "blanks-around-lists": false,
     "blanks-around-headings": false
 }

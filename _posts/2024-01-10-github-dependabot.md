@@ -1,6 +1,6 @@
 ---
-title: "GitHub Security: Dependabot"
-excerpt: "In today's post we go over GitHub Dependabot."
+title: "GitHub Dependabot"
+excerpt: "GitHub Dependabot is an automated dependency management tool integrated directly into GitHub repositories. It helps keep projects secure and up-to-date by automatically monitoring and updating dependencies."
 tagline: "Keep your dependencies secure and up-to-date"
 header:
   overlay_color: "#24292f"
@@ -8,8 +8,6 @@ header:
 tags:
   - github
   - security
-toc: true
-related: true
 ---
 
 ## Overview
@@ -22,12 +20,10 @@ GitHub Dependabot is an automated dependency management tool integrated directly
 
 ## How does Dependabot work?
 
-### Security
-
+**Security**<br>
 Dependabot scans your project's dependencies for security vulnerabilities and notifies you of any issues. It also provides automated pull requests to update vulnerable dependencies, making it easy to fix security issues quickly. Dependabot can be configured to scan for security vulnerabilities daily or weekly, depending on your needs. You can also set the frequency of scans and choose which package managers to monitor.
 
-### Versioning
-
+**Versioning**<br>
 Dependabot uses semantic versioning to determine which dependencies to update. It checks the version numbers of your dependencies against the latest available versions and generates a list of updates. Dependabot then creates a pull request for each update, which you can review and merge. You can configure Dependabot to create pull requests for all updates or only for security updates.
 
 ## Benefits of using Dependabot
@@ -74,6 +70,6 @@ And here is an example pull request that dependabot created:
 
 Keeping your dependencies up-to-date is critical for maintaining the security and stability of your applications. However, managing dependencies can be a time-consuming and challenging task. GitHub Dependabot automates this process, saving you time and improving the security of your applications. It's easy to configure and integrates seamlessly with GitHub, making it an essential tool for any engineer, whether it is software or devops.
 
-## References
+## Resources
 
 - [**GitHub Dependabot**](https://docs.github.com/en/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/about-dependabot-version-updates)

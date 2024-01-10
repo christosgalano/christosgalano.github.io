@@ -7,8 +7,6 @@ header:
   teaser: assets/images/azure/wordpress-on-azure/infrastructure.jpg
 tags:
   - azure
-toc: true
-related: true
 ---
 
 ![infrastructure](/assets/images/azure/wordpress-on-azure/infrastructure.jpg)

@@ -8,8 +8,6 @@ header:
 tags:
   - ci-cd
   - github
-toc: true
-related: true
 ---
 
 ## Overview
@@ -98,6 +96,6 @@ Finally, we do not want all of the remaining jobs to be cancelled if a matrix-jo
 
 The matrix strategy in GitHub Actions is a powerful feature that can help you optimize your CI/CD pipeline. By defining a matrix, you can test your code with multiple configurations, increasing coverage and reducing the risk of errors. It's also a great way to automate testing on different configurations, saving you time and effort. If you're not already using the matrix strategy, give it a try and see how it can improve your CI.
 
-## References
+## Resources
 
 - [**Using a matrix for your jobs**](https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs)

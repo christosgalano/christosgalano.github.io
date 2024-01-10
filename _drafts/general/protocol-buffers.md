@@ -7,8 +7,6 @@ header:
   teaser: /assets/images/protobuf/protobuf.webp
 tags:
   - miscellaneous
-toc: true
-related: true
 ---
 
 ## General

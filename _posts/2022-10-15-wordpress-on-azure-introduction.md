@@ -7,8 +7,6 @@ header:
   teaser: assets/images/azure/wordpress-on-azure/wordpress-on-azure.png
 tags:
   - azure
-toc: true
-related: true
 ---
 
 ## General

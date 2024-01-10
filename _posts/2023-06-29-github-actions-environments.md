@@ -8,8 +8,6 @@ header:
 tags:
   - ci-cd
   - github
-toc: true
-related: true
 ---
 
 ## Overview
@@ -89,6 +87,6 @@ Now let's see the output of the deployments that occurred:
 
 GitHub environments are a powerful feature that can help streamline your development workflow and improve collaboration among team members. By creating multiple environments, you can test and deploy your code in a controlled and reproducible way, reducing the risk of errors or bugs. If you're not already using environments in your development workflow, now is a great time to start!
 
-## References
+## Resources
 
 - [**Using environments for deployment**](https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment)

@@ -8,8 +8,6 @@ header:
 tags:
   - iac
   - testing
-toc: true
-related: true
 ---
 
 ## Overview

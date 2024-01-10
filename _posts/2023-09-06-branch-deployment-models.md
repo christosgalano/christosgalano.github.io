@@ -7,13 +7,11 @@ header:
   teaser: assets/images/github/branches/branch-deploy-model.webp
 tags:
   - ci-cd
-toc: true
-related: true
 ---
 
 ## Overview
 
-Whether you're a software or devops engineer, you're probably in scenarios where you need to deploy your code on a daily basis. It makes no difference whether the code is infrastructure or application-related; the necessity to deploy it in a secure and reliable manner is always present. As a result, it is critical to understand the main deployment models accessible to you and select the one that best fits your needs.
+Whether you're a software or devops engineer, you're probably in scenarios where you need to deploy your code daily. It makes no difference whether the code is infrastructure or application-related; the necessity to deploy it securely and reliably is always present. As a result, it is critical to understand the main deployment models accessible to you and select the one that best fits your needs.
 
 ## Merge deploy model
 
@@ -62,7 +60,7 @@ The branch deployment model emphasizes maintaining a reliable main branch and pr
 
 The branch deploy model is a more reliable and secure deployment model than the merge deploy model. It ensures that the main branch is always in a stable state and that changes are thoroughly tested and validated before being merged. This approach also provides a clear path for rollback if needed.
 
-## References
+## Resources
 
 - [**Enabling branch deployments through IssueOps with GitHub Actions**](https://github.blog/2023-02-02-enabling-branch-deployments-through-issueops-with-github-actions/)
 - [**terraform-template-repo**](https://github.com/christosgalano/terraform-template-repo)

@@ -7,8 +7,6 @@ header:
   teaser: assets/images/azure/wordpress-on-azure/monitoring-and-testing.jpg
 tags:
   - azure
-toc: true
-related: true
 ---
 
 ## General
