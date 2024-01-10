@@ -136,10 +136,7 @@ kramdown:
   syntax_highlighter: rouge
 
 # Collections
-collections:
-  github_actions:
-    output: true
-    permalink: /:collection/:path/
+# collections:
 
 # Defaults
 defaults:
