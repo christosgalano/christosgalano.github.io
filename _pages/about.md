@@ -26,5 +26,5 @@ Thank you for visiting my blog, and I hope you find the content insightful and i
 
 Christos
 
-[**Download CV**]({{ site.url }}/assets/files/Christos_Galanopoulos.pdf){:target="_blank"}
-{:class="download-cv"}
+[**Resume**]({{ site.url }}/assets/files/Christos-Galanopoulos.pdf){:target="_blank"}
+{:class="resume"}
