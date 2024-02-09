@@ -1,6 +1,6 @@
 ---
-title: "GitHub Security: Code Scanning"
-excerpt: "In today's post we go over code scanning capabilities in GitHub."
+title: "GitHub Code Scanning"
+excerpt: "GitHub Code Scanning is a tool that analyzes your code for security vulnerabilities, providing actionable feedback to help you remediate issues quickly."
 tagline: "Secure your codebase"
 header:
   overlay_color: "#24292f"

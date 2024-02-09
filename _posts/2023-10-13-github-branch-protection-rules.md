@@ -1,6 +1,6 @@
 ---
-title: "GitHub Security: Branch Protection Rules"
-excerpt: "In today's post we look at ways to protect our branches."
+title: "GitHub Branch Protection Rules"
+excerpt: "Branch Protection Rules are a set of rules that can be applied to a branch in a GitHub repository to enforce best practices, streamline development processes, and foster a culture of collaboration."
 tagline: "A guide to one of GitHub's best features"
 header:
   overlay_color: "#24292f"
