@@ -180,11 +180,11 @@
 }
 
 .author__bio {
-  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
   @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 13px; // if author__name is used change to 20px
+    margin-bottom: 13px;
   }
 }
 
