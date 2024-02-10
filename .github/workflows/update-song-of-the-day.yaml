@@ -42,7 +42,7 @@ jobs:
           git push
   
   deploy:
-    uses: ./.github/worikflows/deploy.yaml
+    uses: ./.github/workflows/deploy.yaml
     permissions: 
       contents: read
       pages: write
