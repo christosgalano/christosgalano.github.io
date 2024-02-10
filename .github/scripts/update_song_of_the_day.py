@@ -5,7 +5,7 @@ import sys
 
 
 def extract_id(s):
-    pattern = r'song-of-the-day: "https://open\.spotify\.com/embed/track/(\w+)'
+    pattern = r"song-of-the-day: (\w+)"
     match = re.search(pattern, s)
     if match:
         return match.group(1)
@@ -13,7 +13,7 @@ def extract_id(s):
 
 
 def replace_id(s, new_id):
-    pattern = r'(song-of-the-day: "https://open\.spotify\.com/embed/track/)\w+'
+    pattern = r"(song-of-the-day: )\w+"
     return re.sub(pattern, r"\1" + new_id, s)
 
 
@@ -44,9 +44,7 @@ def main():
                 print(f"Selected song: {song_id}")
 
             # Update the song of the day
-            lines[
-                i
-            ] = f'song-of-the-day: "https://open.spotify.com/embed/track/{song_id}?utm_source=generator&theme=0"\n'
+            lines[i] = f"song-of-the-day: {song_id}\n"
             break
 
     # Write the updated lines back to the file
