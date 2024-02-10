@@ -63,7 +63,7 @@ rock-and-metal:
 
 ## Song of the Day
 
-{% include spotify_track id="song-of-the-day" %}
+<!-- {% include spotify_track id="song-of-the-day" %} -->
 
 ## Youtube Favorites
 
