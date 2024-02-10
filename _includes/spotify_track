@@ -1,10 +1,11 @@
 {% if include.id %}
-{% assign spotify_track = page[include.id] %}
+{% assign track_id = page[include.id] %}
 {% else %}
-{% assign spotify_track = page.spotify_track %}
+{% assign track_id = page.spotify_track %}
 {% endif %}
 
 <div class="spotify-embed">
-    <iframe src="{{ spotify_track }}" frameBorder="0" allowfullscreen="true" loading="lazy"
+    <iframe src="https://open.spotify.com/embed/track/{{ track_id }}?utm_source=generator&theme=0"" frameBorder=" 0"
+        allowfullscreen="true" loading="lazy"
         allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>

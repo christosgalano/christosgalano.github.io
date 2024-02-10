@@ -7,7 +7,7 @@ header:
   overlay_filter: "0.75"
   overlay_image: assets/images/music-corner/horizontal-vinyl.webp
 
-song-of-the-day: "https://open.spotify.com/embed/track/1ivrWqo5wHG3mTzEIzalry?utm_source=generator&theme=0"
+song-of-the-day: "1ivrWqo5wHG3mTzEIzalry"
 
 youtube-favorites:
   - url: https://www.youtube.com/embed/8IEezGQwgZk?si=BpG-Nz7HA957PBEb # Ana Vidovic - Lambrecht
@@ -15,7 +15,7 @@ youtube-favorites:
   - url: https://www.youtube.com/embed/5_AKc1q13Gw?si=WRZrQKMdQR7nEaSW # Borbàla Seres - Sonata K208 by Domenico Scarlatti
   - url: https://www.youtube.com/embed/ha7d1Kh7TuM?si=51WSLcH5SSPiRhoq # Ihor Kordiuk - Adagissimo from Capriccio BWV 992
   - url: https://www.youtube.com/embed/Q-vcnyI-LRQ?si=z91G9aveQmD2D6U0 # Alberto Mesirca -Sonata K466 by Domenico Scarlatti
-  - url: https://www.youtube.com/embed/YYYIbqWQ8U8?si=c7grhuFvAwVNXAWv # Siccas - Best of Baroque & Renaissance
+- url: https://www.youtube.com/embed/YYYIbqWQ8U8?si=c7grhuFvAwVNXAWv # Siccas - Best of Baroque & Renaissance
 
 classical:
   - url: https://open.spotify.com/embed/album/47qtV9qmB13tNmMCGJBTZp?utm_source=generator&theme=0   # Rachmaninoff: Piano Concerto No. 2 in C Minor, Op. 18 & Rhapsody on a Theme of Paganini, Op. 43·Sergei Rachmaninoff
