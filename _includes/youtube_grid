@@ -7,7 +7,7 @@
 <div class="youtube-grid-container">
     {% for video in youtube_grid %}
     <div class="youtube-responsive-video">
-        <iframe src="{{ video.url }}" frameBorder="0" allowfullscreen="true" loading="lazy"
+        <iframe src="https://www.youtube.com/embed/{{ video.id }}" frameBorder="0" allowfullscreen="true" loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture"></iframe>
     </div>
     {% endfor %}

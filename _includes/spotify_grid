@@ -7,7 +7,8 @@
 <div class="spotify-grid-container">
     {% for track in spotify_grid %}
     <div class="spotify-responsive-track">
-        <iframe src="{{ track.url }}" frameBorder="0" allowfullscreen="true" loading="lazy"
+        <iframe src="https://open.spotify.com/embed/album/{{ track.id }}?utm_source=generator&theme=0" frameBorder="0"
+            allowfullscreen="true" loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture"></iframe>
     </div>
     {% endfor %}
