@@ -1,0 +1,45 @@
+# This workflow updates the "song_library.json" file in the "assets/files" folder
+name: Update Song Library
+
+on:
+  schedule:
+    - cron: '0 6 1 * *' # Run at 6:00 AM on the first day of the month
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  update-song-library:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11' 
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+        working-directory: .github/scripts
+      
+      - name: Run script
+        run: |
+          python ./.github/scripts/update_song_library.py \
+          --client-id ${{ secrets.SPOTIFY_CLIENT_ID }} \
+          --client-secret ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add assets/files/song_library.json
+          git commit -m "Update song library"
+          git push

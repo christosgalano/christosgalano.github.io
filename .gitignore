@@ -33,3 +33,6 @@ _site
 
 # Notes
 notes.md
+
+# Cache
+.cache

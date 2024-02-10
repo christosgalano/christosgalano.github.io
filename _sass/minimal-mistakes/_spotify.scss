@@ -23,3 +23,35 @@
         border: 0;
     }
 }
+
+.spotify-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(120px, auto);
+    gap: 0.5rem;
+
+    @media (max-width: 1200px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (max-width: 800px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.spotify-responsive-track {
+    position: relative;
+    overflow: hidden;
+
+    iframe {
+        transition: opacity 0.125s;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

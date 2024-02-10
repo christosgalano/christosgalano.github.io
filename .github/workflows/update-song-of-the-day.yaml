@@ -1,0 +1,42 @@
+# This workflow updates the "song-of-the-day" value in the "_pages/music-corner.md" file.
+name: Update Song of the Day
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Run every day at 00:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  update-song-of-the-day:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11' 
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+        working-directory: .github/scripts
+      
+      - name: Run script
+        run: python ./.github/scripts/update_song_of_the_day.py 
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add _pages/music-corner.md
+          git commit -m "Update song of the day"
+          git push

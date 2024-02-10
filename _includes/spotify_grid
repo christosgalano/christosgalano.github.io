@@ -1,0 +1,14 @@
+{% if include.id %}
+{% assign spotify_grid = page[include.id] %}
+{% else %}
+{% assign spotify_grid = page.spotify_grid %}
+{% endif %}
+
+<div class="spotify-grid-container">
+    {% for track in spotify_grid %}
+    <div class="spotify-responsive-track">
+        <iframe src="{{ track.url }}" frameBorder="0" allowfullscreen="true" loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture"></iframe>
+    </div>
+    {% endfor %}
+</div>
