@@ -61,7 +61,7 @@ rock-and-metal:
 
 ## Youtube Favorites
 
-{% include youtube_grid id="youtube-favorites" %}
+<!-- {% include youtube_grid id="youtube-favorites" %} -->
 
 ## Classical
 
