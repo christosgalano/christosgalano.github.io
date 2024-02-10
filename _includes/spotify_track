@@ -5,7 +5,7 @@
 {% endif %}
 
 <div class="spotify-embed">
-    <iframe src="https://open.spotify.com/embed/track/{{ track_id }}?utm_source=generator&theme=0"" frameBorder=" 0"
+    <iframe src="https://open.spotify.com/embed/track/{{ track_id }}?utm_source=generator&theme=0" frameBorder=" 0"
         allowfullscreen="true" loading="lazy"
         allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>
