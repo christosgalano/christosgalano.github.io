@@ -6,17 +6,14 @@ header:
   overlay_color: "#24292f"
   overlay_filter: "0.75"
   overlay_image: assets/images/music-corner/horizontal-vinyl.webp
-
 song-of-the-day: "1ivrWqo5wHG3mTzEIzalry"
-
 youtube-favorites:
   - url: https://www.youtube.com/embed/8IEezGQwgZk?si=BpG-Nz7HA957PBEb # Ana Vidovic - Lambrecht
   - url: https://www.youtube.com/embed/Dne6Ofhykqw?si=_hWNhcLcFQnjETAT # Ana Vidovic - Concierto de Aranjuez, Capriccio Diabolico
   - url: https://www.youtube.com/embed/5_AKc1q13Gw?si=WRZrQKMdQR7nEaSW # Borbàla Seres - Sonata K208 by Domenico Scarlatti
   - url: https://www.youtube.com/embed/ha7d1Kh7TuM?si=51WSLcH5SSPiRhoq # Ihor Kordiuk - Adagissimo from Capriccio BWV 992
   - url: https://www.youtube.com/embed/Q-vcnyI-LRQ?si=z91G9aveQmD2D6U0 # Alberto Mesirca -Sonata K466 by Domenico Scarlatti
-- url: https://www.youtube.com/embed/YYYIbqWQ8U8?si=c7grhuFvAwVNXAWv # Siccas - Best of Baroque & Renaissance
-
+  - url: https://www.youtube.com/embed/YYYIbqWQ8U8?si=c7grhuFvAwVNXAWv # Siccas - Best of Baroque & Renaissance
 classical:
   - url: https://open.spotify.com/embed/album/47qtV9qmB13tNmMCGJBTZp?utm_source=generator&theme=0   # Rachmaninoff: Piano Concerto No. 2 in C Minor, Op. 18 & Rhapsody on a Theme of Paganini, Op. 43·Sergei Rachmaninoff
   - url: https://open.spotify.com/embed/album/5jMYJmjUYMHvuWhJTjitaD?utm_source=generator&theme=0   # Bach: Brandenburg Concertos
@@ -34,7 +31,6 @@ classical:
   - url: https://open.spotify.com/embed/album/6Np2Nm763aXzl0Za3PJmRG?utm_source=generator&theme=0   # Bach Violin Sonatas: Manuel Barrueco
   - url: https://open.spotify.com/embed/album/6lu8QlTLnOsd199MZ7rHOy?utm_source=generator&theme=0   # Sabine Meyer: Mozart - Clarinet Concerto, Concerto Debussy, Fantasma Takemitsu
   - url: https://open.spotify.com/embed/album/54Awn36ryf55PkZyOR4iwQ?utm_source=generator&theme=0   # Tchaikovsky: The Nutcracker, Op. 71
-
 jazz:
   - url: https://open.spotify.com/embed/album/7pU5qUNqbOMToIyqzF0Nmg?utm_source=generator&theme=0   # John Coltrane: Soultrane
   - url: https://open.spotify.com/embed/album/1weenld61qoidwYuZ1GESA?utm_source=generator&theme=0   # Miles Davis: Kind of Blue
@@ -44,7 +40,6 @@ jazz:
   - url: https://open.spotify.com/embed/album/7Eoz7hJvaX1eFkbpQxC5PA?utm_source=generator&theme=0   # John Coltrane: A Love Supreme
   - url: https://open.spotify.com/embed/album/4vIJFprkZ7vyN6nhcBgQmG?utm_source=generator&theme=0   # John Coltrane: Blue Train (Expanded Edition)
   - url: https://open.spotify.com/embed/album/6uLc3AR3EtapSUlQz5lGWP?utm_source=generator&theme=0   # Round Midnight Project: Nocturnes
-
 rock-and-metal:
   - url: https://open.spotify.com/embed/album/0ui4S0TZghkf1d1Wz0oWpk?utm_source=generator&theme=0   # Led Zeppelin: The Song Remains The Same
   - url: https://open.spotify.com/embed/album/1J8QW9qsMLx3staWaHpQmU?utm_source=generator&theme=0   # Led Zeppelin: Led Zeppelin
@@ -58,7 +53,6 @@ rock-and-metal:
   - url: https://open.spotify.com/embed/album/2T6jeELx5BqH4GMLObBy10?utm_source=generator&theme=0   # Black Sabbath: Black Sabbath
   - url: https://open.spotify.com/embed/album/3kBG6q0aXKxzn01wKTwZr5?utm_source=generator&theme=0   # Black Sabbath: Master of Reality
   - url: https://open.spotify.com/embed/album/5RS9xkMuDmeVISqGDBmnSa?utm_source=generator&theme=0   # Queen: The Works
-
 ---
 
 ## Song of the Day
