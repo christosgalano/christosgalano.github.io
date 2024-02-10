@@ -40,3 +40,10 @@ jobs:
           git add _pages/music-corner.md
           git commit -m "Update song of the day"
           git push
+  
+  deploy:
+    uses: ./.github/worikflows/deploy.yaml
+    permissions: 
+      contents: read
+      pages: write
+      id-token: write
