@@ -6,7 +6,7 @@ header:
   overlay_color: "#24292f"
   overlay_filter: "0.75"
   overlay_image: assets/images/music-corner/horizontal-vinyl.webp
-song-of-the-day: 5zxAi929dOt3aDyafibvt0
+song-of-the-day: 5AaqgjT1FYc9tNR3jOUnjw
 youtube-favorites:
   - id: 8IEezGQwgZk?si=BpG-Nz7HA957PBEb # Ana Vidovic - Lambrecht
   - id: Dne6Ofhykqw?si=_hWNhcLcFQnjETAT # Ana Vidovic - Concierto de Aranjuez, Capriccio Diabolico
