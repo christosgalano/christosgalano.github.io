@@ -68,7 +68,7 @@ publish-docker-image:
     
     - name: Build and push Docker image
       id: build-push-image
-      uses: docker/build-push-action@v4
+      uses: docker/build-push-action@v5
       with:
         context: ${{ github.workspace }}/src
         push: true
