@@ -39,6 +39,7 @@ jobs:
       
       - name: Inject values
         run: |
+          chmod +x ./.github/scripts/inject_values.sh
           ./.github/scripts/inject_values.sh \
           ${{ secrets.GISCUS_REPO_ID }} \
           ${{ secrets.GISCUS_CATEGORY_ID }} \
