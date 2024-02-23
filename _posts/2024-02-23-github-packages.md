@@ -1,7 +1,7 @@
 ---
 title: "GitHub Packages"
-excerpt: "In today's post we look at package management with GitHub Packages."
-tagline: "Simplifying package management"
+excerpt: "GitHub Packages is a package management service provided by GitHub. It allows developers to publish and consume software packages, including libraries, frameworks, and other dependencies, within the GitHub ecosystem."
+tagline: "Simplifying package management in GitHub"
 header:
   overlay_color: "#24292f"
   teaser: assets/images/github/packages/github-packages.webp
