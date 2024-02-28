@@ -454,4 +454,3 @@ In summary, Protocol Buffers are a great way to serialize and deserialize data. 
 ## Resources
 
 - [**Protobuf**](https://protobuf.dev/)
-- [**Buf**](https://buf.build/docs)

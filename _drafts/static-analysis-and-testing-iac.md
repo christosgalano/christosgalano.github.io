@@ -4,7 +4,7 @@ excerpt: "Exploring the synergy of static analysis and testing in infrastructure
 tagline: "Enhancing IaC quality and reliability through systematic examination"
 header:
   overlay_color: "#24292f"
-  teaser: assets/images/testing/bug-testing.webp
+  teaser: /assets/images/testing/bug-testing.webp
 tags:
   - iac
   - testing
@@ -84,4 +84,4 @@ In conclusion, combining Static Analysis and Testing offers a robust approach to
 
 ## Resources
 
-- [CI/CD Guideline](https://christosgalano.github.io/cicd-guideline/)
+- [**CI/CD Guideline**](https://christosgalano.github.io/cicd-guideline/)
