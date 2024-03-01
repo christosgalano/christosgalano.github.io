@@ -3,7 +3,7 @@ permalink: /about/
 title: "About"
 ---
 
-Hey there! I'm Christos, a dedicated DevOps engineer with a strong interest in technology. I constantly strive for improvement, exploring and mastering various tools and technologies that empower software development and cloud computing. Furthermore, I enjoy sharing information to increase public awareness of many topics. I strongly believe in the power of information dissemination and promoting a culture of continual learning.
+Hey there! I'm Christos, a dedicated DevOps engineer and Microsoft MVP with a strong interest in technology. I constantly strive for improvement, exploring and mastering various tools and technologies that empower software development and cloud computing. Furthermore, I enjoy sharing information to increase public awareness of many topics. I strongly believe in the power of information dissemination and promoting a culture of continual learning.
 
 ## The purpose of this blog
 
