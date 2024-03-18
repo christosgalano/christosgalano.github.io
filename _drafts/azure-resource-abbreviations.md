@@ -51,13 +51,13 @@ def fetch_resource_abbreviations(url) -> dict[str, str]:
     return data
 
 def main(file_path) -> None:
-    url = "<https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations>"
+    url = "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations"
     data = fetch_resource_abbreviations(url)
     with open(file=file_path, mode="w") as f:
         json.dump(obj=data, fp=f, indent=2)
         f.write("\n")
 
-if **name** == "**main**":
+if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "-f",
