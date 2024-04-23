@@ -10,10 +10,11 @@ song-of-the-day: 4zGq9NwGL4YV0NbqoqjNaZ
 youtube-favorites:
   - id: 8IEezGQwgZk?si=BpG-Nz7HA957PBEb # Ana Vidovic - Lambrecht
   - id: Dne6Ofhykqw?si=_hWNhcLcFQnjETAT # Ana Vidovic - Concierto de Aranjuez, Capriccio Diabolico
+  - id: 8VHNWAhvdNE?si=a5Z4EozoN9xuorkE # Yo-Yo Ma - Bach's Prélude from Cello Suite No. 2 in Alaska
   - id: 5_AKc1q13Gw?si=WRZrQKMdQR7nEaSW # Borbàla Seres - Sonata K208 by Domenico Scarlatti
-  - id: ha7d1Kh7TuM?si=51WSLcH5SSPiRhoq # Ihor Kordiuk - Adagissimo from Capriccio BWV 992
   - id: Q-vcnyI-LRQ?si=z91G9aveQmD2D6U0 # Alberto Mesirca -Sonata K466 by Domenico Scarlatti
   - id: YYYIbqWQ8U8?si=c7grhuFvAwVNXAWv # Siccas - Best of Baroque & Renaissance
+  # - id: ha7d1Kh7TuM?si=51WSLcH5SSPiRhoq # Ihor Kordiuk - Adagissimo from Capriccio BWV 992
 classical:
   - id: 47qtV9qmB13tNmMCGJBTZp # Rachmaninoff: Piano Concerto No. 2 in C Minor, Op. 18 & Rhapsody on a Theme of Paganini, Op. 43·Sergei Rachmaninoff
   - id: 5jMYJmjUYMHvuWhJTjitaD # Bach: Brandenburg Concertos
