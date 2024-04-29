@@ -325,6 +325,90 @@ locals {
 {% endraw %}
 {% endhighlight %}
 
+## GitHub Actions
+
+You can automate the process of updating the abbreviations JSON file by using GitHub Actions. Here's an example workflow that runs the Python script on a schedule and creates a pull request if the file has changed.
+
+{% highlight yaml %}
+{% raw %}
+# File: update-resource-abbreviations.yaml
+
+name: Update Resource Abbreviations
+
+on:
+  schedule:
+    - cron: '0 6 ** 1'  # Runs at 06:00, only on Monday
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  update-abbreviations:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4
+
+      - name: Run update script
+        run: python ./.github/scripts/update_resource_abbreviations.py -f ./bicep/abbreviations.json
+
+      - name: Check for changes
+        id: git-diff
+        run: |
+          change=false
+          if git status --porcelain | grep -E 'bicep/abbreviations.json'; then
+            change=true
+          fi
+          echo "changed=$change" >> $GITHUB_OUTPUT
+
+      - name: Create/Update branch and commit changes
+        if: steps.git-diff.outputs.changed == 'true'
+        env:
+          BRANCH_NAME: update-resource-abbreviations
+        run: |
+          git pull origin main
+          git switch ${{ env.BRANCH_NAME }} || git switch -c ${{ env.BRANCH_NAME }}
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add bicep/abbreviations.json
+          git commit -m 'Update resource abbreviations'
+          git push --set-upstream origin ${{ env.BRANCH_NAME }}
+
+      # Make sure to enable *Allow GitHub Actions to create and approve pull requests* under Settings > Actions
+      - name: Create pull request
+        if: steps.git-diff.outputs.changed == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH_NAME: update-resource-abbreviations
+        run: |
+          gh pr create \
+          --base ${{ github.ref_name }} \
+          --head ${{ env.BRANCH_NAME }} \
+          --title "Update resource abbreviations" \
+          --body "Automated changes by GitHub Actions regarding the *bicep/abbreviations.json* file."
+{% endraw %}
+{% endhighlight %}
+
+![pull-request-1](/assets/images/azure/resource-abbreviations/pull-request-1.webp)
+
+![pull-request-2](/assets/images/azure/resource-abbreviations/pull-request-2.webp)
+
 ## Summary
 
 Automating the extraction and maintenance of Azure resource abbreviations with this Python script enhances efficiency and consistency in resource naming practices. By keeping abbreviations up-to-date, developers and cloud practitioners can ensure clarity and conformity in resource naming conventions, contributing to a well-organized and easily understandable Azure infrastructure.
