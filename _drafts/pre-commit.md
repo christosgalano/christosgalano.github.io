@@ -6,6 +6,7 @@ header:
   overlay_color: "#24292f"
   teaser: /assets/images/pre-commit/pre-commit.webp
 tags:
+  - miscellaneous
 ---
 
 ## Introduction
