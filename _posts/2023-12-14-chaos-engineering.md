@@ -6,7 +6,6 @@ header:
   overlay_color: "#24292f"
   teaser: assets/images/testing/chaos-engineering.webp
 tags:
-  - article
   - testing
 ---
 

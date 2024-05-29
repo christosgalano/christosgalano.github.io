@@ -10,7 +10,7 @@ tags:
   - infrastructure-as-code
 ---
 
-## Introduction
+## Overview
 
 In today's fast-paced cloud landscape, consistency, reliability, and adherence to best practices are crucial. Azure Verified Modules (AVM) address these needs by providing pre-defined, reusable Infrastructure as Code (IaC) modules developed and maintained by Microsoft for both Bicep and Terraform. They streamline Azure resource deployment, simplifying infrastructure management while ensuring compliance with Microsoft's well-architected framework (WAF). Whether for a small-scale application or a complex architecture, AVM modules provide a reliable foundation for Azure deployments, supported by Microsoft's robust assistance and updates.
 

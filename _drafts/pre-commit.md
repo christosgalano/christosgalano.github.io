@@ -9,7 +9,7 @@ tags:
   - miscellaneous
 ---
 
-## Introduction
+## Overview
 
 Maintaining code quality is crucial, whether you're a software developer, data scientist, devops engineer, or anyone working with code in a Git repository. Writing clean and consistent code can be challenging, especially when collaborating with others or managing large projects. Tools like pre-commit help automate this process by running various inspection and formatting tools on your code before you commit it to a version control system. In this post, we'll explore what pre-commit is, how it works, what it can offer, and provide an example of its usage.
 

@@ -4,7 +4,7 @@ excerpt: "Protocol Buffers, also known as protobuf, is a language-agnostic binar
 tagline: "A new page to data serialization"
 header:
   overlay_color: "#24292f"
-  teaser: /assets/images/protobuf/protobuf.webp
+  teaser: /assets/images/demos/protobuf/protobuf.webp
 tags:
   - go
   - miscellaneous
@@ -60,7 +60,7 @@ These use cases showcase the versatility of Protocol Buffers in addressing commu
 
 ### General Flow
 
-![protocol-buffers-concepts](/assets/images/protobuf/protocol-buffers-concepts.webp)
+![protocol-buffers-concepts](/assets/images/demos/protobuf/protocol-buffers-concepts.webp)
 
 ### File Organization
 
@@ -146,7 +146,7 @@ message Person {
 
 In the example above, we have reserved field numbers 4 to 10 and the field name `address`. So, if any developer attempts to use these numbers or names in the future, the compiler will issue a warning.
 
-![reserved](/assets/images/protobuf/reserved.webp)
+![reserved](/assets/images/demos/protobuf/reserved.webp)
 
 **Nested Types**
 
@@ -425,11 +425,11 @@ First, we create a new composer and a new song. Then, we encode the song using p
 
 Here is the hexadecimal comparison between the protobuf and JSON encodings:
 
-![hex-output](/assets/images/protobuf/hex-output.webp)
+![hex-output](/assets/images/demos/protobuf/hex-output.webp)
 
 As you can see, the protobuf encoding is much more compact than the JSON encoding. We can easily see the difference in size:
 
-![size](/assets/images/protobuf/size.webp)
+![size](/assets/images/demos/protobuf/size.webp)
 
 ## Best Practices
 
