@@ -6,8 +6,8 @@ header:
   overlay_color: "#24292f"
   teaser: /assets/images/azure/resource-abbreviations/bicep.webp
 tags:
-  - azure
   - iac
+  - azure
 ---
 
 ## Overview
