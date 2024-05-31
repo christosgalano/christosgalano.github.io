@@ -7,7 +7,7 @@ header:
   teaser: /assets/images/azure/azure-verified-modules/avm.webp
 tags:
   - azure
-  - infrastructure-as-code
+  - iac
 ---
 
 ## Overview

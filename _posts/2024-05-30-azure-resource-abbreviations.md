@@ -7,7 +7,7 @@ header:
   teaser: /assets/images/azure/resource-abbreviations/bicep.webp
 tags:
   - azure
-  - infrastructure-as-code
+  - iac
 ---
 
 ## Overview
