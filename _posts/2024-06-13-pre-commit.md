@@ -108,6 +108,6 @@ pre-commit is a powerful tool that helps maintain code quality by automating che
 
 ## Resources
 
-- [**pre-commit Documentation**](https://pre-commit.com/)
-- [**pre-commit Hooks Repository**](https://github.com/pre-commit/pre-commit-hooks)
-- [**Terraform pre-commit Hooks**](https://github.com/antonbabenko/pre-commit-terraform)
+- [**pre-commit documentation**](https://pre-commit.com/)
+- [**pre-commit hooks repository**](https://github.com/pre-commit/pre-commit-hooks)
+- [**Terraform pre-commit hooks**](https://github.com/antonbabenko/pre-commit-terraform)
