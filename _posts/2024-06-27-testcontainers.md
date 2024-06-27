@@ -210,7 +210,6 @@ func (r *RedisSongRepository) Delete(ctx context.Context, id string) error {
 	}
 	return nil
 }
-
 {% endraw %}
 {% endhighlight %}
 </details>
@@ -522,7 +521,6 @@ func TestRedisSongRepository_Delete(t *testing.T) {
 		t.Fatalf("failed to delete non-existent song: %s", err)
 	}
 }
-
 {% endraw %}
 {% endhighlight %}
 </details>
