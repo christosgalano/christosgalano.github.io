@@ -9,7 +9,6 @@ tags:
   - github
   - security
   - ci-cd
-  - testing
 ---
 
 ## Overview
