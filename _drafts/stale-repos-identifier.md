@@ -84,11 +84,9 @@ jobs:
 
 - **ADDITIONAL_METRICS:** This variable specifies additional metrics to consider when evaluating repository activity. In this example, the action also checks for open pull requests (PRs) to provide a more comprehensive overview of repository activity.
 
-![issue-1](/assets/images/github/stale-repos/issue-1.webp)
-
-![issue-2](/assets/images/github/stale-repos/issue-2.webp)
-
 ![workflow](/assets/images/github/stale-repos/workflow.webp)
+
+![issue-1](/assets/images/github/stale-repos/issue-1.webp)
 
 ## Summary
 
