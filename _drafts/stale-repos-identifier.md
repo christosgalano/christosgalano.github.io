@@ -44,7 +44,7 @@ name: stale-repos-identifier
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 1 **'
+    - cron: '0 0 1 * *' # At 00:00, on day 1 of the month
 
 jobs:
   identify:

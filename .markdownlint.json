@@ -39,5 +39,6 @@
     "no-hard-tabs": false,
     "blanks-around-lists": false,
     "blanks-around-headings": false,
-    "no-bare-urls": false
+    "no-bare-urls": false,
+    "no-space-in-emphasis": false
 }
