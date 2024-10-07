@@ -1,14 +1,14 @@
 # main links
 main:
-  - title: "Home"
+  - title: 'Home'
     url: /
   # - title: "Categories"
   #   url: /categories/
-  - title: "Tags"
+  - title: 'Tags'
     url: /tags/
-  - title: "Speaking"
+  - title: 'Speaking'
     url: /speaking/
-  - title: "MC"
+  - title: 'Tunes'
     url: /music-corner/
-  - title: "About"
+  - title: 'About'
     url: /about/
