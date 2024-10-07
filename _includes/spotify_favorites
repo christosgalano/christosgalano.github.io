@@ -1,0 +1,15 @@
+{% if include.id %}
+{% assign spotify_favorites = page[include.id] %}
+{% else %}
+{% assign spotify_favorites = page.spotify_favorites %}
+{% endif %}
+
+<div class="spotify-grid-container">
+    {% for track in spotify_favorites %}
+    <div class="spotify-responsive-track">
+        <iframe src="https://open.spotify.com/embed/track/{{ track.id }}?utm_source=generator&theme=0" frameBorder="0"
+            allowfullscreen="true" loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture"></iframe>
+    </div>
+    {% endfor %}
+</div>
