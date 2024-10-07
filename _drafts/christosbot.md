@@ -128,11 +128,11 @@ Now, integrate the search functionality into the chat environment:
 6. Select **Hybrid + semantic** search type.
 7. Use system-managed identity for authentication.
 
-![Add data source 1](/assets/images/azure/christosbot/add-data-source-1.webp)
+![Add-data-source-1](/assets/images/azure/christosbot/add-data-source-1.webp)
 
-![Add data source 2](/assets/images/azure/christosbot/add-data-source-2.webp)
+![Add-data-source-2](/assets/images/azure/christosbot/add-data-source-2.webp)
 
-![Add data source 3](/assets/images/azure/christosbot/add-data-source-3.webp)
+![Add-data-source-3](/assets/images/azure/christosbot/add-data-source-3.webp)
 
 Adjust the **Advanced settings** of the data source.
 
