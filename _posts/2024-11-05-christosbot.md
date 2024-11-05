@@ -1,7 +1,7 @@
 ---
 title: "christosbot"
 excerpt: "Build your own conversational AI assistant using Azure AI Search and Azure OpenAI. This comprehensive guide outlines the architecture, models, and steps necessary to create an intelligent bot that interacts with your content effectively."
-tagline: "Creating christosbot: Developing a Conversational AI with Azure AI Search and Azure OpenAI"
+tagline: "Developing a Conversational AI with Azure AI Search and Azure OpenAI"
 header:
   overlay_color: "#24292f"
   teaser: /assets/images/azure/christosbot/azure-ai.webp
