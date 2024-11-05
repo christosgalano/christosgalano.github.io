@@ -25,9 +25,6 @@
     "no-duplicate-heading": {
         "siblings_only": true
     },
-    "ol-prefix": {
-        "style": "ordered"
-    },
     "strong-style": false,
     "ul-style": {
         "style": "dash"
@@ -40,5 +37,6 @@
     "blanks-around-lists": false,
     "blanks-around-headings": false,
     "no-bare-urls": false,
-    "no-space-in-emphasis": false
+    "no-space-in-emphasis": false,
+    "ol-prefix": false
 }

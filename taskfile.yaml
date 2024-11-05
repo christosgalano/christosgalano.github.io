@@ -1,0 +1,13 @@
+version: '3'
+
+tasks:
+  default:
+    desc: List all tasks
+    cmds:
+      - task -l
+    silent: true
+
+  hello:
+    desc: Print a greeting
+    cmd: echo 'Hello World from Task!'
+    silent: true
