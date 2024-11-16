@@ -57,17 +57,23 @@ author:
   name: *name
   avatar: '/assets/images/self/speaking-hd.webp'
   bio: 'Innovating with purpose'
-  location: 'Athens, Greece'
+  # location: 'Athens, Greece'
   links:
     - label: 'Email'
       icon: 'fas fa-fw fa-envelope'
       url: 'mailto:christosgalano@outlook.com'
     - label: 'GitHub'
       icon: 'fab fa-fw fa-github'
-      url: 'https://github.com/christosgalano'
+      url: 'https://github.com/christosgalanop'
     - label: 'LinkedIn'
       icon: 'fab fa-fw fa-linkedin'
       url: 'https://www.linkedin.com/in/christos-galanopoulos/'
+    - label: 'Medium'
+      icon: 'fab fa-fw fa-medium'
+      url: 'https://medium.com/@christosgalanop'
+    - label: 'Sessionize'
+      icon: 'fas fa-fw fa-microphone'
+      url: 'https://sessionize.com/christos-galanopoulos/'
 
 # Site Footer
 footer:
@@ -81,6 +87,12 @@ footer:
     - label: 'LinkedIn'
       icon: 'fab fa-fw fa-linkedin'
       url: 'https://www.linkedin.com/in/christos-galanopoulos/'
+    - label: 'Medium'
+      icon: 'fab fa-fw fa-medium'
+      url: 'https://medium.com/@christosgalanop'
+    - label: 'Sessionize'
+      icon: 'fas fa-fw fa-microphone'
+      url: 'https://sessionize.com/christos-galanopoulos/'
 
 # Reading Files
 include:
@@ -151,9 +163,8 @@ defaults:
       comments: true
       read_time: true
       show_date: true
-      author_profile: true
+      author_profile: false
       toc: true
-      enable_copy_code_button: true
       toc_label: 'Table of Contents'
       toc_icon: 'list-ul'
       toc_sticky: true
@@ -163,14 +174,14 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: false
   # tags
   - scope:
       path: 'tags'
       type: tags
     values:
       layout: tag
-      author_profile: true
+      author_profile: false
 
 # Sass/SCSS
 sass:

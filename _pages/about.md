@@ -1,6 +1,7 @@
 ---
 permalink: /about/
-title: "About"
+title: false
+author_profile: true
 ---
 
 ## Who Am I?

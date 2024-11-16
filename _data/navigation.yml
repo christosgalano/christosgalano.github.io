@@ -3,7 +3,7 @@ main:
   - title: 'Home'
     url: /
   - title: 'Archive'
-    url: /archive/
+    url: /year-archive/
   - title: 'Tags'
     url: /tags/
   - title: 'Speaking'

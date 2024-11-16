@@ -6,9 +6,9 @@ style: |
   a {
     text-decoration: none;
   }
-header:
-  overlay_color: "#24292f"
-  overlay_filter: "0.25"
+# header:
+#   overlay_color: "#24292f"
+#   overlay_filter: "0.25"
 
 azureheads_december_2022:
   - image_path: assets/images/speaking/azureheads-wordpress-on-azure.webp
@@ -42,6 +42,8 @@ azure_innovators_hub_october_2024:
     title: "Azure Innovators Hub, October 2024"
     excerpt: 'In October 2024, I had the pleasure of speaking at the *Azure Innovators Hub* event. This talk addressed the concept of policy-driven governance, focusing on how the Open Policy Agent (OPA) ensures that infrastructure code complies with organizational standards, security good practices, and regulatory requirements. The presentation can be found [here](/assets/files/policy-driven-governance-for-infrastructure-code-2024.pptx).'
 ---
+
+<br>
 
 {% include feature_row id="azureheads_december_2022" type="left" %}
 

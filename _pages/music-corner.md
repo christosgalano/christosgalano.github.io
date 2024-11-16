@@ -2,10 +2,10 @@
 title: "Music Corner"
 layout: splash
 permalink: /music-corner/
-header:
-  overlay_color: "#24292f"
-  overlay_filter: "0.75"
-  overlay_image: assets/images/music-corner/horizontal-vinyl.webp
+# header:
+#   overlay_color: "#24292f"
+#   overlay_filter: "0.75"
+#  overlay_image: assets/images/music-corner/horizontal-vinyl.webp
 song-of-the-day: 7pM6JMKsJNsHb1dM74pgi3
 spotify-favorites:
   - id: 4Dj27GYfUXh4bFo3amdEyU # Chaconne Desiderio

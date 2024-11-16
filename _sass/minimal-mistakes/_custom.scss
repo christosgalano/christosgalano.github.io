@@ -39,3 +39,25 @@ p.resume {
     vertical-align: middle;
     margin-bottom: 0;
 }
+
+
+.toc-container {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: fit-content;
+}
+
+.toc-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc-container li {
+    margin: 5px 0;
+}
+
+.toc-container a {
+    text-decoration: none;
+}
