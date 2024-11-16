@@ -1,22 +1,33 @@
 // Copy code block button
-figure.highlight pre button {
-    color: #b2d584;
-    overflow: auto;
-    white-space: pre;
-    word-wrap: normal;
-    background-color: #3f545e;
-    border-color: #3f545e;
-    font-size: 18px;
-    position: absolute;
-    right: 0.8rem;
-    top: 0.8rem;
-    opacity: 1;
-    padding-bottom: 1.5mm;
+div.highlighter-rouge,
+figure.highlight {
+    position: relative;
 
-    &:active,
-    &:focus,
-    &:hover {
-        background: rgba(169, 128, 200, 0.7);
+    pre button.copy {
+        position: absolute;
+        right: 0.5rem;
+        top: 0.5rem;
+        padding: 0.25rem 0.6rem;
+        font-size: $type-size-6;
+        color: $base0b;
+        background-color: $base01;
+        border: 1px solid $base0b;
+        border-radius: $border-radius;
+        opacity: 1;
+        transition: all 0.2s ease;
+        cursor: pointer;
+        z-index: 2;
+        font-family: $monospace;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        font-weight: 500;
+
+        &:hover,
+        &:focus {
+            color: $base0d; // Change to function color (usually bright blue)
+            background-color: $base02; // Even lighter background on hover
+            border-color: $base0d; // Match new text color
+        }
     }
 }
 

@@ -7,7 +7,7 @@ title: 'Christos Galanopoulos'
 title_separator: '|'
 subtitle:
 name: &name 'Christos Galanopoulos'
-description: &description "Christos Galanopoulos's blog about GitHub, Azure, Kubernetes, and other technologies."
+description: &description "Christos Galanopoulos's blog exploring DevOps, Cloud, AI, and the ever-evolving world of tech buzzwords."
 url: https://christosgalano.github.io
 baseurl: '' # the subpath of your site, e.g. "/blog"
 repository: 'christosgalano/christosgalano.github.io'
@@ -55,7 +55,7 @@ social:
 # Site Author
 author:
   name: *name
-  avatar: '/assets/images/self/speaking.webp'
+  avatar: '/assets/images/self/speaking-hd.webp'
   bio: 'Innovating with purpose'
   location: 'Athens, Greece'
   links:
@@ -152,8 +152,8 @@ defaults:
       read_time: true
       show_date: true
       author_profile: true
-      enable_copy_code_button: true
       toc: true
+      enable_copy_code_button: true
       toc_label: 'Table of Contents'
       toc_icon: 'list-ul'
       toc_sticky: true

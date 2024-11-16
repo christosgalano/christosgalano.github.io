@@ -2,8 +2,8 @@
 main:
   - title: 'Home'
     url: /
-  # - title: 'Categories'
-  #   url: /categories/
+  - title: 'Archive'
+    url: /archive/
   - title: 'Tags'
     url: /tags/
   - title: 'Speaking'
