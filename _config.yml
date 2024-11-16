@@ -1,4 +1,4 @@
-remote_theme: 'mmistakes/minimal-mistakes@4.24.0'
+remote_theme: 'mmistakes/minimal-mistakes@4.26.2' # 4.24.0 stable
 minimal_mistakes_skin: 'default' # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -152,6 +152,7 @@ defaults:
       read_time: true
       show_date: true
       author_profile: true
+      enable_copy_code_button: true
       toc: true
       toc_label: 'Table of Contents'
       toc_icon: 'list-ul'

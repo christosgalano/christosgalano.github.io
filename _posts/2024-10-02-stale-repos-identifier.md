@@ -37,8 +37,7 @@ The action generates a report highlighting inactive repositories, helping teams 
 
 To demonstrate how this action can be used, below is an example workflow configured to run from my `.github` repository. This workflow runs on the first day of each month and automatically identifies repositories that have been inactive for over 365 days. Any repository marked as stale will be flagged for review, and the results will be posted in a GitHub issue within the same repository.
 
-{% highlight yaml %}
-{% raw %}
+```yaml
 name: stale-repos-identifier
 
 on:
@@ -71,8 +70,7 @@ jobs:
       run: gh issue edit 4 --body-file stale_repos.md --repo ${{ github.repository }}
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-{% endraw %}
-{% endhighlight %}
+```
 
 - **STALL_REPOS_TOKEN:** This secret token has permission to read all repositories across the organization, allowing the action to access the necessary data for the stale check.
 
