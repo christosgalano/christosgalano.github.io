@@ -55,8 +55,11 @@ social:
 # Site Author
 author:
   name: *name
+  home: '/about/'
   avatar: '/assets/images/self/speaking-hd.webp'
-  bio: 'Innovating with purpose'
+  bio: 'Method to the madness'
+  # bio: "Beyond the first 'right' answer"
+  # bio: 'Innovating with purpose'
   # location: 'Athens, Greece'
   links:
     - label: 'Email'

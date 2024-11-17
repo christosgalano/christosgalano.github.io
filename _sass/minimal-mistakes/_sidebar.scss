@@ -150,6 +150,7 @@
   vertical-align: top;
   padding-left: 15px;
   padding-right: 25px;
+  padding-bottom: 10px;
   line-height: 1;
 
   @include breakpoint($large) {
@@ -157,6 +158,7 @@
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 20px;
   }
 
   a {
