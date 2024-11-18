@@ -30,6 +30,5 @@ Curious about my professional background? Check out my [resume]({{ site.url }}/a
 
 Thanks for stopping by—I hope you find something here that sparks your curiosity or helps with your work.
 
-Until next time,
-
+Until next time,<br>
 Christos
