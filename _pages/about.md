@@ -6,7 +6,7 @@ author_profile: true
 
 ## Who Am I?
 
-I'm Christos Galanopoulos: a DevOps engineer, Microsoft Azure MVP, and TOGAF-certified architect who gets a kick out of solving complex technical challenges. I spend my days diving deep into problems, identifying core patterns, and building solutions that stand the test of time. Rather than rushing to quick fixes, I believe in taking a step back to understand the whole picture — whether it relates to designing systems, architecting solutions, optimizing workflows, or enabling teams to work more effectively.
+I'm Christos Galanopoulos: a DevOps engineer, Microsoft MVP, and TOGAF-certified architect who gets a kick out of solving complex technical challenges. I spend my days diving deep into problems, identifying core patterns, and building solutions that stand the test of time. Rather than rushing to quick fixes, I believe in taking a step back to understand the whole picture — whether it relates to designing systems, architecting solutions, optimizing workflows, or enabling teams to work more effectively.
 
 ## What Is This Blog?
 
