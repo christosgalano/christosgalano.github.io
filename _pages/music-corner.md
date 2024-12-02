@@ -6,7 +6,7 @@ permalink: /music-corner/
 #   overlay_color: "#24292f"
 #   overlay_filter: "0.75"
 #  overlay_image: assets/images/music-corner/horizontal-vinyl.webp
-song-of-the-day: 3m0F38gQaexoHSCWnQhvcj
+song-of-the-day: 3n1l1bHxSrGvGrDH4ADDri
 spotify-favorites:
   - id: 4Dj27GYfUXh4bFo3amdEyU # Chaconne Desiderio
   - id: 3gKYq33uHC0FKHp8V7yzFi # You don't know what love is
