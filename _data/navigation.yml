@@ -8,7 +8,7 @@ main:
     url: /tags/
   - title: 'Speaking'
     url: /speaking/
-  - title: 'Tunes'
-    url: /music-corner/
+  # - title: 'Tunes'
+  #   url: /music-corner/
   - title: 'About'
     url: /about/

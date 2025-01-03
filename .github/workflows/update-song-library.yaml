@@ -2,8 +2,8 @@
 name: Update Song Library
 
 on:
-  schedule:
-    - cron: '0 6 1 * *' # Run at 6:00 AM on the first day of the month
+  # schedule:
+  #   - cron: '0 6 1 * *' # Run at 6:00 AM on the first day of the month
   workflow_dispatch:
 
 permissions:
