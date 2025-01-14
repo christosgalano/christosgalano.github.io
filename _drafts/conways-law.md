@@ -10,7 +10,7 @@ tags:
   - miscellaneous
 ---
 
-In software development, success isn't determined solely by tools or frameworks—it's deeply influenced by how teams are organized. This is the heart of **Conway's Law**, a principle that remains inescapable for organizations building complex systems.
+In software development, success isn't determined solely by tools or frameworks—it's deeply influenced by how teams are organized. This is the heart of Conway's Law, a principle that remains inescapable for organizations building complex systems.
 
 ## What Is Conway's Law?
 
