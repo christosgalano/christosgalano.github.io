@@ -1,7 +1,7 @@
 ---
 title: "Evolutionary Architecture"
 excerpt: "Discover how evolutionary architecture empowers systems to adapt, scale, and thrive—avoiding obsolescence in a rapidly changing technological and business landscape."
-tagline: "Designing systems that evolve, adapt, and thrive in a world of constant change."
+tagline: "Designing systems that evolve, adapt, and thrive in a world of constant change"
 header:
   overlay_color: "#24292f"
   teaser: /assets/images/architecture/evolutionary-architecture.webp

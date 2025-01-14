@@ -1,7 +1,7 @@
 ---
 title: "Conway's Law"
 excerpt: "Explore Conway's Law—its origins, meaning, and why the structure of an organization inevitably influences the systems it creates."
-tagline: "Your team's structure is your system's architecture."
+tagline: "Your team's structure is your system's architecture"
 header:
   overlay_color: "#24292f"
   teaser: /assets/images/architecture/conways-law.webp
@@ -14,7 +14,7 @@ In software development, success isn't determined solely by tools or frameworks�
 
 ## What Is Conway's Law?
 
-Coined by computer scientist **Melvin E. Conway** in 1967, Conway's Law states:
+Coined by computer scientist Melvin E. Conway in 1967, Conway's Law states:
 
 > Organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations.
 
@@ -22,7 +22,7 @@ Put simply, the way teams are structured and how they communicate directly shape
 
 ## The Origin of Conway's Law
 
-Melvin Conway introduced this concept in his paper, *"How Do Committees Invent?"* However, it gained widespread recognition when **Fred Brooks** referenced it in *The Mythical Man-Month*. Conway argued that the communication pathways within an organization naturally manifest in the design of its systems.
+Melvin Conway introduced this concept in his paper, *"How Do Committees Invent?"* However, it gained widespread recognition when Fred Brooks referenced it in *The Mythical Man-Month*. Conway argued that the communication pathways within an organization naturally manifest in the design of its systems.
 
 While Conway's Law was initially based on observation, decades of software engineering experience have reinforced its accuracy, especially in large, complex projects where team structures significantly influence system architecture.
 
@@ -31,11 +31,8 @@ While Conway's Law was initially based on observation, decades of software engin
 Conway's Law is not just a theoretical observation—it's a reality that impacts every level of system design. Whether intentionally or not, the structure of teams dictates the structure of the systems they build.
 
 - **Team Boundaries Define System Boundaries:** Teams tend to design components that align with their own organizational boundaries. Separate teams lead to separate modules, while integrated teams create more cohesive systems.
-
 - **Communication Gaps Lead to Integration Challenges:** Poor communication across teams often results in poorly integrated systems, causing misaligned features, duplicated efforts, and complex dependencies.
-
 - **Modular Teams Encourage Modular Systems:** Autonomous teams naturally produce modular, decoupled architectures, whereas centralized or tightly coupled teams often create monolithic systems.
-
 - **Silos Create Fragility:** When teams work in isolation, systems become fragmented, making them harder to scale, maintain, or adapt.
 
 Recognizing this dynamic allows organizations to design their structures deliberately, shaping their systems with intention rather than by accident.
@@ -45,11 +42,8 @@ Recognizing this dynamic allows organizations to design their structures deliber
 Conway's Law isn't a guideline—it's a reality. Organizations can't "opt-out" of its influence. Whether a company acknowledges it or not, its team structure will **inevitably** shape its systems.
 
 - **Communication Drives Design:** How information flows within an organization determines how components interact. If teams don't talk, their systems won't either.
-
 - **Scale Amplifies the Effect:** As organizations grow, the impact of Conway's Law becomes even more pronounced. More teams, more silos, more complexity.
-
 - **Attempts to Ignore It Backfire:** Organizations that design systems without aligning their teams often face integration problems, missed deadlines, and technical debt.
-
 - **Remote and Distributed Work Magnifies the Challenge:** In remote-first environments, communication barriers can fragment system design even further, making the principle harder to manage.
 
 No amount of process or tooling can fully override the structural impact of team dynamics. This makes Conway's Law inescapable—and something organizations must confront head-on.
@@ -73,7 +67,7 @@ In an era where adaptability and scalability are critical, **Conway's Law is ine
 
 ## Resources
 
-- **Original Paper:** [*How Do Committees Invent?* by Melvin Conway (1968)](https://www.melconway.com/Home/Committees_Paper.html)  
-- **The Mythical Man-Month:** [Fred Brooks' Classic on Software Engineering](https://www.goodreads.com/book/show/13629.The_Mythical_Man_Month)  
-- **Team Topologies:** [Organizing Business and Technology Teams for Fast Flow](https://teamtopologies.com/)  
-- **Martin Fowler's Take on Conway's Law:** [Conway's Law Explained](https://martinfowler.com/bliki/ConwaysLaw.html)
+- [**How Do Committees Invent? by Melvin Conway (1968)**](https://www.melconway.com/Home/Committees_Paper.html)  
+- [**Fred Brooks' Classic on Software Engineering**](https://www.goodreads.com/book/show/13629.The_Mythical_Man_Month)  
+- [**Organizing Business and Technology Teams for Fast Flow**](https://teamtopologies.com/)  
+- [**Conway's Law Explained**](https://martinfowler.com/bliki/ConwaysLaw.html)
