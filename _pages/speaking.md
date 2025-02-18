@@ -46,7 +46,7 @@ silicon_corfu_2025:
   - image_path: assets/images/speaking/silicon-corfu-2025.webp
     alt: "Digital Innovation Conference Silicon Corfu 2025"
     title: "Digital Innovation Conference, February 2025"
-    excerpt: "In February 2025, I had the opportunity to speak at Digital Innovation Conference in Corfu. My session, DevOps with GitHub, explored how GitHub's DevOps capabilities can optimize software development workflows, from code to deployment.Here you can find the [presentation](/assets/files/silicon-devops-with-github-2025.pdf) and the corresponding [repository](https://github.com/christosgalano/devops-with-github-example)."
+    excerpt: "In February 2025, I had the opportunity to speak at the Digital Innovation Conference in Corfu. My session, DevOps with GitHub, explored how GitHub's DevOps capabilities can streamline application development, focusing on CI/CD pipelines, automated security scans, and dependency management using tools like GitHub Actions and Dependabot. Here you can find the [presentation](/assets/files/silicon-devops-with-github-2025.pdf) and the corresponding [repository](https://github.com/christosgalano/devops-with-github-example)."
 
 ---
 
