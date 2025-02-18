@@ -11,7 +11,7 @@ style: |
 #   overlay_filter: "0.25"
 
 azureheads_december_2022:
-  - image_path: assets/images/speaking/azureheads-wordpress-on-azure.webp
+  - image_path: assets/images/speaking/azureheads-wordpress-on-azure-2022.webp
     alt: "Azureheads 2022"
     title: "Azureheads, December 2022"
     excerpt: 'As the year 2022 drew to a close, I had the opportunity to be a first-time speaker at an Azureheads meetup. During my presentation, I focused on showcasing how someone can host, monitor, and test a WordPress site by utilizing Azure, Bicep, and GitHub. The repository mentioned can be found [here](https://github.com/christosgalano/WordPress-on-Azure).'
@@ -41,6 +41,13 @@ azure_innovators_hub_october_2024:
     alt: "Azure Innovators Hub 2024"
     title: "Azure Innovators Hub, October 2024"
     excerpt: 'In October 2024, I had the pleasure of speaking at the *Azure Innovators Hub* event. This talk addressed the concept of policy-driven governance, focusing on how the Open Policy Agent (OPA) ensures that infrastructure code complies with organizational standards, security good practices, and regulatory requirements. The presentation can be found [here](/assets/files/policy-driven-governance-for-infrastructure-code-2024.pptx).'
+
+silicon_corfu_2025:
+  - image_path: assets/images/speaking/silicon-corfu-2025.webp
+    alt: "Digital Innovation Conference Silicon Corfu 2025"
+    title: "Digital Innovation Conference, February 2025"
+    excerpt: "In February 2025, I had the opportunity to speak at Digital Innovation Conference in Corfu. My session, DevOps with GitHub, explored how GitHub's DevOps capabilities can optimize software development workflows, from code to deployment.Here you can find the [presentation](/assets/files/silicon-devops-with-github-2025.pdf) and the corresponding [repository](https://github.com/christosgalano/devops-with-github-example)."
+
 ---
 
 <br>
@@ -54,3 +61,5 @@ azure_innovators_hub_october_2024:
 {% include feature_row id="global_azure_athens_april_2024" type="right" %}
 
 {% include feature_row id="azure_innovators_hub_october_2024" type="left" %}
+
+{% include feature_row id="silicon_corfu_2025" type="right" %}
