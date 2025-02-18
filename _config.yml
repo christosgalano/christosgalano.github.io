@@ -57,9 +57,8 @@ author:
   name: *name
   home: '/about/'
   avatar: '/assets/images/self/perf.webp'
-  bio: 'Method in the madness'
-  # bio: "Beyond the first 'right' answer"
-  # bio: 'Innovating with purpose'
+  bio: 'It depends, always'
+  # bio: 'Method in the madness'
   # location: 'Athens, Greece'
   links:
     - label: 'Email'
