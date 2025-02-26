@@ -67,15 +67,21 @@ author:
     - label: 'GitHub'
       icon: 'fab fa-fw fa-github'
       url: 'https://github.com/christosgalano'
-    - label: 'LinkedIn'
-      icon: 'fab fa-fw fa-linkedin'
-      url: 'https://www.linkedin.com/in/christos-galanopoulos/'
     - label: 'Medium'
       icon: 'fab fa-fw fa-medium'
       url: 'https://medium.com/@christosgalanop'
+    - label: 'LinkedIn'
+      icon: 'fab fa-fw fa-linkedin'
+      url: 'https://www.linkedin.com/in/christos-galanopoulos/'
     - label: 'Sessionize'
       icon: 'fas fa-fw fa-microphone'
       url: 'https://sessionize.com/christos-galanopoulos/'
+    - label: 'Goodreads'
+      icon: 'fab fa-fw fa-goodreads'
+      url: 'https://www.goodreads.com/user/show/173308664-christos-galanopoulos'
+    - label: 'Apple Music'
+      icon: 'fab fa-fw fa-apple'
+      url: 'https://music.apple.com/profile/christosgalano'
 
 # Site Footer
 footer:
@@ -95,6 +101,12 @@ footer:
     - label: 'Sessionize'
       icon: 'fas fa-fw fa-microphone'
       url: 'https://sessionize.com/christos-galanopoulos/'
+    - label: 'Goodreads'
+      icon: 'fab fa-fw fa-goodreads'
+      url: 'https://www.goodreads.com/user/show/173308664-christos-galanopoulos'
+    - label: 'Apple Music'
+      icon: 'fab fa-fw fa-apple'
+      url: 'https://music.apple.com/profile/christosgalano'
 
 # Reading Files
 include:
