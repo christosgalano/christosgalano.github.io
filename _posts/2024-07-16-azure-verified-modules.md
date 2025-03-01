@@ -46,7 +46,7 @@ AVM defines module classifications that can be created, published, and consumed.
 
 Resource Modules deploy a primary Azure resource with Well-Architected Framework (WAF) high-priority best practices configured by default. These include optimizations like availability zones, proper firewall settings, enforced Entra ID authentication, and other shared interfaces such as RBAC and Private Endpoints where supported.
 
-These modules may include related resources that are essential to the primary resource's functionality. For example, a VM module would typically include disks and NICs, as users would expect these components to be part of a complete VM deployment experience. However, Resource Modules explicitly do not deploy external dependencies (like the virtual network that a VM requires).
+These modules may include related resources essential to the primary resource's functionality. For example, a VM module would typically include disks and NICs, as users would expect these components to be part of a complete VM deployment experience. However, Resource Modules explicitly do not deploy external dependencies (like the virtual network that a VM requires).
 
 Resource Modules are ideal for those who want to build custom architectures with individual components that adhere to WAF best practices, or for those creating pattern modules.
 
