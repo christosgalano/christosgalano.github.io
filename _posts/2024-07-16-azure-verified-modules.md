@@ -40,19 +40,31 @@ AVM modules are organized in a well-structured repository with clear directories
 
 ## Module Classifications
 
-AVM defines two primary classifications for modules: Resource Modules and Pattern Modules. These classifications help users understand the scope and intended use of each module type.
+AVM defines module classifications that can be created, published, and consumed. Understanding these classifications helps you select the right modules for your infrastructure needs.
 
 ### Resource Modules
 
-Resource Modules are designed to deploy a primary Azure resource configured with high-priority best practices from the Well-Architected Framework (WAF). These modules often include related resources necessary for the primary resource to function properly, ensuring a seamless deployment experience. However, they do not deploy external dependencies for the primary resource.
+Resource Modules deploy a primary Azure resource with Well-Architected Framework (WAF) high-priority best practices configured by default. These include optimizations like availability zones, proper firewall settings, enforced Entra ID authentication, and other shared interfaces such as RBAC and Private Endpoints where supported.
 
-These modules are ideal for deploying individual Azure resources while adhering to WAF best practices. They can be used independently or combined with other Resource Modules to create more complex architectures.
+These modules may include related resources that are essential to the primary resource's functionality. For example, a VM module would typically include disks and NICs, as users would expect these components to be part of a complete VM deployment experience. However, Resource Modules explicitly do not deploy external dependencies (like the virtual network that a VM requires).
+
+Resource Modules are ideal for those who want to build custom architectures with individual components that adhere to WAF best practices, or for those creating pattern modules.
 
 ### Pattern Modules
 
-Pattern Modules are designed to deploy multiple Azure resources together, often using existing Resource Modules. They aim to accelerate the deployment of common architectures or tasks and can include other Pattern Modules, but must not reference non-AVM modules.
+Pattern Modules deploy multiple Azure resources together, typically leveraging existing Resource Modules. They can vary in size and complexity but are designed to accelerate the deployment of common architectures or tasks.
 
-Pattern Modules are suitable for deploying complex architectures or implementing specific patterns using a combination of Resource Modules. They provide a higher-level abstraction for deploying multiple resources together, streamlining the deployment process.
+Good candidates for Pattern Modules are architectures documented in the Azure Architecture Center or other official Microsoft documentation. While Pattern Modules can include other Pattern Modules, they must not reference non-AVM modules to maintain quality and consistency standards.
+
+These modules are perfect for teams looking to quickly deploy established architectural patterns while maintaining WAF best practices throughout their infrastructure.
+
+### Utility Modules (Draft)
+
+A newer classification currently in draft status, Utility Modules implement functions or routines that can be flexibly reused across Resource or Pattern Modules. For example, a function that retrieves the endpoint of an API or portal for a given environment.
+
+Utility Modules must not deploy any Azure resources except deployment scripts and are designed for module authors who want to leverage commonly used functions without reimplementing them locally.
+
+![Azure Verified Modules](/assets/images/azure/azure-verified-modules/avm-modules.webp)
 
 ## How to Use Azure Verified Modules
 
@@ -73,38 +85,32 @@ Here's an example of using an AVM module that deploys a production standard AKS 
 # main.tf
 module "avm-ptn-aks-production" {
   source  = "Azure/avm-ptn-aks-production/azurerm"
-  version = "0.1.0"
+  version = "0.3.0"
   
-  kubernetes_version  = "1.28"
-  name                = "aks-production"
-  resource_group_name = "rg-aks-production"
+  kubernetes_version          = "1.30"
   
-  managed_identities = {
-    user_assigned_resource_ids = [
-      azurerm_user_assigned_identity.this.id
-    ]
+  name                        = module.naming.kubernetes_cluster.name_unique
+  resource_group_name         = azurerm_resource_group.this.name
+  location                    = azurerm_resource_group.this.location
+  
+  private_dns_zone_id         = azurerm_private_dns_zone.mydomain.id
+  private_dns_zone_id_enabled = true
+  
+  rbac_aad_tenant_id          = data.azurerm_client_config.current.tenant_id
+  enable_telemetry            = true
+  
+  network_policy              = "calico"
+  network = {
+    name                = module.avm_res_network_virtualnetwork.name
+    resource_group_name = azurerm_resource_group.this.name
+    node_subnet_id      = module.avm_res_network_virtualnetwork.subnets["subnet"].resource_id
+    pod_cidr            = "192.168.0.0/16"
   }
-
-  location = "North Europe"
-  node_pools = {
-    workload = {
-      name                 = "workload"
-      vm_size              = "Standard_D2d_v5"
-      orchestrator_version = "1.28"
-      max_count            = 110
-      min_count            = 2
-      os_sku               = "Ubuntu"
-      mode                 = "User"
-    },
-    ingress = {
-      name                 = "ingress"
-      vm_size              = "Standard_D2d_v5"
-      orchestrator_version = "1.28"
-      max_count            = 4
-      min_count            = 2
-      os_sku               = "Ubuntu"
-      mode                 = "User"
-    }
+  
+  acr = {
+    name                          = module.naming.container_registry.name_unique
+    subnet_resource_id            = module.avm_res_network_virtualnetwork.subnets["private_link_subnet"].resource_id
+    private_dns_zone_resource_ids = [azurerm_private_dns_zone.this.id]
   }
 }
 {% endraw %}
@@ -128,7 +134,6 @@ module resourceRoleAssignment 'br/public:avm/ptn/authorization/resource-role-ass
     // Non-required parameters
     description: 'Assign Storage Blob Data Reader role to the managed identity on the storage account.'
     principalType: 'ServicePrincipal'
-    roleName: 'Storage Blob Data Reader'
   }
 }
 {% endraw %}
