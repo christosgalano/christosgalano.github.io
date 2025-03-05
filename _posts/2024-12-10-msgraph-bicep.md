@@ -132,7 +132,7 @@ To use the Microsoft Graph Bicep extension, you need to enable the experimental 
 
 {% highlight terraform %}
 {% raw %}
-extension microsoftGraphV1
+extension graphV1
 extension graphBeta
 
 // using Microsoft Graph v1.0
