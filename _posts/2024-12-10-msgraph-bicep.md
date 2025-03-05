@@ -27,7 +27,7 @@ This extension allows Bicep templates to define tenant resources beyond the trad
 
 ![Microsoft Graph Bicep Extension](/assets/images/azure/msgraph-bicep/graph-bicep-extension.webp)
 
-For a complete list of supported resource types, refer to the [Microsoft Graph template reference](https://learn.microsoft.com/en-us/graph/templates/reference/overview?view=graph-bicep-1.0).
+> For a complete list of supported resource types, refer to the [Microsoft Graph template reference](https://learn.microsoft.com/en-us/graph/templates/reference/overview?view=graph-bicep-1.0).
 
 ## Key Benefits of the Microsoft Graph Bicep Extension
 
@@ -116,13 +116,31 @@ To use the Microsoft Graph Bicep extension, you need to enable the experimental 
 
 {% highlight json %}
 {% raw %}
-{
-  "experimentalFeaturesEnabled": {
-    "extensibility": true
+{  
+  "experimentalFeaturesEnabled": {  
+    "extensibility": true  
   },
-  "extensions": {
-    "microsoftGraphV1_0": "br:mcr.microsoft.com/bicep/extensions/microsoftgraph/v1.0:0.1.8-preview"
-  }
+  "extensions": {  
+    "graphV1": "br:mcr.microsoft.com/bicep/extensions/microsoftgraph/v1.0:<v1.0-version>",
+    "graphBeta": "br:mcr.microsoft.com/bicep/extensions/microsoftgraph/beta:<beta-version>"  
+  }  
+}
+{% endraw %}
+{% endhighlight %}
+
+{% highlight terraform %}
+{% raw %}
+extension graphV1
+extension graphBeta
+
+// using Microsoft Graph v1.0
+resource group 'Microsoft.Graph/groups@v1.0' existing = {
+    uniqueName: groupName
+}
+
+// using Microsoft Graph beta
+resource app 'Microsoft.Graph/applications@beta' existing = {
+    uniqueName: appName
 }
 {% endraw %}
 {% endhighlight %}
@@ -133,7 +151,7 @@ Here's an example of creating a security group and assigning a role-based permis
 
 {% highlight terraform %}
 {% raw %}
-extension microsoftGraphV1_0
+extension graphV1
 
 @sys.description('Specifies the role definition ID used in the role assignment.')
 param roleDefinitionID string
@@ -179,7 +197,7 @@ One potential issue that may arise is that the instantiation of the principal or
 
 {% highlight json %}
 {% raw %}
-{"status":"Failed","error":{"code":"DeploymentFailed","target":"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-christos-galanopoulos/providers/Microsoft.Resources/deployments/deployment1","message":"At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/arm-deployment-operations for usage details.","details":[{"code":"PrincipalNotFound","message":"Principal xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx does not exist in the directory xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx. Check that you have the correct principal ID. If you are creating this principal and then immediately assigning a role, this error might be related to a replication delay. In this case, set the role assignment principalType property to a value, such as ServicePrincipal, User, or Group.  See https://aka.ms/docs-principaltype"}]}}
+{"status":"Failed","error":{"code":"DeploymentFailed","target":"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-test/providers/Microsoft.Resources/deployments/deployment1","message":"At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/arm-deployment-operations for usage details.","details":[{"code":"PrincipalNotFound","message":"Principal xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx does not exist in the directory xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx. Check that you have the correct principal ID. If you are creating this principal and then immediately assigning a role, this error might be related to a replication delay. In this case, set the role assignment principalType property to a value, such as ServicePrincipal, User, or Group.  See https://aka.ms/docs-principaltype"}]}}
 {% endraw %}
 {% endhighlight %}
 
@@ -189,7 +207,7 @@ Here's an example of creating an application and its associated service principa
 
 {% highlight terraform %}
 {% raw %}
-extension microsoftGraphV1_0
+extension graphV1
 
 @sys.description('The unique name of the application.')
 param uniqueName string
@@ -221,6 +239,8 @@ In this example, the Bicep template creates an application and its associated se
 2. **Permission Scoping**: Ensure your deployment identity has appropriate permissions in both Azure and Microsoft Graph scopes. Missing permissions are a common cause of deployment failures.
 
 3. **Idempotency Challenges**: When working with Microsoft Graph resources, pay special attention to client-provided keys to ensure reliable, repeatable deployments.
+
+> More known issues and solutions can be found in the [Microsoft Graph Bicep](https://learn.microsoft.com/en-us/graph/templates/known-issues-graph-bicep?view=graph-bicep-1.0) documentation.
 
 ## Summary
 
