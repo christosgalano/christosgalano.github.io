@@ -112,6 +112,8 @@ These use cases demonstrate how the Microsoft Graph Bicep extension can transfor
 
 ## Examples
 
+### Preliminary Setup
+
 To use the Microsoft Graph Bicep extension, you need to enable the experimental feature in your Bicep configuration file. It is also advisable to use [dynamic types](https://learn.microsoft.com/en-us/graph/templates/how-to-migrate-to-dynamic-types) rather than built-in types. Below is an example of the configuration file:
 
 {% highlight json %}
@@ -122,7 +124,7 @@ To use the Microsoft Graph Bicep extension, you need to enable the experimental 
   },
   "extensions": {  
     "graphV1": "br:mcr.microsoft.com/bicep/extensions/microsoftgraph/v1.0:<v1.0-version>",
-    "graphBeta": "br:mcr.microsoft.com/bicep/extensions/microsoftgraph/beta:<beta-version>"  
+    "graphBeta": "br:mcr.microsoft.com/bicep/extensions/microsoftgraph/beta:<beta-version>"
   }  
 }
 {% endraw %}
@@ -130,17 +132,32 @@ To use the Microsoft Graph Bicep extension, you need to enable the experimental 
 
 {% highlight terraform %}
 {% raw %}
-extension graphV1
+extension microsoftGraphV1
 extension graphBeta
 
 // using Microsoft Graph v1.0
 resource group 'Microsoft.Graph/groups@v1.0' existing = {
-    uniqueName: groupName
+  uniqueName: groupName
 }
 
 // using Microsoft Graph beta
 resource app 'Microsoft.Graph/applications@beta' existing = {
-    uniqueName: appName
+  uniqueName: appName
+}
+{% endraw %}
+{% endhighlight %}
+
+The examples above use the following Bicep configuration:
+
+{% highlight json %}
+{% raw %}
+{  
+  "experimentalFeaturesEnabled": {  
+    "extensibility": true  
+  },
+  "extensions": {
+    "microsoftGraphV1": "br:mcr.microsoft.com/bicep/extensions/microsoftgraph/v1.0:0.1.9-preview"
+  }
 }
 {% endraw %}
 {% endhighlight %}
@@ -151,7 +168,7 @@ Here's an example of creating a security group and assigning a role-based permis
 
 {% highlight terraform %}
 {% raw %}
-extension graphV1
+extension microsoftGraphV1
 
 @sys.description('Specifies the role definition ID used in the role assignment.')
 param roleDefinitionID string
@@ -207,7 +224,7 @@ Here's an example of creating an application and its associated service principa
 
 {% highlight terraform %}
 {% raw %}
-extension graphV1
+extension microsoftGraphV1
 
 @sys.description('The unique name of the application.')
 param uniqueName string
