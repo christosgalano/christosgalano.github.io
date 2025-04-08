@@ -1,7 +1,7 @@
 ---
 title: "The Change Paradox"
-excerpt: "When success breeds stagnation, organizations face a choice: cling to stability or chase fleeting trends. This piece explores why neither works—and why deliberate, thoughtful change is the real path forward."
-tagline: ""
+excerpt: "When success hardens into habit, progress stalls. This piece unpacks why clinging to stability or chasing trends both fall short — and why deliberate, intentional change is the only path that endures."
+tagline: "Lasting progress is never accidental."
 header:
   overlay_color: "#24292f"
   teaser: /assets/images/thought-provoking/the-change-paradox.webp
