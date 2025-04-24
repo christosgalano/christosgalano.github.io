@@ -48,6 +48,12 @@ silicon_corfu_2025:
     title: "Digital Innovation Conference, February 2025"
     excerpt: "In February 2025, I had the opportunity to speak at the Digital Innovation Conference in Corfu. My session, DevOps with GitHub, explored how GitHub's DevOps capabilities can streamline application development, focusing on CI/CD pipelines, automated security scans, and dependency management using tools like GitHub Actions and Dependabot. Here you can find the [presentation](/assets/files/silicon-devops-with-github-2025.pdf) and the corresponding [repository](https://github.com/christosgalano/devops-with-github-example)."
 
+ai_cloud_and_modern_workplace_2025:
+  - image_path: assets/images/speaking/ai-cloud-and-modern-workplace-2025.webp
+    alt: "AI, Cloud & Modern Workplace Conference 2025"
+    title: "AI, Cloud & Modern Workplace Conference, February 2025"
+    excerpt: 'At the AI, Cloud & Modern Workplace conference in February 2025, I delivered a session titled *Managing Terraform State in Azure*. The talk tackled the often-overlooked challenge of state management in complex cloud environments. I shared practical strategies for structuring remote state storage, securing access, and enabling scalable collaboration across teams. The session offered actionable guidance on balancing governance with developer autonomy in real-world Azure setups. [Watch it on YouTube](https://www.youtube.com/watch?v=1EvYprjlXrs) or grab the [presentation](/assets/files/ai-cloud-and-modern-workplace-2025.pdf).'
+
 ---
 
 <br>
@@ -63,3 +69,5 @@ silicon_corfu_2025:
 {% include feature_row id="azure_innovators_hub_october_2024" type="left" %}
 
 {% include feature_row id="silicon_corfu_2025" type="right" %}
+
+{% include feature_row id="ai_cloud_and_modern_workplace_2025" type="left" %}
