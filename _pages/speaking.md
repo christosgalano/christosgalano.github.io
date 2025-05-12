@@ -54,6 +54,12 @@ ai_cloud_and_modern_workplace_2025:
     title: "AI, Cloud & Modern Workplace Conference, February 2025"
     excerpt: 'At the AI, Cloud & Modern Workplace conference in February 2025, I delivered a session titled *Managing Terraform State in Azure*. The talk tackled the often-overlooked challenge of state management in complex cloud environments. I shared practical strategies for structuring remote state storage, securing access, and enabling scalable collaboration across teams. The session offered actionable guidance on balancing governance with developer autonomy in real-world Azure setups. [Watch it on YouTube](https://www.youtube.com/watch?v=1EvYprjlXrs) or grab the [presentation](/assets/files/ai-cloud-and-modern-workplace-2025.pdf).'
 
+global_azure_athens_may_2025:
+  - image_path: assets/images/speaking/global-azure-athens-2025.webp
+    alt: "Global Azure Athens 2025"
+    title: "Global Azure Athens, May 2025"
+    excerpt: 'At this year's Global Azure Athens, I shared some practical ways to simplify and speed up development workflows using Azure Dev Center. We talked about how Dev Boxes, and Deployment Environments can take the pain out of setting up projects, getting new team members onboard, and providing a consistent experience to the developers. You can check out the [presentation](/assets/files/global-azure-athens-2025.pdf) for a closer look.'
+
 ---
 
 <br>
@@ -71,3 +77,5 @@ ai_cloud_and_modern_workplace_2025:
 {% include feature_row id="silicon_corfu_2025" type="right" %}
 
 {% include feature_row id="ai_cloud_and_modern_workplace_2025" type="left" %}
+
+{% include feature_row id="global_azure_athens_may_2025" type="right" %}
