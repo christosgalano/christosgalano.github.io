@@ -64,18 +64,18 @@ global_azure_athens_may_2025:
 
 <br>
 
-{% include feature_row id="azureheads_december_2022" type="left" %}
-
-{% include feature_row id="global_azure_athens_may_2023" type="right" %}
-
-{% include feature_row id="cloud_technology_tuesdays_may_2023" type="left" %}
-
-{% include feature_row id="global_azure_athens_april_2024" type="right" %}
-
-{% include feature_row id="azure_innovators_hub_october_2024" type="left" %}
-
-{% include feature_row id="silicon_corfu_2025" type="right" %}
+{% include feature_row id="global_azure_athens_may_2025" type="right" %}
 
 {% include feature_row id="ai_cloud_and_modern_workplace_2025" type="left" %}
 
-{% include feature_row id="global_azure_athens_may_2025" type="right" %}
+{% include feature_row id="silicon_corfu_2025" type="right" %}
+
+{% include feature_row id="azure_innovators_hub_october_2024" type="left" %}
+
+{% include feature_row id="global_azure_athens_april_2024" type="right" %}
+
+{% include feature_row id="cloud_technology_tuesdays_may_2023" type="left" %}
+
+{% include feature_row id="global_azure_athens_may_2023" type="right" %}
+
+{% include feature_row id="azureheads_december_2022" type="left" %}
