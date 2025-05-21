@@ -1,6 +1,6 @@
 ---
 title: "GitHub Models"
-excerpt: "GitHub Models is a workspace within GitHub that supports prompt design, model comparison, and structured evaluation for LLM-based development—without leaving your repository."
+excerpt: "GitHub Models is a workspace within GitHub that supports prompt design, model comparison, and structured evaluation for LLM-based development."
 tagline: "Develop and evaluate language model workflows directly in GitHub."
 header:
   overlay_color: "#24292f"
