@@ -13,7 +13,7 @@ tags:
 
 Every organization believes it designs its systems deliberately. Architecture diagrams are drawn, interfaces are defined, boundaries are established. But there's an uncomfortable truth lurking beneath these careful plans: the real architecture was decided long before the first line of code was written. It was determined the moment teams were formed.
 
-## The Invisible Architect
+## The invisible architect
 
 In 1967, computer scientist Melvin Conway observed something that should have been obvious but wasn't: organizations produce systems that mirror their own communication structures. Not sometimes. Not usually. Always.
 
@@ -23,7 +23,7 @@ The principle is deceptively simple: if you have four teams working on a compile
 
 Conway didn't discover this by studying successful projects. He noticed it in the failures—the places where brilliant engineers built exactly what their organization structure demanded, not what the problem required.
 
-## Backwards by Design
+## Backwards by design
 
 Most companies approach system design backwards. They draw the ideal architecture, assign teams to build it, then wonder why reality refuses to match the blueprint. They blame complexity, changing requirements, or technical debt. Rarely do they question whether their beautiful design was ever possible given how their teams were organized.
 
@@ -31,7 +31,7 @@ Consider the typical enterprise: separate teams for database, backend, frontend,
 
 This isn't a failure of engineering. It's Conway's Law in action. The teams built exactly what their structure allowed them to build: isolated components held together by treaties instead of trust.
 
-## Fossil Records
+## Fossil records
 
 The most insidious part of Conway's Law is its invisibility. Teams don't consciously decide to mirror their organization—it happens through countless small decisions.
 
@@ -41,7 +41,7 @@ Each choice makes local sense. Together, they create global dysfunction. The arc
 
 Remote work has amplified this. Physical distance becomes system distance. Time zones become asynchronous interfaces. The casual conversations that might have prevented architectural drift never happen. The system sprawls, guided by organizational structure rather than design.
 
-## Wielding the Law
+## Wielding the law
 
 Here's where most discussions of Conway's Law go wrong: they treat it as a problem to solve. But you can't solve gravity. You can only work with it or against it.
 
@@ -51,7 +51,7 @@ This isn't about reorg theater or musical chairs with reporting lines. It's abou
 
 But this requires something most organizations struggle with: admitting that their current structure might be wrong. It's easier to blame the technology, the requirements, or the last vendor than to acknowledge that the org chart might be the problem.
 
-## The Practical Paradox
+## The practical paradox
 
 Some try to bypass Conway's Law through process—architectural review boards, collaboration tools, DevOps methodologies. These efforts don't fail because they're bad ideas. They fail because they're fighting physics with philosophy. No amount of process can make two teams who don't trust each other build a well-integrated system.
 

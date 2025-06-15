@@ -1,52 +1,104 @@
 ---
 title: "Chesterton's Fence"
-excerpt: "Before replacing legacy systems or eliminating long-standing processes, it's essential to understand why they exist. Chesterton's Fence reminds us that behind every structure—no matter how outdated it seems—there may be a valuable reason. In enterprise tech, sustainable innovation starts with thoughtful, informed change."
+excerpt: "Before tearing down what seems obsolete, understand why it was built. In our rush to innovate, we often destroy the very things protecting us from problems we've forgotten existed."
 tagline: "Understand before you change"
 header:
-  overlay_color: "#24292f"
-  teaser: /assets/images/thought-provoking/chestertons-fence.webp
+  teaser: /assets/images/thought-provoking/chestertons-fence/escher-relativity-1953.webp
+  overlay_image: /assets/images/thought-provoking/chestertons-fence/escher-relativity-1953.webp
+  caption: "Relativity (1953) - M.C. Escher"
 tags:
-  - architecture
   - thought-provoking
-  - miscellaneous
+  - architecture
 ---
 
-In the bustling world of enterprise technology, there's a constant push for innovation—an eagerness to modernize, adopt the newest tools, and streamline every process. It's like a race where speed seems to rule the day. Yet, amidst this urgency, there's a valuable principle that reminds us to pause and reflect: Chesterton's Fence.
+Billions are spent on "digital transformation" each year. Many efforts struggle—not just because of bad tech, but because teams dismantle fences no one stopped to understand.
 
-## What is Chesterton's Fence?
+## The paradox of progress
 
-Imagine walking down a path and coming across a fence. G.K. Chesterton used this imagery to convey an important message about change. In his book, *The Thing*, he suggested that tearing down a fence without understanding why it was built was unwise. Just because something seems unnecessary or outdated, doesn't mean it's without purpose. The same principle applies to our processes, architectures, and even team dynamics.
+In 1929, G.K. Chesterton articulated a principle worth revisiting:
 
-What might look like a constraint or an obstacle could actually be protecting something valuable. Whether it's a complex procedure, an established system, or even a long-standing practice, each element often has a role that, when overlooked, risks introducing confusion and disorder.
+> *"There exists in such a case a certain institution or law; let us say, for the sake of simplicity, a fence or gate erected across a road. The more modern type of reformer goes gaily up to it and says, 'I don't see the use of this; let us clear it away.' To which the more intelligent type of reformer will do well to answer: 'If you don't see the use of it, I certainly won't let you clear it away. Go away and think. Then, when you can come back and tell me that you do see the use of it, I may allow you to destroy it.'"*
 
-## The Risks of Rushed Decisions
+This isn't about blindly preserving the past. It's about recognizing that many systems—however odd they appear—were someone's solution to a real problem.
 
-Rushing to remove or replace systems without understanding their role can backfire. A legacy platform might seem outdated, but it could be quietly powering essential operations. Yank it out too fast, and you risk workflow breakdowns, data loss, or user frustration.
+Often, the problem outlives the memory of why we solved it.
 
-The same goes for established processes. What feels like red tape may actually be a safeguard. Remove it blindly, and you may open the door to chaos, compliance issues, or quality drops.
+## The architect's dilemma
 
-> *If you don't know why it's there, you're not ready to remove it.*
+Walk through any enterprise codebase and you'll find them—the fences. That convoluted authentication system. The seemingly redundant validation. The multi-approval workflow for what looks like a minor change.
 
-In architecture, removing a "redundant" layer might collapse hidden dependencies. In team structure, cutting a coordination step might erode shared context.
+Our instinct is often demolition. These barriers slow us down, complicate architecture, challenge our sense of elegance.
 
-Change without understanding doesn't just introduce risk—it invites disorder.
+But much of what seems like unnecessary complexity might be what's left behind after a system made it through something hard.
 
-## Mindful Change
+That unusual validation rule? It might be protecting against a regulatory issue. The multiple approvals? Perhaps they prevent the kind of mistake that once caused serious problems.
 
-Adopting the mindset of Chesterton's Fence means fostering a culture of thoughtful change. Tech leaders should encourage their teams to explore the reasons behind existing systems and workflows. Asking questions like, "Why was this process established?" and "What problems does it solve?" allows for a deeper understanding that guides intentional modifications.
+The fence-builders may be gone. But their hard-won lessons often remain—quietly encoded in the structures they left behind.
 
-Instead of discarding outdated systems outright, consider modernizing them step by step. Introducing new technologies in increments can help ensure that the core functions remain intact while gradually improving effectiveness. For processes, take the time to analyze their efficiency. If something seems to slow progress, explore how it might be optimized rather than eliminated.
+## Innovation theater
 
-## The Heart of Intentional Transformation
+We've developed certain myths around disruption.
 
-Change is a given in enterprise technology, but it must be approached with caution. Reckless transformations can lead to chaos. The lesson of Chesterton's Fence is clear: every change should be grounded in understanding. Without a grasp of why something exists, we run the risk of compromising vital connections or functions.
+"Move fast and break things" can work—until one of those things turns out to be essential.
 
-True innovation comes not from hastily discarding the old but from respecting and understanding it. By taking the time to critically assess what we have, we can prevent unnecessary disruptions and move forward with purpose.
+Many failed modernization projects share a pattern:
+- New team inherits a "legacy" system
+- It looks unnecessarily complex
+- Team rebuilds with modern simplicity
+- Edge cases resurface
+- Patches accumulate
+- New system grows complex too
+- And the cycle repeats
 
-## Final Thoughts
+Each generation tends to believe it sees more clearly. That previous architects were working with inferior tools or knowledge.
 
-In a world where speed often takes precedence, we must not forget the importance of intent. Each structure, process, or system serves a purpose—even if that purpose isn't immediately visible. Before making any changes, pause and reflect: *What is its role? What challenges does it address?*
+Sometimes that's true. Often, it's just distance from the original context.
 
-In enterprise technology, thoughtful change is not just a strategy; it is the pathway to sustainable innovation.
+## The cost of forgetting
 
-> *Understand before you change*
+Imagine a team spending $2 million to rebuild an "outdated" inventory system. The old system has strange rules: no moves on Tuesdays, paper trails for certain transfers, manual review triggers that seem random.
+
+"Archaic nonsense," the team says. The new system is faster, cleaner, more modern.
+
+Then come the consequences.
+
+Those "strange rules"? Court-mandated procedures from a legal settlement. The Tuesday restriction? Part of a labor agreement. The paper trails? Required for controlled substances.
+
+The original devs have moved on. Documentation is sparse. But the fences had quietly protected the company—until they didn't.
+
+## Working with fences
+
+This doesn't mean we should preserve everything. Stagnation has its own risks.  
+But thoughtful innovation might start differently.
+
+**First, investigation.**  
+Before changing anything, try to understand it. What problem might this be solving? Talk to long-tenured people. Dig into commit logs, old tickets. If the reason isn't obvious, it might be buried—not absent.
+
+**Second, context.**  
+That messy system was likely built by capable people navigating real constraints—regulatory, budgetary, organizational. The system often tells a story—if we're willing to listen.
+
+**Third, documentation.**  
+If you do remove a fence, record its purpose and why it seemed safe to remove. Future architects deserve more than silence where structure once stood.
+
+## The harder path
+
+Quick changes feel like progress. They make great presentations.
+
+Understanding takes more time. It requires humility—accepting that previous builders might have known things we don't.  
+It needs patience—investigating before acting.  
+It calls for judgment—recognizing that some constraints serve important purposes.
+
+But here's what Chesterton understood: the fence we don't understand might be the one we need.
+
+In our eagerness to build the future, we sometimes risk dismantling the foundations that could support it.
+
+The next time you encounter a fence—a process that seems pointless, a system that appears obsolete, a rule that feels arbitrary—pause.
+
+Consider:  
+*What might I not be seeing?*  
+*What problem could this be solving?*  
+*What lesson might be encoded here?*
+
+---
+
+*If you can't explain why the fence exists, it may not be time to tear it down.*
