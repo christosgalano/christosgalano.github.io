@@ -152,5 +152,5 @@ Evaluations can be applied to multiple prompt variants or model outputs. Results
 
 ## Resources
 
-- [GitHub Models Documentation](https://docs.github.com/github-models)  
-- [GitHub Model Marketplace](https://github.com/marketplace/models)
+- [**GitHub Models Documentation**](https://docs.github.com/github-models)  
+- [**GitHub Model Marketplace**](https://github.com/marketplace/models)

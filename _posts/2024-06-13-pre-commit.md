@@ -7,6 +7,7 @@ header:
   teaser: /assets/images/pre-commit/pre-commit.webp
 tags:
   - miscellaneous
+  - governance
 ---
 
 ## Overview

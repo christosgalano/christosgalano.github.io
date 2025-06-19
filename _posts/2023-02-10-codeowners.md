@@ -7,6 +7,7 @@ header:
   teaser: assets/images/github/codeowners/codeowners.webp
 tags:
   - github
+  - governance
 ---
 
 ## Overview
