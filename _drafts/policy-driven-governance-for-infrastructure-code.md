@@ -146,7 +146,6 @@ Every policy needs tests to verify correct behavior:
 Policy governance can handle complex scenarios beyond basic validation.
 
 - **Assess change impact** before deployment
-- **Require approvals** for sensitive operations
 - **Control costs** by limiting expensive resources
 - **Ensure compliance** with data residency and privacy regulations
 

@@ -56,7 +56,7 @@ social:
 author:
   name: *name
   home: '/about/'
-  avatar: '/assets/images/self/perf.webp'
+  avatar: '/assets/images/self/ms-ai-tour.webp'
   bio: 'It depends, always'
   # bio: 'Method in the madness'
   # location: 'Athens, Greece'
