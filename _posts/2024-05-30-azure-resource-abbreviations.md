@@ -8,6 +8,7 @@ header:
 tags:
   - iac
   - azure
+  - python
 ---
 
 ## Overview
