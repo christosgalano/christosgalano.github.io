@@ -1,0 +1,77 @@
+/* Daily Thing Widget Styles */
+
+.daily-thing-widget {
+    padding: 0;
+    margin: 10px 0;
+    position: sticky;
+    top: 20px;
+    z-index: 100;
+
+    .daily-thing-header {
+        margin-bottom: 0.5rem;
+
+        h4 {
+            margin: 0;
+            font-size: 0.8rem;
+            font-weight: 800;
+            color: #343434;
+            letter-spacing: 0.5px;
+
+            a {
+                color: inherit;
+                text-decoration: none !important;
+                transition: color 0.2s ease;
+
+                &:hover {
+                    text-decoration: none !important;
+                }
+
+                &:visited {
+                    color: inherit;
+                }
+            }
+        }
+    }
+
+    .daily-thing-content {
+        .daily-thing-text {
+            margin: 0;
+            font-size: 0.8rem;
+            line-height: 1.5;
+            color: #495057;
+            font-style: italic;
+        }
+    }
+
+    @include breakpoint($small) {
+        position: static;
+        margin: 8px 0;
+        padding: 0;
+
+        .daily-thing-header h4 {
+            font-size: 0.75rem;
+        }
+
+        .daily-thing-content .daily-thing-text {
+            font-size: 0.75rem;
+        }
+    }
+}
+
+// Make sure it doesn't interfere with navigation
+.sidebar .daily-thing-widget {
+    margin-top: 15px;
+}
+
+// Adjust positioning for different screen sizes
+@include breakpoint($large) {
+    .daily-thing-widget {
+        max-width: 300px;
+    }
+}
+
+@include breakpoint($x-large) {
+    .daily-thing-widget {
+        max-width: 320px;
+    }
+}

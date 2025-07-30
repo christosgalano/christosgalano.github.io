@@ -1,0 +1,21 @@
+{% comment %}
+Daily Little Thing Widget
+Displays a different inspirational "little thing" each day
+{% endcomment %}
+
+{% assign current_date = site.time | date: "%Y-%m-%d" %}
+{% assign day_of_year = site.time | date: "%j" | plus: 0 %}
+{% assign thing_index = day_of_year | modulo: site.data.little-things.things.size %}
+{% assign todays_thing = site.data.little-things.things[thing_index] %}
+
+<div class="daily-thing-widget">
+    <div class="daily-thing-header">
+        <h4><a href="https://justlittlethings.net/list" target="_blank" rel="noopener noreferrer">Little thing of the
+                day</a></h4>
+    </div>
+    <div class="daily-thing-content">
+        <p class="daily-thing-text">
+            {{ todays_thing }}
+        </p>
+    </div>
+</div>
