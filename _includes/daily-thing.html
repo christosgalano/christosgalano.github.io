@@ -3,9 +3,10 @@ Daily Little Thing Widget
 Displays a different inspirational "little thing" each day
 {% endcomment %}
 
-{% assign current_date = site.time | date: "%Y-%m-%d" %}
-{% assign day_of_year = site.time | date: "%j" | plus: 0 %}
-{% assign thing_index = day_of_year | modulo: site.data.little-things.things.size %}
+{% assign start_date = "2025-01-01" | date: "%s" %}
+{% assign current_date = site.time | date: "%s" %}
+{% assign days_since_start = current_date | minus: start_date | divided_by: 86400 %}
+{% assign thing_index = days_since_start | modulo: site.data.little-things.things.size %}
 {% assign todays_thing = site.data.little-things.things[thing_index] %}
 
 <div class="daily-thing-widget">
