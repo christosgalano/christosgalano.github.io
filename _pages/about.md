@@ -26,5 +26,4 @@ I don't publish on a schedule, but you'll find a mix of tutorials, technical ref
 
 You can follow me on GitHub, LinkedIn, Medium, or wherever good conversations happen. Thanks for stopping by.
 
-Until next time,<br>
 Christos
