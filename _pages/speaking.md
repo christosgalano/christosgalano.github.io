@@ -60,9 +60,17 @@ global_azure_athens_may_2025:
     title: "Global Azure Athens, May 2025"
     excerpt: "At this year's Global Azure Athens, I shared some practical ways to simplify and speed up development workflows using Azure Dev Center. We talked about how Dev Boxes, and Deployment Environments can take the pain out of setting up projects, getting new team members onboard, and providing a consistent experience to the developers. You can check out the [presentation](/assets/files/global-azure-athens-2025.pdf) for a closer look."
 
+glossa_glossa_cloud_july_2025:
+  - image_path: assets/images/speaking/glossa-glossa-cloud.webp
+    alt: "Glossa Glossa Cloud, July 2025"
+    title: "Glossa Glossa Cloud, July 2025"
+    excerpt: "In July 2025, I was invited as a guest on the Greek podcast [*Glossa Glossa Cloud*](https://www.linkedin.com/groups/8367705/), hosted by [Nikos](https://www.linkedin.com/in/nikos-delis-83435232/) and [Maria](https://www.linkedin.com/in/maria-anastasia-moustaka/). We talked about AI and how it's become such a big part of our daily work, plus why having effective governance around it actually matters. You can listen to the episode [here](https://open.spotify.com/episode/7yXLIB0ZHVhgHyCmMYZnmP?si=lh4yAxxdRPOy4yoGqzANzQ)."
+  
 ---
 
 <br>
+
+{% include feature_row id="glossa_glossa_cloud_july_2025" type="left" %}
 
 {% include feature_row id="global_azure_athens_may_2025" type="right" %}
 
