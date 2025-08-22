@@ -61,9 +61,7 @@ def refresh_azure_speech_token(cfg: speechsdk.SpeechConfig) -> None:
     cfg.authorization_token = f"aad#{resource_id}#{aad}"
 
 def _build_azure_speech_config() -> speechsdk.SpeechConfig:
-    """
-    Build a SpeechConfig with shared auth + language setup.
-    """
+    """Build a SpeechConfig with shared auth + language setup."""
     endpoint = os.getenv("SPEECH_ENDPOINT")
     region = os.getenv("SPEECH_REGION")
     language = os.getenv("SPEECH_LANGUAGE", "en-US")
