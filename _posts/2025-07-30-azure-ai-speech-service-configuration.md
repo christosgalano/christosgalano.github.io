@@ -123,7 +123,6 @@ The authentication logic works as follows:
 | `SPEECH_ENDPOINT` | For private/custom endpoint | Full endpoint URL (e.g., "https://your-speech-service.cognitiveservices.azure.com/") |
 | `SPEECH_RESOURCE_ID` | For managed identity auth | Resource ID in format `/subscriptions/.../resourceGroups/.../providers/Microsoft.CognitiveServices/accounts/...` |
 | `SPEECH_LANGUAGE` | Optional | Language code (defaults to "en-US") |
-| `SPEECH_VOICE_NAME` | Optional | Voice name for TTS (defaults to "en-US-AvaNeural") |
 
 > **NOTE**: If your Speech resource uses a private endpoint, you *must* use `SPEECH_ENDPOINT` instead of `SPEECH_REGION`.
 
