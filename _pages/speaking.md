@@ -66,9 +66,16 @@ glossa_glossa_cloud_july_2025:
     title: "Glossa Glossa Cloud, July 2025"
     excerpt: "In July 2025, I was invited as a guest on the Greek podcast [*Glossa Glossa Cloud*](https://www.linkedin.com/groups/8367705/), hosted by [Nikos](https://www.linkedin.com/in/nikos-delis-83435232/) and [Maria](https://www.linkedin.com/in/maria-anastasia-moustaka/). We talked about AI and how it's become such a big part of our daily work, plus why having effective governance around it actually matters. You can listen to the episode [here](https://open.spotify.com/episode/7yXLIB0ZHVhgHyCmMYZnmP?si=lh4yAxxdRPOy4yoGqzANzQ)."
   
+hashitalks_august_2025:
+  - image_path: assets/images/speaking/hashitalks-august-2025.webp
+    alt: "HashiTalks Securely Building, August 2025"
+    title: "HashiTalks Securely Building, August 2025"
+    excerpt: "In August 2025, I spoke at 'HashiTalks: Securely Building' about Managing Terraform State in Azure. In this session, I showcased different approaches to managing Terraform state in Azure securely and at scale; from simple, project-based setups with a few environments to complex, multi-team scenarios with many state files across environments. You can watch the talk [here](https://www.youtube.com/watch?v=PR54hhKs_hY&t=2809s) from 41:10 to 1:07:20."
 ---
 
 <br>
+
+{% include feature_row id="hashitalks_august_2025" type="right" %}
 
 {% include feature_row id="glossa_glossa_cloud_july_2025" type="left" %}
 
