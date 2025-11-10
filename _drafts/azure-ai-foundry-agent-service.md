@@ -1,6 +1,6 @@
 ---
 title: "Azure AI Foundry Agent Service"
-excerpt: "Azure AI Foundry Agent Service is a fully managed platform that transforms AI agent development into production-ready workflows, enabling organizations to build, deploy, and scale intelligent agents with enterprise-grade security and governance."
+excerpt: "Azure AI Foundry Agent Service is a managed platform designed to help organizations build, deploy, and manage AI agents with built-in security, governance, and scale."
 tagline: "Build and deploy AI agents at scale"
 header:
   overlay_color: "#24292f"
@@ -12,74 +12,96 @@ tags:
 
 ## Overview
 
-Azure AI Foundry Agent Service, initially announced as "Azure AI Agent Service", addresses the gap between AI demonstrations and production-ready automation. The service's evolution to its current name reflects its deeper integration with the Azure AI Foundry platform, positioning it as a comprehensive foundation for building intelligent agents rather than just another AI service.
+Azure AI Foundry Agent Service helps turn AI prototypes into production-ready automation.  
+Originally launched as *Azure AI Agent Service*, it now anchors the Azure AI Foundry platform — not just another AI tool, but a foundation for enterprise-grade agents.
 
-Rather than just conversational interfaces, the service enables agents that can process documents, manage workflows, and automate tasks with reliability suitable for mission-critical operations. The platform combines models, tools, frameworks, and governance into a unified system.
+**What it does:**  
+- Beyond chatbots: process documents, manage workflows, automate business tasks  
+- Orchestrates models and tools with built-in governance and observability  
+- Handles state, retries, content safety, and enterprise integration  
 
-It manages orchestration, state management, content safety, and integrates with enterprise identity and observability systems. The service supports over 1,900 models from multiple providers and provides access to 1,400+ connectors through Azure Logic Apps integration, with built-in multi-agent orchestration for complex workflows.
+**Scale:**  
+- Large catalog of models, including GPT-4o, GPT-4, GPT-3.5, Llama, Mistral, and Cohere  
+- 1,400+ connectors via Logic Apps  
+- Multi-agent orchestration for complex workflows (GA)  
 
-*Note: Service availability and features may vary by Azure region. Check the [Azure Products by Region](https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/) page for current availability.*
+> Availability varies by region. See [Azure Products by Region](https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/).
+
+---
 
 ## Architecture
 
-The service uses an "assembly line" approach with six core stages:
+The service follows an "assembly line" approach, with six conceptual stages:
 
 ![Assembly Line Architecture](/assets/images/azure/ai-foundry/agent-service/assembly-line.webp)
 
-1. **Model Selection** - Choose from Azure OpenAI (GPT-4o, GPT-4, GPT-3.5) and other providers like Meta's Llama, Mistral, and Cohere
-2. **Customization** - Fine-tune models through prompts, training, or RAG techniques
-3. **Tool Integration** - Connect to Bing, SharePoint, Azure AI Search, Logic Apps, Functions, and external APIs
-4. **Orchestration** - Automated management of tool calls, state, retries, and execution sequences
-5. **Trust and Security** - Built-in Microsoft Entra, RBAC, content filtering, and network isolation
-6. **Observability** - Comprehensive logging and tracing through Azure Monitor, including Application Insights for detailed telemetry and performance metrics
+1. **Model Selection**: Choose from Azure OpenAI and other foundation models  
+2. **Customization**: Tune via prompts, fine-tuning, or retrieval-augmented generation (RAG)  
+3. **Tool Integration**: Connect to Bing, SharePoint, Azure AI Search, Logic Apps, Functions, or external APIs  
+4. **Orchestration**: Manage tool calls, state, retries, and execution sequences  
+5. **Trust & Security**: Microsoft Entra, RBAC, content filtering, and network isolation  
+6. **Observability**: Logging and tracing with Azure Monitor and Application Insights  
+
+---
 
 ## Multi-Agent Orchestration
 
-The platform supports two multi-agent approaches (currently in preview):
+Two supported modes:
 
 ![Multi-Agent Orchestration](/assets/images/azure/ai-foundry/agent-service/multi-agent-orchestration.webp)
 
-- **Connected Agents** - Primary agents delegate tasks to specialized sub-agents
-- **Multi-Agent Workflows** - Sophisticated orchestration for complex, stateful processes
+- **Connected Agents**: A primary agent delegates tasks to specialists  
+- **Multi-Agent Workflows**: Stateful, complex processes spanning multiple agents  
 
-The service features a unified runtime that merges the Semantic Kernel and AutoGen frameworks, providing developers with seamless access to both ecosystems' capabilities. This unified approach extends to integration with other frameworks like CrewAI, LangGraph, and LlamaIndex, offering flexibility without framework lock-in. The service can interoperate with other platforms through standardized protocols.
+**Example:** A support agent routes billing issues to a finance agent, product issues to a knowledge agent, and compliance checks to a policy agent.
+
+Agents run on a unified runtime that converges **Semantic Kernel** and **AutoGen**, while also supporting external frameworks like CrewAI, LangGraph, or LlamaIndex. Designed for interoperability, not strict lock-in.
+
+---
 
 ## Enterprise Security
 
-Key security features include:
-
 ![Security Architecture](/assets/images/azure/ai-foundry/agent-service/security-architecture.webp)
 
-- **Identity Management** - Microsoft Entra integration with on-behalf-of authentication and RBAC
-- **Compliance** - Microsoft Purview integration for AI governance, DPIA, and AIA support
-- **Network Security** - Private endpoints, VPN support, and bring-your-own infrastructure options
-- **Threat Protection** - Microsoft Defender integration for security monitoring
+- **Identity**: Microsoft Entra with on-behalf-of auth and RBAC  
+- **Compliance**: Microsoft Purview for AI governance, DPIA, and AIA support  
+- **Network**: Private endpoints, VPN support, BYO infrastructure  
+- **Threat Protection**: Microsoft Defender integration for monitoring  
+
+---
 
 ## Development Experience
 
-The platform offers multiple development paths:
+Choose your path:  
+- **Agent Playground**: No-code design and testing  
+- **Azure AI Foundry SDK**: APIs for Python, C#, JavaScript, and Java  
+- **Evaluation Tools**: Built-in metrics for tool accuracy and task adherence  
+- **CI/CD Ready**: Works with standard pipelines  
 
-- **Agent Playground** - No-code interface for designing and testing agents
-- **Azure AI Foundry SDK** - Comprehensive APIs for Python, C#, JavaScript, and Java
-- **Built-in Evaluation** - Custom metrics and performance tracking
-- **CI/CD Integration** - Standard development workflow support
+---
 
 ## Use Cases
 
-Common implementations include:
-
 ![Use Cases](/assets/images/azure/ai-foundry/agent-service/use-cases.webp)
 
-- **Customer Service** - Automated inquiry handling with CRM integration
-- **Document Processing** - Invoice processing, contract analysis, report generation
-- **Business Automation** - Supply chain, financial reporting, approval workflows
-- **Research and Analysis** - Competitive intelligence, market research, trend monitoring
-- **DevOps** - Code review, testing assistance, system monitoring
+- **Customer Service**: CRM-integrated inquiry handling  
+- **Document Processing**: Invoices, contracts, and reports  
+- **Business Automation**: Supply chain, reporting, approvals  
+- **Research & Analysis**: Market trends, competitive intelligence  
+- **DevOps**: Code review, testing, monitoring  
+
+---
 
 ## Summary
 
-Azure AI Foundry Agent Service provides a comprehensive platform for enterprise AI automation. Its assembly-line architecture ensures production readiness with built-in security, observability, and governance. The service enables organizations to move beyond AI demonstrations to scalable, reliable automation through flexible development approaches and extensive integration capabilities.
+Azure AI Foundry Agent Service bridges the gap between AI experiments and enterprise-scale automation.  
+Its "assembly-line" architecture ensures **production readiness** with security, observability, and governance built in.  
+
+Organizations can move beyond demos to scalable AI workflows with flexible development options and deep integration across Azure and external systems.
+
+---
 
 ## Resources
 
-- [Azure AI Foundry Agent Service Documentation](https://learn.microsoft.com/en-us/azure/ai-services/agents/overview)
+- [Azure AI Foundry Agent Service Documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/overview)
+- [GA Announcement Blog](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/announcing-general-availability-of-azure-ai-foundry-agent-service/4414352)

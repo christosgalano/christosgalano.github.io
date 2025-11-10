@@ -71,9 +71,18 @@ hashitalks_august_2025:
     alt: "HashiTalks Securely Building, August 2025"
     title: "HashiTalks Securely Building, August 2025"
     excerpt: "In August 2025, I spoke at 'HashiTalks: Securely Building' about Managing Terraform State in Azure. In this session, I showcased different approaches to managing Terraform state in Azure securely and at scale; from simple, project-based setups with a few environments to complex, multi-team scenarios with many state files across environments. You can watch the talk [here](https://www.youtube.com/watch?v=PR54hhKs_hY&t=2479s)."
+
+collabdays_november_2025:
+  - image_path: assets/images/speaking/collabdays-november-2025.webp
+    alt: "CollabDays, November 2025"
+    title: "CollabDays, November 2025"
+    excerpt: "In November 2025, I presented at CollabDays on 'Policy-Driven Governance for Infrastructure Code'. This session focused on how the Open Policy Agent (OPA) enforces critical policies during infrastructure provisioning to mitigate risks like misconfigurations and security vulnerabilities. We explored the challenges of scaling infrastructure, demonstrated how OPA ensures operational consistency, and showed how to integrate it into deployment workflows. You can watch the session [here](https://www.youtube.com/watch?v=kU1KhvxRynQ&list=PLk01ug9t6Wsz67Zz_37mH9Xb5EdodiJfy)."
+
 ---
 
 <br>
+
+{% include feature_row id="collabdays_november_2025" type="left" %}
 
 {% include feature_row id="hashitalks_august_2025" type="right" %}
 
