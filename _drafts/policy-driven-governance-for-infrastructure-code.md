@@ -17,6 +17,12 @@ As cloud environments grow, **manual governance stops working**. Different teams
 
 Policy-driven governance changes this reactive approach into **proactive enforcement**. By treating policies as code—version-controlled, tested, and automatically enforced—you catch issues during development instead of in production. Resources meet your standards from the start, not as an afterthought.
 
+> NOTE 1:
+> The contents of this article are also available as a YouTube presentation [here](https://youtu.be/kU1KhvxRynQ?si=f92k4mEnC4bA_y1R).
+>
+> NOTE 2:
+> If you want to explore the concepts hands-on you can use the corresponding template repository [here](https://github.com/christosgalano/opa-template-repo).
+
 ## The problem with manual governance
 
 **Misconfigurations increase with scale**. That overly permissive security group or unencrypted storage bucket slips through manual reviews. When managing hundreds of resources across multiple teams, human oversight alone isn't enough.
@@ -161,10 +167,12 @@ Organizations using policy-driven governance report significant improvements: **
 
 The shift is profound: governance stops being the department that says "no" and becomes the framework that enables "yes, safely." When every deployment automatically meets your standards, teams move faster, not slower. When compliance is built-in, not bolted-on, innovation accelerates.
 
-*Governance isn't a bottleneck—it's an enabler. Done right, it doesn't slow teams down; it gives them the confidence to move fast without breaking things.*
+*Governance isn't a bottleneck—it's an enabler. Done right, it doesn't slow teams down; it gives teams the confidence to move fast without breaking things.*
 
 ## Resources
 
-- [**Open Policy Agent Documentation**](https://www.openpolicyagent.org/docs/latest/)
-- [**OPA Playground**](https://play.openpolicyagent.org/)
-- [**Conftest**](https://www.conftest.dev/)
+- [OPA Template Repository](https://github.com/christosgalano/opa-template-repo)
+- [Video Walkthrough](https://youtu.be/kU1KhvxRynQ?si=f92k4mEnC4bA_y1R)
+- [Open Policy Agent Documentation](https://www.openpolicyagent.org/docs/latest/)
+- [OPA Playground](https://play.openpolicyagent.org/)
+- [Conftest](https://www.conftest.dev/)
