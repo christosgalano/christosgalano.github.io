@@ -76,7 +76,7 @@ collabdays_november_2025:
   - image_path: assets/images/speaking/collabdays-november-2025.webp
     alt: "CollabDays, November 2025"
     title: "CollabDays, November 2025"
-    excerpt: "In November 2025, I presented at CollabDays Greece on 'Policy-Driven Governance for Infrastructure Code'. This session focused on how the Open Policy Agent (OPA) enforces critical policies during infrastructure provisioning to mitigate risks like misconfigurations and security vulnerabilities. We explored the challenges of scaling infrastructure, demonstrated how OPA ensures operational consistency, and showed how to integrate it into deployment workflows. You can watch the session [here](https://www.youtube.com/watch?v=kU1KhvxRynQ&list=PLk01ug9t6Wsz67Zz_37mH9Xb5EdodiJfy)."
+    excerpt: "In November 2025, I presented at CollabDays Greece on 'Policy-Driven Governance for Infrastructure Code'. This session focused on how the Open Policy Agent (OPA) enforces critical policies during infrastructure provisioning to mitigate risks like misconfigurations and security vulnerabilities. We explored the challenges of scaling infrastructure, demonstrated how OPA ensures operational consistency, and showed how to integrate it into deployment workflows. You can watch the session [here](https://youtu.be/kU1KhvxRynQ?si=qqk3IgN10R93Mio6)."
 
 ---
 
