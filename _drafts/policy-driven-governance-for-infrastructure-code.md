@@ -17,11 +17,9 @@ As cloud environments grow, **manual governance stops working**. Different teams
 
 Policy-driven governance changes this reactive approach into **proactive enforcement**. By treating policies as code—version-controlled, tested, and automatically enforced—you catch issues during development instead of in production. Resources meet your standards from the start, not as an afterthought.
 
-> NOTE 1:
-> The contents of this article are also available as a YouTube presentation [here](https://youtu.be/kU1KhvxRynQ?si=f92k4mEnC4bA_y1R).
+> The contents of this article are also available as a [YouTube presentation](https://youtu.be/kU1KhvxRynQ?si=f92k4mEnC4bA_y1R).
 >
-> NOTE 2:
-> If you want to explore the concepts hands-on you can use the corresponding template repository [here](https://github.com/christosgalano/opa-template-repo).
+> To explore the concepts hands-on, use the [OPA template repository](https://github.com/christosgalano/opa-template-repo). It ships with ready-to-use policies, tests, CI workflows, and GitHub Copilot resources for AI-assisted policy authoring.
 
 ## The problem with manual governance
 
@@ -67,11 +65,21 @@ Effective policy governance starts with a **well-structured policy library**. Th
 
 ### Organizing policies
 
-Structure your policies for maintainability:
-- Group by cloud provider (AWS, Azure, GCP)
-- Organize by resource type
-- Create shared utilities for common patterns
-- Include comprehensive test coverage
+A practical structure organizes policies by **tool first, then provider or resource type**:
+
+```text
+policy/
+├── terraform/
+│   ├── util/             # shared helpers (tag validation, resource filtering)
+│   ├── azuredevops/      # rules per resource type
+│   ├── azurerm/
+│   └── scenarios/        # multi-resource validations
+└── arm/
+    ├── resources/
+    └── scenarios/
+```
+
+This mirrors how infrastructure teams think: by the tool they use, then by what they're managing. The same pattern extends naturally to Kubernetes (by API group), CloudFormation (by service), or any other tool that produces JSON.
 
 **Centralize policy storage** using repositories or registries like Azure Blob Storage, Amazon S3, or container registries. Centralization ensures all teams use the same policies and receive updates immediately.
 
@@ -93,9 +101,23 @@ Organizing policies by provider and resource type improves maintainability:
 
 Helper functions reduce duplication. Tag validation ensures consistent resource labeling:
 
+```rego
+# Check all required tags are present on a resource
+has_all_tags(resource, required_tags) if {
+    keys    := object.keys(resource.change.after.tags)
+    missing := required_tags - keys
+    missing == set()
+}
+```
+
 ![helper-tags](/assets/images/policy-driven-governance-for-infrastructure-code/helper-tags.webp)
 
 Resource filtering allows policies to target specific types and operations:
+
+```rego
+# Return all resources of a given type from the Terraform plan
+by_type(type, resources) := [r | some r in resources; r.type == type]
+```
 
 ![helper-resources](/assets/images/policy-driven-governance-for-infrastructure-code/helper-resources.webp)
 
@@ -111,7 +133,19 @@ Every policy needs tests to verify correct behavior:
 
 ### Testing with Conftest
 
-**Conftest** simplifies policy testing for developers. It validates structured data—Terraform plans, Kubernetes manifests, Dockerfiles—against your OPA policies:
+**Conftest** simplifies policy testing for developers. It validates structured data—Terraform plans, Kubernetes manifests, Dockerfiles—against your OPA policies. Run it locally before pushing, or integrate it as a CI step:
+
+```sh
+# Validate a Terraform plan against your policies
+conftest test --policy policy/ --all-namespaces tfplan.json
+```
+
+Violations are reported with the exact message from your policy metadata, making it clear what failed and why:
+
+```
+FAIL - tfplan.json - terraform.azuredevops.project - Azure DevOps projects must have private visibility.
+FAIL - tfplan.json - terraform.azuredevops.project - Azure DevOps projects must use Git for version control.
+```
 
 ![conftest](/assets/images/policy-driven-governance-for-infrastructure-code/conftest.webp)
 
@@ -131,6 +165,7 @@ Every policy needs tests to verify correct behavior:
 - Write tests for both passing and failing scenarios
 - Cover edge cases before they appear in production
 - Treat policy tests like application tests
+- Use a linter like [Regal](https://github.com/StyraInc/regal) to enforce style and catch common mistakes automatically
 
 **Plan for scale**
 - Use efficient data structures for large rule sets
@@ -171,8 +206,9 @@ The shift is profound: governance stops being the department that says "no" and 
 
 ## Resources
 
-- [OPA Template Repository](https://github.com/christosgalano/opa-template-repo)
+- [OPA Template Repository](https://github.com/christosgalano/opa-template-repo) — template with policies, tests, CI, and GitHub Copilot AI resources
 - [Video Walkthrough](https://youtu.be/kU1KhvxRynQ?si=f92k4mEnC4bA_y1R)
 - [Open Policy Agent Documentation](https://www.openpolicyagent.org/docs/latest/)
 - [OPA Playground](https://play.openpolicyagent.org/)
 - [Conftest](https://www.conftest.dev/)
+- [Regal — Rego Linter](https://github.com/StyraInc/regal)
