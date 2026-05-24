@@ -78,28 +78,36 @@ collabdays_november_2025:
     title: "CollabDays, November 2025"
     excerpt: "In November 2025, I presented at CollabDays Greece on 'Policy-Driven Governance for Infrastructure Code'. This session focused on how the Open Policy Agent (OPA) enforces critical policies during infrastructure provisioning to mitigate risks like misconfigurations and security vulnerabilities. We explored the challenges of scaling infrastructure, demonstrated how OPA ensures operational consistency, and showed how to integrate it into deployment workflows. You can watch the session [here](https://youtu.be/kU1KhvxRynQ?si=qqk3IgN10R93Mio6)."
 
+global_azure_athens_may_2026:
+  - image_path: assets/images/speaking/global-azure-athens-2026.webp
+    alt: "Global Azure Athens 2026"
+    title: "Global Azure Athens, May 2026"
+    excerpt: "At Global Azure Athens 2026, I delivered a session on 'Policy-Driven Governance for Infrastructure Code'. The talk addressed how the Open Policy Agent (OPA) enforces critical policies during infrastructure provisioning to mitigate risks such as misconfigurations and security vulnerabilities. We covered the key challenges of scaling infrastructure, demonstrated how OPA ensures operational consistency across the entire lifecycle, and showed how to integrate it seamlessly into deployment workflows. You can check out the [template repository](https://github.com/christosgalano/opa-template-repo) for a hands-on starting point."
+
 ---
 
 <br>
 
-{% include feature_row id="collabdays_november_2025" type="left" %}
+{% include feature_row id="global_azure_athens_may_2026" type="left" %}
 
-{% include feature_row id="hashitalks_august_2025" type="right" %}
+{% include feature_row id="collabdays_november_2025" type="right" %}
 
-{% include feature_row id="glossa_glossa_cloud_july_2025" type="left" %}
+{% include feature_row id="hashitalks_august_2025" type="left" %}
 
-{% include feature_row id="global_azure_athens_may_2025" type="right" %}
+{% include feature_row id="glossa_glossa_cloud_july_2025" type="right" %}
 
-{% include feature_row id="ai_cloud_and_modern_workplace_2025" type="left" %}
+{% include feature_row id="global_azure_athens_may_2025" type="left" %}
 
-{% include feature_row id="silicon_corfu_2025" type="right" %}
+{% include feature_row id="ai_cloud_and_modern_workplace_2025" type="right" %}
 
-{% include feature_row id="azure_innovators_hub_october_2024" type="left" %}
+{% include feature_row id="silicon_corfu_2025" type="left" %}
 
-{% include feature_row id="global_azure_athens_april_2024" type="right" %}
+{% include feature_row id="azure_innovators_hub_october_2024" type="right" %}
 
-{% include feature_row id="cloud_technology_tuesdays_may_2023" type="left" %}
+{% include feature_row id="global_azure_athens_april_2024" type="left" %}
 
-{% include feature_row id="global_azure_athens_may_2023" type="right" %}
+{% include feature_row id="cloud_technology_tuesdays_may_2023" type="right" %}
 
-{% include feature_row id="azureheads_december_2022" type="left" %}
+{% include feature_row id="global_azure_athens_may_2023" type="left" %}
+
+{% include feature_row id="azureheads_december_2022" type="right" %}
