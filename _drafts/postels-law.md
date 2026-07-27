@@ -1,7 +1,7 @@
 ---
 title: "Postel's Law"
-excerpt: "Postel discovered this principle while working on TCP/IP, the foundation of internet communications. He noticed that strict, inflexible systems often failed when confronted with real-world variations and imperfections. Systems that could tolerate minor deviations in what they received, while maintaining strict standards in what they produced, proved far more resilient."
-tagline: "Balancing flexibility and reliability in systems design"
+excerpt: "Be conservative in what you send, be liberal in what you accept. A principle born in TCP/IP that quietly shaped every resilient system since, and the security lesson that forced us to refine it."
+tagline: "Strict outward, tolerant inward"
 header:
   overlay_color: "#24292f"
   teaser: /assets/images/architecture/postels-law.webp
@@ -34,14 +34,14 @@ Even database systems embody this approach. They often accept data in multiple f
 
 ## Understanding the Balance
 
-What makes Postel's Law powerful is how it resolves a fundamental tension in system design. Any system needs to be both reliable and adaptable - reliable enough that others can depend on it, but adaptable enough to handle real-world complexity. Most approaches treat this as a trade-off, sacrificing one for the other.
+What makes Postel's Law powerful is how it resolves a fundamental tension in system design. Any system needs to be both reliable and adaptable: reliable enough that others can depend on it, but adaptable enough to handle real-world complexity. Most approaches treat this as a trade-off, sacrificing one for the other.
 
 Postel showed a different path. By being conservative in output but liberal in input, systems can achieve both:
 
-- When producing output, they maintain strict standards - being precise, predictable, and consistent. This creates the stability that other systems can rely on.
-- When handling input, they show measured flexibility - accommodating reasonable variations and imperfections without failing. This creates the adaptability needed to work in complex environments.
+- When producing output, they maintain strict standards: precise, predictable, consistent. This creates the stability that other systems can rely on.
+- When handling input, they show measured flexibility, accommodating reasonable variations and imperfections without failing. This creates the adaptability needed to work in complex environments.
 
-This balance isn't just clever engineering - it's a pattern for sustainable system design. Systems built this way can evolve and integrate with others while maintaining their core reliability. They're better positioned to handle both current complexity and future changes.
+This balance isn't just clever engineering. It's a pattern for sustainable system design. Systems built this way can evolve and integrate with others while maintaining their core reliability. They're better positioned to handle both current complexity and future changes.
 
 ## The Security Challenge
 
@@ -57,11 +57,15 @@ Understanding Postel's Law helps us build better systems:
 - **Thoughtful Tolerance**: Accept variation in input where it makes sense, but validate critical requirements. This builds resilience without compromising security.
 - **Graceful Degradation**: When encountering problems, fail gracefully and provide clear feedback. This maintains system stability while helping users understand and correct issues.
 
-## Final Thoughts
+## A law that survived its author
 
-As our systems grow more complex and interconnected, Postel's insight remains relevant. Whether building microservices, APIs, or distributed systems, this balance between strictness and flexibility helps create solutions that last.
+As our systems grow more complex and interconnected, Postel's insight keeps finding new ground. Whether building microservices, APIs, or distributed systems, the balance between strictness and flexibility is what separates solutions that last from solutions that merely launch.
 
-The principle endures because it reflects a deeper truth about sustainable systems - they need both reliability and adaptability to thrive. Postel's Law shows us how to achieve both.
+The principle endures because it reflects a deeper truth about sustainable systems: they need both reliability and adaptability to thrive. Not one or the other. Both, held in deliberate tension.
+
+---
+
+*Demand little of others, promise much of yourself. Networks were not the first systems to run on that rule, only the first to write it down.*
 
 ## Resources
 

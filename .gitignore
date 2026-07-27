@@ -33,6 +33,10 @@ _site
 
 # Notes
 notes.md
+linkedin-posts.md
+
+# AI assistant config (local only)
+.claude/
 
 # Cache
 .cache
