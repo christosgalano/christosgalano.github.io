@@ -80,9 +80,11 @@ brew install protobuf
 {% endraw %}
 {% endhighlight %}
 
+`protoc` is what we'll use in this guide, and it's still the standard compiler. For a team setting up Protobuf across multiple services, though, it's worth knowing about [buf](https://buf.build/), which wraps `protoc` with linting, breaking-change detection, and dependency management built in. If you're past the demo stage, start there instead.
+
 ### Major Components
 
-**NOTE:** This guide uses the latest version of Protocol Buffers, proto3. For details on the differences between proto2 and proto3, refer to the [Language Guide](https://developers.google.com/protocol-buffers/docs/proto3).
+**NOTE:** This guide uses proto3, still the most common way to define Protobuf schemas. Since 2023, Google also offers [editions](https://protobuf.dev/editions/overview/) (`edition = "2023"` or `"2024"`), which replace the proto2/proto3 syntax split with explicit feature flags. Proto3 has no deprecation plan, though, so it's still a fine place to start. For details on the differences between proto2 and proto3, refer to the [Language Guide](https://developers.google.com/protocol-buffers/docs/proto3).
 
 **Messages**
 
@@ -330,7 +332,7 @@ First, we need to install the Go plugin for Protocol Buffers:
 
 {% highlight bash %}
 {% raw %}
-go install google.golang.org/protobuf/cmd/protoc-gen-go
+go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
 {% endraw %}
 {% endhighlight %}
 
@@ -423,6 +425,8 @@ func main() {
 
 First, we create a new composer and a new song. Then, we encode the song using protobuf and write it to a file. We also encode the song using JSON for comparison and write it to a file. Finally, we read the protobuf file, decode it, and print the decoded song.
 
+Notice that we build `Bach` and `Chaconne` with plain struct literals, setting fields like `Name` directly. That's the classic "open struct" API, and it's still what proto3 gives you by default. Go's protobuf library introduced an [Opaque API](https://go.dev/blog/protobuf-opaque) in late 2024, which hides struct fields behind `Get`/`Set`/`Has`/`Clear` accessors instead. It only activates if you opt in through editions, so nothing here changes: direct field access remains fully valid.
+
 Here is the hexadecimal comparison between the protobuf and JSON encodings:
 
 ![hex-output](/assets/images/demos/protobuf/hex-output.webp)
@@ -447,6 +451,10 @@ As you can see, the protobuf encoding is much more compact than the JSON encodin
 - Avoid using text format for interchange, as it can lead to deserialization issues when renaming or adding fields.
 - Serialization stability is not guaranteed across builds. Avoid relying on it for purposes like building cache keys.
 - Avoid using language keywords for field names to prevent conflicts during serialization and access.
+- Avoid designing messages with hundreds of fields. Split them into focused messages instead; large ones slow down compilation and bloat memory usage.
+- Keep RPC request and response messages separate from the messages you use for storage, even when the fields overlap today. They evolve for different reasons and at different speeds.
+- Model a field that can take more than two states with an enum, not a boolean. A boolean can only ever mean two things, and requirements rarely stay binary.
+- Prefer well-known types, like `Duration` and `Timestamp`, and Google's common types, like `Money`, over hand-rolled equivalents. Reinventing them costs you the tooling and library support that already exists for the standard ones.
 
 ## Summary
 
@@ -455,3 +463,7 @@ In summary, Protocol Buffers are a great way to serialize and deserialize data. 
 ## Resources
 
 - [**Protobuf**](https://protobuf.dev/)
+- [**Protobuf Editions**](https://protobuf.dev/editions/overview/)
+- [**buf**](https://buf.build/)
+- [**Go Opaque API**](https://go.dev/blog/protobuf-opaque)
+- [**Protovalidate**](https://github.com/bufbuild/protovalidate)
