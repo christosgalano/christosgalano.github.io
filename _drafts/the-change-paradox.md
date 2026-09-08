@@ -3,13 +3,16 @@ title: "The Change Paradox"
 excerpt: "When success hardens into habit, progress stalls. This piece unpacks why clinging to stability or chasing trends both fall short, and why deliberate, intentional change is the only path that endures."
 tagline: "Lasting progress is never accidental."
 header:
-  overlay_color: "#24292f"
+  overlay_image: /assets/images/thought-provoking/the-change-paradox.webp
+  caption: "M.C. Escher, Waterfall (1961)"
   teaser: /assets/images/thought-provoking/the-change-paradox.webp
 tags:
   - thought-provoking
 ---
 
-Most businesses today face a fundamental tension: the structures, habits, and practices that drive success can just as easily become barriers to progress. This isn't a theoretical dilemma; it plays out every day in missed opportunities, failed transformations, and obsolete practices.
+Escher's *Waterfall* keeps a wheel turning forever on water that seems to climb back up after it falls. No pump, no incline, just architecture that tricks the eye into accepting an impossible loop. Most organizational change looks a little like that engraving: constant motion, dressed up as progress, arriving nowhere it hasn't already been.
+
+The structures and habits that drive success can just as easily become the barriers that stall it. This isn't a theoretical dilemma. It plays out in missed opportunities, failed transformations, and practices nobody remembers agreeing to.
 
 ## Stability's False Promise
 
@@ -25,7 +28,7 @@ The danger isn't sudden collapse but slow decline. Companies often discover too 
 
 The opposite impulse is equally dangerous. Fear of being left behind drives companies to chase every new technology and methodology. Digital transformation, cloud computing, and artificial intelligence each promise transformation, but too often, they become panic-driven initiatives rather than deliberate choices.
 
-Competitive pressure fuels a cycle of hasty implementations. Teams deploy systems they barely understand, disrupting core processes and weakening security. Projects are abandoned half-finished as new priorities emerge, creating a cascade of issues: unstable systems, broken workflows, and mounting technical debt. Constant context-switching burns out teams, while experienced staff leaves, taking critical knowledge with them.
+Competitive pressure fuels a cycle of hasty implementations. Teams deploy systems they barely understand, disrupting core processes and weakening security. Projects get abandoned half-finished as new priorities emerge, and what's left behind rarely gets cleaned up: it becomes technical debt someone else inherits. Constant context-switching burns out teams, while experienced staff leaves, taking critical knowledge with them.
 
 Consider Agile adoption. While its manifesto champions values like individuals, interactions, and responsiveness to change, many companies reduce it to surface-level rituals: daily standups and sprint planning. The same happens with cloud migrations, where "cloud-first" becomes a mantra instead of a strategy. Organizations move fast but not thoughtfully, creating complexity, cost overruns, and systems that are harder to manage than those they replaced.
 
@@ -35,7 +38,7 @@ Everyone wants to be the cool kid on the block: chasing the latest tools, method
 
 Progress isn't about speed or spontaneity. It's about deliberate choice. True progress requires thoughtful experimentation balanced with operational stability. It's not a reckless leap forward, but a measured step with purpose.
 
-This means creating room for exploration without risking what works. New ideas are tested with clear intent: small trials, controlled experiments, and focused iterations before they become large-scale commitments. The goal isn't perfection but steady refinement.
+This means creating room for exploration without risking what works. New ideas get tested with clear intent, in trials small enough to fail cheaply, before anyone commits to them at scale. The goal isn't perfection but steady refinement.
 
 The most successful organizations make deliberate progress a habit. They encourage teams to challenge assumptions and question defaults. When a customer service rep spots a process bottleneck or a developer flags technical debt, leadership listens. These signals aren't disruptions; they're opportunities.
 
