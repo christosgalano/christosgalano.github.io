@@ -2,6 +2,11 @@ source "https://rubygems.org"
 
 gem "github-pages", group: :jekyll_plugins
 
+# octokit (pulled in by jekyll-github-metadata) calls JSON.parse with an
+# arity json 3.x removed, breaking the Jekyll build. Pin below 3.0 until
+# octokit fixes it upstream.
+gem "json", "< 3.0"
+
 gem "tzinfo-data"
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
