@@ -93,7 +93,7 @@ Each deployment exchanges `identity_token.azurerm.jwt` for its own credentials. 
 
 ## What it replaces, and what it does not
 
-The mental model shift is compact. Modules answer "how do I avoid repeating resource definitions?" Workspaces answer "how do I keep state files apart?" Neither answers "what is the system, and how many of it exist?" That is the question Stacks claim, with real capacity behind the claim: a single Stack scales to 100 components and 500 deployments.
+The mental model shift is compact. Modules answer "how do I avoid repeating resource definitions?" Workspaces answer "how do I keep state files apart?" Neither answers "what is the system, and how many of it exist?" That is the question Stacks claim, with real capacity behind the claim: a single Stack scales to 100 components and 20 deployments.
 
 Stacks coexist with workspaces in the same HCP Terraform project, so this is not a migration ultimatum. Greenfield systems with many instances are the natural first candidates. A stable estate with three workspaces and no ordering pain has no problem for Stacks to solve, and restructuring it would be motion, not progress.
 
@@ -103,7 +103,7 @@ Now the part the announcement posts underplay. Stacks are an HCP Terraform featu
 
 That changes the adoption calculus. Adopting modules was a code decision. Adopting Stacks is a platform commitment: your environment topology, orchestration rules, and deployment identities all become artifacts of a commercial service. Perfectly reasonable if you are on HCP Terraform anyway. A real strategic bet if you were keeping your options open, especially with the Terraform and OpenTofu paths diverging as sharply as they have.
 
-Is the trade worth it? It depends on how much workspace sprawl currently costs you, and on how you feel about the vendor question. For a platform team running forty near-identical deployments through hand-choreographed pipelines, Stacks attack a genuine, expensive problem at the right layer: the language. For everyone else, the concepts are still worth learning. Components and deployments name real things, and naming them well is half of architecture.
+Is the trade worth it? It depends on how much workspace sprawl currently costs you, and on how you feel about the vendor question. For a platform team running a dozen or more near-identical deployments through hand-choreographed pipelines, Stacks attack a genuine, expensive problem at the right layer: the language. For everyone else, the concepts are still worth learning. Components and deployments name real things, and naming them well is half of architecture.
 
 ## Summary
 
