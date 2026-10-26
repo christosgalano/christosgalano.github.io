@@ -36,7 +36,10 @@ concurrency:
 jobs:
   # Build job
   build:
-    runs-on: ubuntu-latest
+    # Pinned below ubuntu-latest (now 26.04): ruby-builder has no Ruby 3.1
+    # binary for 26.04 since 3.1 is EOL. Revisit when the Gemfile allows a
+    # newer Ruby.
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
